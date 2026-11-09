@@ -74,7 +74,8 @@
     },
     "dialogue": "별도 대화 시제품 구현. 실제 HTTP 처리기/DOM/음성 대역 검증. live API·실제 화면·실음성은 미검증: dialogue-verification.json 참고.",
     "characters": "3D 세 인물 + 로컬 사진 매핑·교체. 코드/CPU 형상 확인. 실제 WebGL·시각 UI 미검증: character-verification.json",
-    "performance": "정지 화면/고정 그림자 재사용·인물 175→111 draw calls·사진 전송량 88% 감소·병렬 로딩·ETag. 실제 FPS/로딩 시간 미측정: performance-verification.json"
+    "performance": "정지 화면/고정 그림자 재사용·인물 175→111 draw calls·사진 전송량 88% 감소·병렬 로딩·ETag. 실제 FPS/로딩 시간 미측정: performance-verification.json",
+    "maintenance": "루트 및 interview.html은 점검 문구 한 개만 표시, script 없음. 원래 HTML은 references/app-templates에 보존. 구문 검사 및 테스트 29개 통과. 실제 브라우저 미검증."
   },
   "missing_originals": [
     {
@@ -108,13 +109,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 16974,
-      "sha256": "a8d24765c424704f4c53d473b68d161be124d97d3658e4f79071d995f1a9498c"
+      "bytes": 17472,
+      "sha256": "4b8bded225fad3fbb028789d79bb4c12498311af1f9d5bf844ddd8f5f6ef112e"
     },
     {
       "path": "README.md",
-      "bytes": 11365,
-      "sha256": "ed3a89bfe3e3c6f6acbf68309781f25609a44b99a3e523b53dd81c2721f7b97e"
+      "bytes": 11863,
+      "sha256": "aef920944999857e50737cfd7130c1fafa9772aac13c7c14d7521555c9d0f170"
     },
     {
       "path": "assets/brick-ao.jpg",
@@ -638,13 +639,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 2382,
-      "sha256": "21266abb5faf3badea7ff768dd48e20975983def42e5ef9a44254638aa17be8f"
+      "bytes": 596,
+      "sha256": "0b7a9ed093e45fa3e69d5578fe6fcd006baa9f85ab3e6c654e99e823b31a1767"
     },
     {
       "path": "interview-client.test.js",
-      "bytes": 3662,
-      "sha256": "6ad91a1647ba799f4336a50d7608bfb189a91bad96727d1dad9b54dfdc477d90"
+      "bytes": 3687,
+      "sha256": "6d51693d199e6d779ef0c5000839865dbfa978fdbc21aca573795586608d2380"
     },
     {
       "path": "interview-service.js",
@@ -658,8 +659,8 @@
     },
     {
       "path": "interview.html",
-      "bytes": 3480,
-      "sha256": "4240bdc60ac1e7e67db0e65b846c9aa0f9faa606071c589945685645cee9ab2f"
+      "bytes": 596,
+      "sha256": "0b7a9ed093e45fa3e69d5578fe6fcd006baa9f85ab3e6c654e99e823b31a1767"
     },
     {
       "path": "interview.js",
@@ -710,6 +711,16 @@
       "path": "references/REFERENCE_INDEX.md",
       "bytes": 2836,
       "sha256": "ce35757dd360ba049c72d41317d115a37cb0030610b38d3797e291d40dea3fa2"
+    },
+    {
+      "path": "references/app-templates/index.html",
+      "bytes": 2382,
+      "sha256": "21266abb5faf3badea7ff768dd48e20975983def42e5ef9a44254638aa17be8f"
+    },
+    {
+      "path": "references/app-templates/interview.html",
+      "bytes": 3480,
+      "sha256": "4240bdc60ac1e7e67db0e65b846c9aa0f9faa606071c589945685645cee9ab2f"
     },
     {
       "path": "references/character-source/README.md",

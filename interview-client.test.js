@@ -6,7 +6,7 @@ import { randomUUID } from 'node:crypto';
 import { createInterviewService } from './interview-service.js';
 
 async function client() {
- const service=createInterviewService();const html=await fs.readFile(new URL('./interview.html',import.meta.url),'utf8');
+ const service=createInterviewService();const html=await fs.readFile(new URL('./references/app-templates/interview.html',import.meta.url),'utf8');
  class Element {
   constructor(){this.value='';this.textContent='';this.disabled=false;this.hidden=false;this.children=[];this.attributes={};this.listeners={};this.classes=new Set();this.classList={add:(c)=>this.classes.add(c),remove:(c)=>this.classes.delete(c),toggle:(c,on)=>on?this.classes.add(c):this.classes.delete(c)};}
   setAttribute(k,v){this.attributes[k]=v;} addEventListener(k,fn){this.listeners[k]=fn;} append(...nodes){this.children.push(...nodes);} replaceChildren(...nodes){this.children=nodes;} focus(){} requestSubmit(){return this.onsubmit({preventDefault(){}});}

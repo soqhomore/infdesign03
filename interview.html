@@ -1,35 +1,17 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>면접관 · 대화 시험</title><link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./interview.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>서버 오류 수정중입니다</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html { color-scheme: light; }
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; background: #fff; color: #222; font-family: system-ui, sans-serif; }
+    p { margin: 24px; font-size: 18px; line-height: 1.6; text-align: center; word-break: keep-all; }
+  </style>
 </head>
 <body>
-  <div class="desk-line" aria-hidden="true"></div>
-  <header><a href="/">면접실</a><span id="connection">대화 시험</span><button id="sound" aria-pressed="true">음성 켜짐</button></header>
-  <main>
-    <section id="setup" aria-labelledby="setup-title">
-      <p class="small-label">대화 시험</p><h1 id="setup-title">들어오세요.</h1>
-      <p class="setup-note" id="setup-note">연결 상태를 확인하고 있어요.</p>
-      <div class="start-actions"><button id="start-ai" class="solid" disabled>AI 면접 시작</button><button id="start-demo" disabled>로컬 대사 시험</button></div>
-      <details class="setup-details"><summary>연결 안내</summary><p>AI 모드에서는 답변과 이번 대화 이력이 OpenAI로 전송됩니다. 이 앱은 대화를 파일에 저장하지 않으며, 종료하거나 20분 동안 사용하지 않으면 서버 메모리에서 삭제합니다.</p><p>말하기는 브라우저의 음성 인식을 사용합니다. 브라우저에 따라 음성이 해당 서비스로 전송될 수 있습니다. 입력만으로도 진행할 수 있어요. 면접관의 목소리는 기기의 음성 읽기 기능입니다.</p><p>키 연결: 프로젝트의 <code>.env.example</code>을 <code>.env</code>로 복사하고 <code>OPENAI_API_KEY</code>를 설정한 뒤 서버를 다시 실행하세요.</p></details>
-    </section>
-    <section id="conversation" hidden aria-label="면접 대화">
-      <div class="speaker-row"><span id="speaker">면접관</span><span class="voice-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
-      <h1 id="line" tabindex="-1"></h1>
-      <p id="status" role="status" aria-live="polite"></p>
-      <form id="answer-form">
-        <label class="sr-only" for="answer">내 답변</label>
-        <textarea id="answer" rows="2" placeholder="답하거나, 말하거나." maxlength="1200"></textarea>
-        <div class="input-tools"><button type="button" id="mic" aria-label="말하기 시작" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 10v2a6 6 0 0012 0v-2M12 18v3M8 21h8"/></svg><span id="mic-label">말하기</span></button><small id="count">0 / 600</small><button id="send" type="submit" class="solid" disabled>답하기 <span aria-hidden="true">↗</span></button></div>
-      </form>
-      <div id="finished" hidden><p>여기까지 듣겠습니다.</p><button id="again" class="solid">다시 시작</button></div>
-      <div class="bottom-row"><div class="utility"><button id="end">면접 마치기</button><details id="history-panel"><summary>기록</summary><ol id="history"></ol><p id="usage"></p></details></div><button id="happiness" disabled><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M10 18c2 6 10 6 12 0"/><circle class="eye" cx="12" cy="12" r="1"/><circle class="eye" cx="20" cy="12" r="1"/></svg><span>행복버튼</span></button></div>
-    </section>
-    <p id="error" role="alert"></p>
-  </main>
-  <footer><span>한 번의 면접</span><span id="mode-label">대화 시제품</span></footer>
-  <script type="module" src="./interview.js"></script>
+  <p>서버 오류 수정중입니다</p>
 </body>
 </html>
