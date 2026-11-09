@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-10",
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "suite": "npm test 76 passed, 0 failed",
+    "finalGeometryCleanup": "6 focused tests passed",
+    "materials": "rounded edges, textured surfaces, metallic door fittings and shadow lights checked",
+    "pipeline": "alternate scene/camera/projection settings restored even on render failure",
+    "resources": "bedroom GPU disposal regression passes; textures owned by per-set library, PMREM environment borrowed",
+    "review": "one fresh review; first room-preview shadow invalidation fixed"
+  },
+  "limits": {
+    "browser": "Fresh Chrome headless launch failed: Target page, context or browser has been closed. Actual WebGL appearance, tone and measured performance unverified."
+  }
+}

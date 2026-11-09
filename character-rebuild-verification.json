@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-10",
+  "completed": {
+    "leftGarmentShader": "negative subtraction operands parenthesized; regression reproduced then passed",
+    "checks": "npm run check and npm test: 38 passed",
+    "assetFetcher": "stdlib downloader, ZIP range/CRC/path self-test passed"
+  },
+  "pending": {
+    "centerReplacement": true,
+    "assetFilesDownloaded": false,
+    "seatedLibraryModelBuilt": false,
+    "actualWebGLVerified": false
+  },
+  "sources": {
+    "officialPack": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+    "licensePage": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "packBytes": 280737770,
+    "indexEntries": 517,
+    "selectedSuitObjBytes": 633330
+  },
+  "blocker": "Local shell DNS denied; connected Firecrawl allowance exhausted during asset acquisition",
+  "nextCommand": "Not required: user chose local full-human reconstruction instead of downloading",
+  "publicMaintenanceChanged": false,
+  "pushed": false,
+  "historical": true,
+  "supersededBy": "offline-character-verification.json"
+}

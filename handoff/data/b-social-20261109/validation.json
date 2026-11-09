@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-09",
+  "json_parse": "passed",
+  "csv_roundtrip_rows": 17,
+  "unique_ids": 17,
+  "source_url_format": "passed",
+  "report_citations_all_in_research_notes": true,
+  "report_unique_direct_urls": 13,
+  "max_excerpt_words_per_source_page": 19,
+  "counts": {
+    "included_rows": 17,
+    "direct_motivation_rows": 10,
+    "context_rows": 7,
+    "included_unique_source_pages": 14,
+    "direct_motivation_unique_source_pages": 8,
+    "direct_current_jobseeker_self_report_rows": 4,
+    "x_direct_motivation_rows": 4,
+    "x_current_jobseeker_activity_verified_rows": 0,
+    "community_direct_motivation_rows": 6,
+    "excluded_or_unverified_x_candidates": 4,
+    "threads_verified_rows": 0
+  },
+  "notes": "온라인 재검색이 아니라 연구노트와의 대조 검증이다."
+}

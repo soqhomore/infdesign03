@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "scope": "생활의 한마디 결말 데모",
+  "checks": {
+    "syntax": "npm run check: exit 0",
+    "tests": "npm test: 64 passed, 0 failed",
+    "sourceIntegrity": "5 source excerpts matched to original direct-motivation rows",
+    "lifecycle": "preview, after-break completion, normal completion, replay, deferred presentation and pause ownership",
+    "http": "actual createServer handler via in-memory transport: /local/, both new runtime modules and public maintenance return 200",
+    "review": "independent review identified pause ownership; fixed and regression tested"
+  },
+  "limitations": {
+    "browser": "Chrome headless launch failed with SIGABRT / process permissions; actual WebGL and CSS appearance not verified",
+    "loopback": "lsof shows 127.0.0.1:4175 listener, but curl from sandbox cannot connect; user browser reachability not asserted",
+    "preview": "life-ending-geometry-preview.png is a CPU geometry render, not a browser screenshot"
+  },
+  "runtime": {
+    "path": "http://127.0.0.1:4175/local/",
+    "quick": "끝 장면 데모",
+    "full": "two normal answers → happiness button → angry dialogue → completion → chosen ending"
+  },
+  "data": {
+    "sourceIds": [
+      "C04",
+      "XB02",
+      "C05",
+      "XB04",
+      "C06"
+    ],
+    "labels": "quotes are source excerpts; titles, scenes and final lines are authored fiction"
+  }
+}

@@ -63,6 +63,13 @@ test('정상 면접은 5회에서 멈추고 행복버튼이나 종료를 기다�
  assert.equal(v.canReply,false);assert.equal(v.canBreak,true);await assert.rejects(s.turn(v.id,'더 답변'),/행복버튼/);
  assert.equal(s.break(v.id).phase,'angry');
 });
+test('로컬 대사도 같은 키워드 답변에 같은 꼬리질문을 반복하지 않는다',async()=>{
+ const s=createInterviewService();try{
+  let v=s.create({mode:'demo'});const lines=[];
+  for(let i=0;i<5;i++){v=await s.turn(v.id,'성장하고 회사 비전에 기여하고 싶어요.');lines.push(v.line);}
+  assert.equal(new Set(lines).size,lines.length);
+ }finally{s.dispose();}
+});
 test('시간이 지나면 대화 이력이 만료된다',()=>{
  let time=0;const s=createInterviewService({now:()=>time});const {id}=s.create({mode:'demo'});
  time=21*60_000;assert.throws(()=>s.get(id),/만료/);

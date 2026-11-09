@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "사진 구도를 재현한 실시간 3D 면접실",
   "scripts": {
+    "dev": "PORT=4175 node --env-file-if-exists=.env server.mjs",
+    "build:character": "node scripts/build-seated-human.mjs",
     "start": "node --env-file-if-exists=.env server.mjs",
-    "check": "node --check scene.js && node --check game.js && node --check flow.js && node --check server.mjs && node --check interview-service.js && node --check interview.js && node --check characters.js && node --check face-photo.js && node --check face-editor.js && node --check render-policy.js",
-    "test": "node --test flow.test.js interview.test.js server.test.js interview-client.test.js character.test.js face-editor.test.js render-policy.test.js"
+    "check": "node --check scene.js && node --check game.js && node --check flow.js && node --check server.mjs && node --check interview-service.js && node --check interview.js && node --check characters.js && node --check face-photo.js && node --check face-editor.js && node --check render-policy.js && node --check local/stage.js && node --check scripts/seated-human.mjs && node --check scripts/build-seated-human.mjs && node --check local/sound.js && node --check assets/demo/life-data.js && node --check assets/demo/life-ending.js && node --check assets/demo/journey.js && node --check assets/demo/journey-model.js && node --check assets/demo/vestibule.js && node --check scripts/build-interface-fonts.mjs && node --check assets/demo/entry-flow.js && node --check assets/demo/entry-sound.js && node --check assets/demo/rain.js && node --check assets/demo/rain-bedroom.js && node --check assets/demo/rain-sound.js && node --check assets/demo/set-materials.js && node --check assets/demo/set-render.js && node --check assets/demo/life-moment.js && node --check assets/demo/opening.js && node --check assets/demo/happiness-burst.js && node --check assets/demo/bedding.js && node --check assets/demo/camera-drama.js",
+    "test": "node --test flow.test.js interview.test.js server.test.js interview-client.test.js character.test.js face-editor.test.js render-policy.test.js local-stage.test.js seated-character.test.js face-modes.test.js interviewer-motion.test.js happiness-drama.test.js dialogue-shooting.test.js local-sound.test.js life-ending.test.js journey.test.js entry-flow.test.js rain-ending.test.js set-realism.test.js life-moment.test.js doorway.test.js gentle-ending.test.js happiness-burst.test.js bedding.test.js camera-drama.test.js",
+    "build:fonts": "node scripts/build-bithumb-css.mjs && node scripts/build-interface-fonts.mjs"
   },
   "keywords": [],
   "author": "",

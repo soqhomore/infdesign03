@@ -20,6 +20,11 @@ test('양 눈을 찍으면 기울어진 사진도 기준 눈 위치에 정확히
  const shifted=photoTransform(eyes,{x:20,y:-10,zoom:1,rotation:0});
  const p=transformPoint(shifted,eyes[0]);assert.ok(Math.abs(p.x-FACE_EYES[0].x-20)<1e-8);
 });
+test('얼굴 경계 피부색은 흰 배경과 투명 픽셀을 제외해 고른다',async()=>{
+ const {skinColorFromSamples}=await import('./face-photo.js');
+ const color=skinColorFromSamples(new Uint8ClampedArray([255,255,255,255,180,130,100,255,182,132,102,255,0,0,0,0,178,128,98,255]));
+ assert.equal(color,'#b48264');assert.equal(skinColorFromSamples(new Uint8ClampedArray([255,255,255,255,0,0,0,0])),null);
+});
 
 test('실제 해부학적 머리·손 자산에 유효한 삼각형과 눈 기준이 있다',async()=>{
  const d=JSON.parse(await readFile('assets/characters/anatomy.json','utf8'));
@@ -28,7 +33,7 @@ test('실제 해부학적 머리·손 자산에 유효한 삼각형과 눈 기�
  const ys=d.head.positions.filter((_,i)=>i%3===1);assert.ok(Math.max(...ys)>.24&&Math.min(...ys)<.01);
 });
 
-test('세 인물은 착석 몸체를 유지하며 얼굴 사진은 뒷머리에 비치지 않는다',async()=>{
+test('세 인물은 착석 몸체와 입체 가면을 유지하며 사진은 앞면에만 투영된다',async()=>{
  const {buildCharacter}=await import('./characters.js');
  const {Box3}=await import('three');
  const original=globalThis.document,noop=()=>{};
@@ -37,12 +42,28 @@ test('세 인물은 착석 몸체를 유지하며 얼굴 사진은 뒷머리에 
   const data=JSON.parse(await readFile('assets/characters/anatomy.json','utf8'));
   const people=[0,1,2].map(i=>buildCharacter(data,i));
   for(const p of people){
-   assert.equal(p.headRoot.parent,p.root);p.root.updateMatrixWorld(true);
+   assert.ok(p.headRoot.parent===p.upperRoot);p.root.updateMatrixWorld(true);
    const box=new Box3().setFromObject(p.root);assert.ok(box.max.y>1.38&&box.max.y<1.5);assert.ok(box.min.y<.06);
-   let head,draws=0;p.root.traverse(o=>{if(!o.isMesh)return;draws+=Array.isArray(o.material)?o.geometry.groups.length:1;if(o.name==='해부학적 얼굴·귀·목')head=o;});assert.ok(draws<100,'인물 하나가 100회 이상 그려지지 않아야 한다');
-   const pos=head.geometry.attributes.position,weight=head.geometry.attributes.faceWeight;
-   let front=0;for(let i=0;i<pos.count;i++){if(pos.getZ(i)<0)assert.equal(weight.getX(i),0);front=Math.max(front,weight.getX(i));}assert.ok(front>.99);
+   const head=p.face.photoMesh;let draws=0;p.root.traverse(o=>{if(!o.isMesh)return;draws+=Array.isArray(o.material)?o.geometry.groups.length:1;});assert.ok(draws<100,'인물 하나가 100회 이상 그려지지 않아야 한다');
+   const pos=head.geometry.attributes.position,uv=head.geometry.attributes.uv;
+   assert.equal(pos.count,4);for(let i=0;i<pos.count;i++)assert.ok(Math.abs(pos.getZ(i)-.13)<.0001);
+   assert.deepEqual([Math.min(...uv.array),Math.max(...uv.array)],[0,1]);
+
   }
   assert.notEqual(people[0].uniforms,people[1].uniforms,'사진 교체 상태는 인물별로 독립적이어야 한다');
+ }finally{globalThis.document=original;}
+});
+
+test('음수 위치의 면접관도 유효한 좌표 뺄셈으로 의상 셰이더를 만든다',async()=>{
+ const {buildCharacter}=await import('./characters.js');
+ const original=globalThis.document,noop=()=>{};
+ globalThis.document={createElement:()=>({getContext:()=>({fillRect:noop,beginPath:noop,moveTo:noop,lineTo:noop,stroke:noop})})};
+ try{
+  const data=JSON.parse(await readFile('assets/characters/anatomy.json','utf8'));
+  for(let i=0;i<3;i++){
+   const p=buildCharacter(data,i);let torso;p.root.traverse(o=>{if(o.name==='양복 몸판과 안쪽 셔츠')torso=o;});
+   const shader={uniforms:{},vertexShader:'#include <begin_vertex>',fragmentShader:'#include <color_fragment>'};torso.material[0].onBeforeCompile(shader);
+   assert.doesNotMatch(shader.fragmentShader,/\.x--[\d.]/);assert.doesNotMatch(shader.fragmentShader,/\.x-\+[\d.]/);
+  }
  }finally{globalThis.document=original;}
 });

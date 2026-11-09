@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-10",
+  "scope": "interviewer browser speech output; no external TTS added",
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "tests": "npm test: 97 passed, 0 failed",
+    "regressions": [
+      "late Korean voices after intermediate empty event",
+      "latest reply queued during pause and spoken once on return",
+      "interrupted vs completed utterance resume",
+      "blocked speech reports error without retry loop",
+      "preview while paused and return to pending dialogue",
+      "timeout ignores stale start event",
+      "mute/reset discard pending speech",
+      "successful preview clears prior speech error while preserving unrelated input status"
+    ],
+    "review": "Independent read-only review: terminal stale callback fixed; successful preview clears only prior speech error; no important remaining findings"
+  },
+  "limits": [
+    "Browser access host unavailable; actual user-device audio and microphone not verified",
+    "No paid TTS API invoked; natural voice approach remains a proposal"
+  ],
+  "proposal_sources": [
+    "https://elevenlabs.io/docs/overview/models",
+    "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-to-produce-emotions"
+  ]
+}

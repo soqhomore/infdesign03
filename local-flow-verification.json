@@ -1,0 +1,44 @@
+{
+  "scope": "local multi-turn interview integration",
+  "entry": "http://127.0.0.1:4175/local/",
+  "publicMaintenanceUnchanged": true,
+  "committed": false,
+  "pushed": false,
+  "flow": [
+    "choose ai or explicit scripted demo",
+    "normal question and follow-ups",
+    "happiness unlocks after 2 replies",
+    "button transition keeps previous question; character remains listening",
+    "next reply receives offended response and character posture/light change",
+    "finish or reset"
+  ],
+  "tests": {
+    "syntax": "npm run check passed",
+    "all": "npm test: 37 passed",
+    "transport": "real HTTP handlers in memory; no socket request",
+    "client": "local HTML + existing dialogue client + service with DOM/speech doubles",
+    "stage": "actual bridge with scene object doubles, mood transition, room/face pause and resume, reset",
+    "regressions": [
+      "late utterance end cannot silence a new utterance",
+      "late API reply cannot restart TTS while room/face presentation is paused",
+      "scripted normal follow-ups do not repeat exact questions"
+    ],
+    "review": "Independent reviewer: Important CSS conflict and pause race reproduced and fixed; follow-up review clean"
+  },
+  "server": {
+    "command": "npm run dev",
+    "port": 4175,
+    "pid": 27945,
+    "listeningVerified": true
+  },
+  "limits": {
+    "realBrowser": false,
+    "realMicrophone": false,
+    "realTTS": false,
+    "liveAI": false,
+    "reason": "Browser host unavailable; ordinary shell localhost HTTP blocked despite listener. Existing browser launch restrictions.",
+    "faceAnimation": "posture/light cue only; no expression rig or lip sync",
+    "newPhraseDestruction": false
+  },
+  "sourceIsolation": "Only listed local files served; disabled by localUI:false and by default when VERCEL is set; no deployment configuration added"
+}

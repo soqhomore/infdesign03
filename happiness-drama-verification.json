@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-10",
+  "implementation": {
+    "buttonImpact": "Confirmed normal→angry transition: 0.78s damped screen/UI jolt, click-position button echo, expanding gold ring and short warm flash",
+    "originalCameraTransformsChanged": false,
+    "impactAnchor": "Captured in client before button becomes hidden; local state event carries x/y/size only",
+    "angerSteps": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "timing": "Button alone has 0 anger; each subsequent angry response increases level",
+    "faceHeat": "0.65s ramp; all three masks tint, central strongest, sides 55%/45%",
+    "photoHeat": "Shader uniform tint preserves underlying uploaded texture; original canvas unchanged",
+    "tremor": "Finite shudder per increasing anger: 2.0→3.8 seconds, central approximately 2.5→7mm amplitude, asynchronous phase on side masks",
+    "renderer": "Existing 24fps maximum transform updates, changed frames/shadows only, returns to existing idle motion after shudder",
+    "room": "Warmer front fill and stronger edge vignette as anger rises",
+    "reset": "Again/setup clears face heat, shudder, impact class and ambient tension; face appearance selection follows existing rules",
+    "reducedMotion": "No screen/head shake or impact animation; face color and expression remain",
+    "faceEditing": "Existing controller pause freezes idle/tremor/heat timing during editing",
+    "downloads": false,
+    "publicMaintenanceChanged": false,
+    "pushed": false
+  },
+  "checks": {
+    "syntax": "npm run check passed",
+    "tests": "npm test: 53 passed",
+    "redGreen": [
+      "Missing stageAnger / setAnger → stage progression and all masks heat/tremor green",
+      "Independent review P1: hidden button anchor produced 0px instead of 1145px, client impact undefined → captured before hiding and forwarded; both regression checks green"
+    ],
+    "behavior": [
+      "No anger on button alone",
+      "Per-reply progressive colors, photo shader uniform",
+      "Increasing tremor amplitude and finite settle against matching idle reference",
+      "Reduced-motion no tremor",
+      "One impact per transition, setup reset",
+      "Hidden-button client render ordering and stage anchor use"
+    ],
+    "review": "Fresh independent review found one important button-layout ordering issue; fixed with regression tests and separate decorative button echo; no other important issue found"
+  },
+  "visual": {
+    "actualBrowserVerified": false,
+    "actualWebGLVerified": false,
+    "cssAnimationVisuallyVerified": false,
+    "browserAttempt": "CUA browser access host unavailable",
+    "cpuPreviews": [
+      "character-drama-basic-0.25.png",
+      "character-drama-basic-1.png",
+      "character-drama-capybara-1.png",
+      "character-drama-photo-1.png"
+    ],
+    "limit": "CPU shape/color inspection only. Photo preview approximates shader tint in CPU and uses existing generated reference; not real GPU lighting, animation cadence, screen-shake screenshot or a newly uploaded user photo."
+  }
+}

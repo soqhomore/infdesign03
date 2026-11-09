@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-10",
+  "cause": [
+    "continuous skirting crossed doorway threshold",
+    "door bottom .01 below threshold top .0275",
+    "opaque bright panel at z=-.12"
+  ],
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "tests": "npm test 80 passed, 0 failed",
+    "regression": "steel door no wood texture, positive threshold clearance, split skirting, left wall clearance, open-aperture ray hits distant interior instead of near panel",
+    "review": "independent focused review; minor left-wall intrusion corrected"
+  },
+  "limits": {
+    "browser": "CUA browser inventory returned browser access host unavailable. Actual WebGL appearance unverified."
+  }
+}

@@ -4,8 +4,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createInterviewService, InterviewError } from './interview-service.js';
 const root = path.dirname(fileURLToPath(import.meta.url));
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.jpg': 'image/jpeg', '.png': 'image/png', '.json': 'application/json', '.wasm': 'application/wasm' };
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.jpg': 'image/jpeg', '.png': 'image/png', '.json': 'application/json', '.wasm': 'application/wasm', '.otf':'font/otf', '.mp3': 'audio/mpeg' };
 const publicFiles = new Set(['index.html', 'scene.js', 'game.js', 'flow.js', 'style.css', 'game.css', 'interview.html', 'interview.js', 'interview.css', 'characters.js', 'face-photo.js', 'face-editor.js', 'face-editor.css', 'render-policy.js']);
+const localFiles=new Set(['local/room.html','local/stage.js','local/conversation.css','local/sound.js']);
 function json(res, status, value) {
   res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' });
   res.end(JSON.stringify(value));
@@ -26,7 +27,7 @@ async function body(req) {
   try { const data = JSON.parse(raw); if (!data || typeof data !== 'object' || Array.isArray(data)) throw Error(); return data; }
   catch { throw new InterviewError('요청 내용을 읽지 못했어요.', 400); }
 }
-export function createServer({ service = createInterviewService({ apiKey: process.env.OPENAI_API_KEY, model: process.env.INTERVIEW_MODEL || 'gpt-6-luna' }) } = {}) {
+export function createServer({ service = createInterviewService({ apiKey: process.env.OPENAI_API_KEY, model: process.env.INTERVIEW_MODEL || 'gpt-6-luna' }), localUI = !process.env.VERCEL } = {}) {
   return http.createServer(async (req, res) => {
     try {
       if (!/^(127\.0\.0\.1|localhost)(:\d+)?$/.test(req.headers.host || '')) throw new InterviewError('로컬 주소로 접속해 주세요.', 403);
@@ -44,9 +45,11 @@ export function createServer({ service = createInterviewService({ apiKey: proces
         return json(res, 200, action === 'turn' ? await service.turn(id, data.answer, data.requestId) : service.break(id));
       }
       if (!['GET', 'HEAD'].includes(req.method)) { res.writeHead(405); res.end(); return; }
-      const rel = decodeURIComponent(url.pathname).replace(/^\//, '') || 'index.html';
+      let rel = decodeURIComponent(url.pathname).replace(/^\//, '') || 'index.html';
+      if(localUI&&rel==='local'){res.writeHead(302,{Location:'/local/'});res.end();return;}
+      if(rel==='local/')rel='local/room.html';
       const segments = rel.split('/');
-      const isPublic = publicFiles.has(rel) || /^(assets|vendor)\//.test(rel);
+      const isPublic = publicFiles.has(rel) || /^(assets|vendor)\//.test(rel) || (localUI&&localFiles.has(rel));
       if (!isPublic || segments.some(s => s.startsWith('.') || s.includes('\\'))) { res.writeHead(404); res.end(); return; }
       const file = path.resolve(root, rel);
       if (!file.startsWith(root + path.sep) || !(await realpath(file)).startsWith(root + path.sep)) { res.writeHead(404); res.end(); return; }
@@ -65,6 +68,6 @@ export function createServer({ service = createInterviewService({ apiKey: proces
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const port = Number(process.env.PORT || 4173); const server = createServer();
-  server.listen(port, '127.0.0.1', () => console.log(`면접실 실행: http://127.0.0.1:${port}\n대화 시험: http://127.0.0.1:${port}/interview.html`));
+  server.listen(port, '127.0.0.1', () => console.log(`로컬 면접: http://127.0.0.1:${port}/local/\n점검 화면: http://127.0.0.1:${port}/`));
   server.on('error', e => { console.error(e.code === 'EADDRINUSE' ? `포트 ${port}가 사용 중입니다. PORT=4174 npm start 로 실행하세요.` : e.message); process.exit(1); });
 }

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "reference": "references/ending/bed.jpeg (viewed; user-supplied reference, not runtime background)",
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "tests": "npm test 74 passed, 0 failed",
+    "graphics": "actual Three bedroom, one 180-streak rain batch + procedural pane; finite positions and GPU disposal verified",
+    "audio": "mock AudioContext verifies single source, pause/resume, mute, 8-second fade and stop",
+    "flow": "14-second life scene, selected wish props/fiction line, credits and reset regression coverage",
+    "review": "independent review; reversed smoothstep bounds corrected"
+  },
+  "assumption": "Common rainy bedroom with wish-specific props; async optional preference unanswered at implementation",
+  "limits": {
+    "browser": "Fresh headless Chrome launch failed: Target page, context or browser has been closed. Actual WebGL/CSS and speaker volume unverified."
+  }
+}

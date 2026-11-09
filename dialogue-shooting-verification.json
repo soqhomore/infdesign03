@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-10",
+  "kind": "Experimental dialogue-shooting spike, replacing the interrupted button-target idea",
+  "implementation": {
+    "before": "Bithumb Basic for calm dialogue/UI",
+    "after": "Bithumb Original after happiness until replay; dialogue floats in a separate Three.js FX scene",
+    "target": "Current interviewer line, split into <=18 code-point chunks; three visible slots with remaining chunks queued",
+    "interaction": "Aim/click/tap; keys 1/2/3 outside text fields; accessible target buttons",
+    "hit": "Same letter texture broken into 32 triangles in one batched mesh, fades and disposes after ~1.05s",
+    "reply": "Text/voice conversation unchanged; shooting does not submit an answer, advance anger counters or call AI",
+    "pause": "Room/editor pause preserves current targets; reduced-motion uses static targets without shards",
+    "source": "game.js (existing served module), integrated by local/stage.js",
+    "serverRestarted": false,
+    "serverNote": "OS denied terminating owned 4175 server; reused existing served module/path. Fonts embedded with explicit font/otf data URLs in assets/fonts/bithumb.css so old MIME map is sufficient. Direct OTF MIME added to future server starts.",
+    "publicMaintenanceChanged": false,
+    "pushed": false
+  },
+  "fonts": {
+    "Basic": {
+      "file": "assets/fonts/BithumbGothicBasic.otf",
+      "bytes": 452008,
+      "sha256": "75a628aeae5306d36ff9d2ab6d321bcd71e49aad02a2293dc6d67110323a4401",
+      "identicalToUserZip": true
+    },
+    "Original": {
+      "file": "assets/fonts/BithumbGothicOriginal.otf",
+      "bytes": 434100,
+      "sha256": "a91ecaf9d784c883dafb5f97a7fa6cd26e60a4ad306a406fa6605a8b9a93fd02",
+      "identicalToUserZip": true
+    }
+  },
+  "checks": {
+    "syntax": "npm run check passed",
+    "tests": "npm test:58 passed",
+    "nativeFontRender": "Both provided OTF files registered and rendered through native Canvas; actual Basic/Original glyph difference inspected in dialogue-font-preview.png",
+    "fontMime": "In-process HTTP handler serves direct OTF font/otf and generated font CSS text/css",
+    "shooting": "Real Three Raycaster, triangle UV/texture identity, stale font/line completion cancellation, pause, text field shortcut exclusion, hit→burst→disposal→reset lifecycle tested",
+    "review": "Independent review found two minor issues: temporary impact rotate/scale aiming error and font failure message disappearing; both addressed (XY-only stage shock while targeting, retained error state)."
+  },
+  "limits": {
+    "actualBrowserVerified": false,
+    "actualWebGLVerified": false,
+    "liveHttpVerified": false,
+    "browserAttempt": "CUA browser access host unavailable",
+    "httpAttempt": "Sandbox curl could not connect to listening localhost; in-process handler tests passed",
+    "preview": "Native font/texture inspection, not an actual room or WebGL screenshot"
+  }
+}

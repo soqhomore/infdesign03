@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-10",
+  "implementation": {
+    "modes": [
+      "basic",
+      "capybara",
+      "photo"
+    ],
+    "defaultForAll": "basic",
+    "selection": "Per interviewer in 면접관 바꾸기, defaults menu to center interviewer",
+    "procedural3DMasks": true,
+    "additionalAssetsDownloaded": false,
+    "photoSurface": "Shallow curved oval, no anatomical facial details or separate hair/eyeballs",
+    "photoUpload": "Existing JPG/PNG/WebP, manual two-eye alignment, preview/position/scale/rotation",
+    "photoPersistence": false,
+    "photoNetworkTransmission": false,
+    "photoRetainedAcrossModes": true,
+    "resetClearsSelectedPhoto": true,
+    "sameHeadRootAcrossModes": true,
+    "dialogueSessionPreserved": true,
+    "reaction": "Existing next-response head pose; neutral/capybara eyebrows change on offended mood; photo is static texture",
+    "publicMaintenanceChanged": false,
+    "pushed": false
+  },
+  "checks": {
+    "syntax": "npm run check passed",
+    "tests": "npm test: 45 passed",
+    "controller": "Default modes, per-person isolation, photo required, invalid mode rejected, head transform stable, photo texture retained across mode changes and disposed on reset",
+    "editor": "Async read cancellation on mode/person/close, eye alignment, invalid file, per-person apply/reset, repeated application alpha regression RED 0.75 vs 0.5 then fixed",
+    "review": "Fresh independent code review; one photo-preview alpha accumulation issue reproduced and fixed"
+  },
+  "visual": {
+    "actualBrowserVerified": false,
+    "actualWebGLVerified": false,
+    "browserAttempt": "CUA browser access host unavailable, freshly checked",
+    "cpuPreviews": [
+      "character-mask-basic-head.png",
+      "character-mask-capybara-head.png",
+      "character-mask-photo-head.png",
+      "character-mask-capybara-side.png"
+    ],
+    "cpuLimit": "Geometry and simple CPU shading only; not an actual room/GPU/PBR/UI screenshot. Photo preview uses existing generated reference solely to inspect mapping, not a new user-upload or recovered original.",
+    "quality": "Stylized 3D masks; no photorealism or personalized head reconstruction claim"
+  },
+  "metrics": {
+    "models": {
+      "basic": [
+        {
+          "triangles": 23550,
+          "basePassDrawCalls": 34
+        },
+        {
+          "triangles": 24048,
+          "basePassDrawCalls": 25
+        },
+        {
+          "triangles": 22926,
+          "basePassDrawCalls": 35
+        }
+      ],
+      "capybara": [
+        {
+          "triangles": 28458,
+          "basePassDrawCalls": 41
+        },
+        {
+          "triangles": 28956,
+          "basePassDrawCalls": 32
+        },
+        {
+          "triangles": 27834,
+          "basePassDrawCalls": 42
+        }
+      ],
+      "photo": [
+        {
+          "triangles": 23934,
+          "basePassDrawCalls": 29
+        },
+        {
+          "triangles": 24432,
+          "basePassDrawCalls": 20
+        },
+        {
+          "triangles": 23310,
+          "basePassDrawCalls": 30
+        }
+      ]
+    },
+    "scope": "CPU counts of visible mesh triangles and base pass draws; excludes room/shadows/GPU timings"
+  }
+}

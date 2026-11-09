@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-10",
+  "implementation": {
+    "allThreeFaceApplicant": true,
+    "target": [
+      0,
+      1.25,
+      3.42
+    ],
+    "gaze": "Fixed seated applicant at existing home camera; orbit camera does not steer heads",
+    "motion": "Independent occasional nod/tilt/refocus, 1.7–2.7s bursts and 5–10s waits, initial starts staggered",
+    "maxGestureDegrees": 1.38,
+    "maxVerticalMotionMM": 1.5,
+    "updateCeilingFPS": 24,
+    "stillFrameReuse": true,
+    "shadowsUpdatedOnlyOnPoseChanges": true,
+    "faceEditorPausesIdle": true,
+    "reducedMotionRespected": true,
+    "hiddenTab": "Scene skips work while hidden; controller clamps a resumed time gap to 0.1s",
+    "mood": "Central next-response offended expression and pose composed with gaze and idle; no second head transform writer",
+    "stylesPreserved": [
+      "basic",
+      "capybara",
+      "photo"
+    ],
+    "publicMaintenanceChanged": false,
+    "pushed": false
+  },
+  "checks": {
+    "syntax": "npm run check passed",
+    "tests": "npm test: 48 passed",
+    "review": "Independent review found no blocking issue; resync OS reduced-motion preference after async model load; test wording narrowed to paused/controller gap behavior",
+    "limits": "No real document.hidden event or actual GPU/animation cadence verification; unit time stepping and source integration inspection only"
+  },
+  "measurements": {
+    "initialForwardDotTowardApplicant": [
+      1.0000000000000002,
+      1.0000000000000002,
+      1.0000000000000002
+    ],
+    "maxGestureDegreesPerPerson": [
+      1.375078792522966,
+      1.3749115338196878,
+      1.3750884532358634
+    ],
+    "simulation": {
+      "seconds": 60,
+      "inputHz": 60,
+      "changedSteps": 703,
+      "unchangedSteps": 2898,
+      "scope": "CPU transform update counts, not measured GPU FPS"
+    }
+  },
+  "visual": {
+    "browserVerified": false,
+    "attempt": "CUA browser access host unavailable",
+    "cpuPreviews": [
+      "character-gaze-basic-group-0.png",
+      "character-gaze-basic-group-2.2.png"
+    ],
+    "limit": "CPU geometry snapshots from home camera; no room/PBR/WebGL/UI capture"
+  }
+}

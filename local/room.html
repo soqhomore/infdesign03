@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <base href="/">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>행복버튼 — 로컬 면접</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/face-editor.css">
+  <script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/addons/"}}</script>
+  <link rel="stylesheet" href="/assets/fonts/bithumb.css">
+  <link rel="stylesheet" href="/assets/fonts/interface.css">
+  <link rel="stylesheet" href="/local/conversation.css">
+  <link rel="stylesheet" href="/assets/demo/journey.css">
+
+</head>
+<body data-experience="conversation" class="local-conversation">
+  <main id="stage" aria-label="입체 면접실. 둘러보기 버튼을 누르면 마우스로 공간을 회전할 수 있습니다."></main>
+  <div id="loading" role="status"><span></span><p>당신은 왜 일하고 싶으신가요? <span>생각해 봐요.</span></p><small id="load-detail">재질과 조명 불러오는 중</small></div>
+  <header><span class="scene-title">면접실</span><button id="hide-ui" aria-label="조작 메뉴 숨기기">메뉴 숨기기</button></header>
+  <aside id="settings" hidden>
+    <div class="setting-head"><strong>공간 설정</strong><button id="close-settings" aria-label="설정 닫기">×</button></div>
+    <label>실내 밝기 <output id="exposure-value">1.00</output><input id="exposure" type="range" min="0.55" max="1.6" step="0.05" value="1"></label>
+    <label>블라인드 올리기 <output id="blinds-value">0%</output><input id="blinds" type="range" min="0" max="75" step="1" value="0"></label>
+    <label class="check"><input type="checkbox" id="ao" checked> 접촉부 음영</label>
+    <label class="check"><input type="checkbox" id="quality" checked> 고화질</label>
+    <small>시점을 바꾸며 책상·의자·재질을 확인할 수 있어요.</small>
+  </aside>
+  <footer id="toolbar"><div class="view-buttons"><button id="home" class="active">지원자 시점</button><button id="orbit">둘러보기</button></div><span class="divider"></span><button id="faces-toggle" disabled>면접관 바꾸기</button><button id="settings-toggle">조명·공간</button><button id="capture">화면 저장</button><button id="fullscreen" aria-label="전체 화면">전체화면</button></footer>
+  <p id="hint">세 면접관 · 가면·카피바라·내 사진을 선택할 수 있어요</p>
+  <button id="show-ui" hidden>메뉴 보기</button>
+  <div id="notice" role="status"></div>
+
+  <section id="local-ui" aria-label="여러 질문을 주고받는 면접">
+    <div class="local-top"><span id="connection">로컬 면접</span><div><button id="local-faces" disabled>면접관 바꾸기</button><button id="sound" aria-pressed="true">음성 켜짐</button><button id="sfx" aria-pressed="true">효과음 켜짐</button><button id="local-room">면접실 보기</button></div></div>
+    <section id="setup" aria-labelledby="setup-title">
+      <p class="small-label">면접</p><h1 id="setup-title">들어오세요.</h1>
+      <p class="setup-note" id="setup-note">연결 상태를 확인하고 있어요.</p>
+      <div class="start-actions"><button id="start-ai" class="solid" disabled>면접 시작</button><button id="start-demo" disabled>로컬 대사로 시험</button></div>
+      <details class="setup-details"><summary>연결 안내</summary><p>AI 모드에서는 답변과 이번 대화 이력이 OpenAI로 전송됩니다. 이 앱은 대화를 파일에 저장하지 않으며, 종료하거나 20분 동안 사용하지 않으면 서버 메모리에서 삭제합니다.</p><p>말하기는 브라우저의 음성 인식을 사용합니다. 브라우저에 따라 음성이 해당 서비스로 전송될 수 있습니다. 입력만으로도 진행할 수 있어요. 면접관의 목소리는 기기의 음성 읽기 기능입니다.</p><p>키 연결: 프로젝트의 <code>.env.example</code>을 <code>.env</code>로 복사하고 <code>OPENAI_API_KEY</code>를 설정한 뒤 서버를 다시 실행하세요.</p></details>
+    </section>
+    <section id="conversation" hidden aria-label="면접 대화">
+      <div class="speaker-row"><span id="speaker">면접관</span><span class="voice-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+      <h1 id="line" tabindex="-1"></h1>
+      <p id="status" role="status" aria-live="polite"></p>
+      <form id="answer-form">
+        <label class="sr-only" for="answer">내 답변</label>
+        <textarea id="answer" rows="2" placeholder="답하거나, 말하거나." maxlength="1200"></textarea>
+        <div class="input-tools"><button type="button" id="mic" aria-label="말하기 시작" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 10v2a6 6 0 0012 0v-2M12 18v3M8 21h8"/></svg><span id="mic-label">말하기</span></button><small id="count">0 / 600</small><button id="send" type="submit" class="solid" disabled>답하기 <span aria-hidden="true">↗</span></button></div>
+      </form>
+      <div id="finished" hidden><button id="again" class="solid">다시 앉기</button></div>
+      <div class="bottom-row"><div class="utility"><button id="end">면접 마치기</button><details id="history-panel"><summary>기록</summary><ol id="history"></ol><p id="usage"></p></details></div><button id="happiness" disabled><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M10 18c2 6 10 6 12 0"/><circle class="eye" cx="12" cy="12" r="1"/><circle class="eye" cx="20" cy="12" r="1"/></svg><span>행복버튼</span></button></div>
+    </section>
+    <p id="error" role="alert"></p>
+    <small id="mode-label">가운데 면접관과 대화합니다.</small>
+    <button id="voice-test" type="button">목소리 시험</button>
+    <p id="voice-status" role="status" aria-live="polite">기기의 한국어 음성을 사용합니다.</p>
+  </section>
+  <script type="module" src="/scene.js"></script>
+  <script type="module" src="/interview.js"></script>
+  <script type="module" src="/local/sound.js"></script>
+</body>
+</html>

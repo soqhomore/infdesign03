@@ -187,3 +187,99 @@ export function initInterview({renderer,stage,home,openFaces}){
     }
   };
 }
+
+// Local dialogue-shooting experiment.
+
+export function dialogueFont(state={}){
+ return state.afterBreak||state.phase==='angry'||state.angryTurns>0?'Bithumb Original':'Pretendard';
+}
+export function splitDialogue(text,limit=18){
+ const chars=Array.from(String(text||'').trim().replace(/\s+/gu,' ')),parts=[];
+ while(chars.length){
+  let end=Math.min(limit,chars.length);
+  if(end<chars.length)for(let i=end;i>=Math.ceil(limit/2);i--)if(/\s|[,.!?。？！]/u.test(chars[i-1])){end=i;break;}
+  const part=chars.splice(0,end).join('').trim();if(part)parts.push(part);
+  while(chars[0]===' ')chars.shift();
+ }
+ return parts;
+}
+function layout(slot,compact){return compact?{x:0,y:.34-slot*.5,z:0,w:5,angle:0}:[{x:-1.2,y:.3,z:0,w:2.9,angle:-.035},{x:1.1,y:-.12,z:.08,w:2.9,angle:.025},{x:-.5,y:-.57,z:-.03,w:2.9,angle:-.018}][slot];}
+export function makeDialogueCard(text,{family='Bithumb Original',slot=0,compact=false,canvasFactory=()=>document.createElement('canvas')}={}){
+ const canvas=canvasFactory();canvas.width=1024;canvas.height=160;const ctx=canvas.getContext('2d');
+ let size=72;do{ctx.font=`400 ${size}px "${family}"`;if(ctx.measureText(text).width<950)break;size-=2;}while(size>24);
+ ctx.textAlign='center';ctx.textBaseline='middle';ctx.lineJoin='round';ctx.lineWidth=8;ctx.strokeStyle='#10202ae8';ctx.shadowColor='#0008';ctx.shadowBlur=8;ctx.strokeText(text,512,80);ctx.fillStyle='#fff4d7';ctx.fillText(text,512,80);
+ const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;
+ const at=layout(slot,compact),height=at.w*160/1024,mesh=new THREE.Mesh(new THREE.PlaneGeometry(at.w,height),new THREE.MeshBasicMaterial({map:texture,transparent:true,side:THREE.DoubleSide,toneMapped:false,depthWrite:false}));
+ mesh.position.set(at.x,at.y,at.z);mesh.rotation.z=at.angle;mesh.userData={text,family,slot,width:at.w,height,base:mesh.position.clone(),angle:at.angle};mesh.name='저격할 대사';return mesh;
+}
+function disposeCard(card,texture=true){card.geometry.dispose();card.material.dispose();if(texture)card.material.map.dispose();}
+export function makeLetterBurst(card){
+ card.updateMatrixWorld(true);const positions=[],uvs=[],pieces=[],{width:w,height:h}=card.userData,cols=8,rows=2;
+ for(let y=0;y<rows;y++)for(let x=0;x<cols;x++)for(let half=0;half<2;half++){
+  const a=x/cols,b=(x+1)/cols,c=y/rows,d=(y+1)/rows,uv=half?[[a,c],[b,d],[a,d]]:[[a,c],[b,c],[b,d]],points=uv.map(([u,v])=>new THREE.Vector3((u-.5)*w,(v-.5)*h,0).applyMatrix4(card.matrixWorld)),center=points.reduce((p,v)=>p.add(v),new THREE.Vector3()).divideScalar(3);
+  pieces.push({center,local:points.map(p=>p.clone().sub(center)),velocity:new THREE.Vector3((a-.5)*3.5,.5+Math.random()*1.8,.3+Math.random()),spin:(Math.random()-.5)*9});positions.push(...points.flatMap(p=>p.toArray()));uvs.push(...uv.flat());
+ }
+ const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));
+ const mesh=new THREE.Mesh(geometry,new THREE.MeshBasicMaterial({map:card.material.map,transparent:true,side:THREE.DoubleSide,toneMapped:false,depthWrite:false}));mesh.frustumCulled=false;
+ return {mesh,pieces,age:0};
+}
+async function loadFonts(){
+ if(!document.fonts)throw Error('이 브라우저에서는 서체를 불러오지 못했어요.');
+ await Promise.all(['Pretendard','Bithumb Original'].map(async family=>{const faces=await document.fonts.load(`400 72px "${family}"`,'면접 대사');if(!faces.length)throw Error('서체를 불러오지 못했어요. 새로고침해 주세요.');}));
+}
+
+// Experimental visual interaction. Hits never submit answers or call the AI API.
+export function initDialogueShooting({renderer,stage,invalidate}){
+ const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(40,16/9,.1,20);camera.position.z=5;
+ const ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),targets=[],bursts=[],queue=[];
+ const reticle=document.createElement('div');reticle.id='dialogue-reticle';reticle.hidden=true;reticle.setAttribute('aria-hidden','true');document.body.append(reticle);
+ const flash=document.createElement('div');flash.id='dialogue-hit-flash';flash.setAttribute('aria-hidden','true');document.body.append(flash);
+ const shortcuts=document.createElement('div');shortcuts.id='dialogue-shot-actions';shortcuts.className='sr-only';document.body.append(shortcuts);
+ const note=document.createElement('p');note.id='dialogue-shot-note';note.hidden=true;note.textContent='조준 · 클릭';document.body.append(note);
+ let state={},revision=0,key='',paused=false,enabled=false,time=0,lastTime=null,lastPaint=-Infinity,compact=innerWidth<650,fontError='';
+ const preference=matchMedia('(prefers-reduced-motion: reduce)');let reduced=preference.matches;
+ const fonts=loadFonts().then(()=>true,()=>{fontError='서체를 불러오지 못했어요. 새로고침해 주세요.';synchronize();return false;});
+ function clear(){for(const c of targets){scene.remove(c);disposeCard(c);}targets.length=0;for(const b of bursts){scene.remove(b.mesh);disposeCard(b.mesh);}bursts.length=0;queue.length=0;shortcuts.replaceChildren();reticle.hidden=true;}
+ function synchronize(){
+  document.body.classList.toggle('dialogue-shooting',enabled&&!paused);note.textContent=fontError||'조준 · 클릭';note.hidden=paused||(!fontError&&(!enabled||!targets.length));shortcuts.hidden=paused||!enabled;
+  shortcuts.replaceChildren();for(const c of targets){const b=document.createElement('button');b.type='button';b.textContent=`${c.userData.slot+1}. ${c.userData.text} 저격`;b.onclick=()=>shoot(c);shortcuts.append(b);}
+ }
+ function spawn(slot){if(!queue.length)return;const card=makeDialogueCard(queue.shift(),{family:dialogueFont(state),slot,compact});scene.add(card);targets.push(card);}
+ function locate(event){
+  const rect=renderer.domElement.getBoundingClientRect();if(!rect.width||!rect.height)return null;
+  pointer.set((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1);camera.aspect=rect.width/rect.height;camera.updateProjectionMatrix();camera.updateMatrixWorld();scene.updateMatrixWorld(true);ray.setFromCamera(pointer,camera);return ray.intersectObjects(targets,false)[0]?.object||null;
+ }
+ function shoot(card){
+  if(!enabled||paused||!targets.includes(card))return;
+  const slot=card.userData.slot;scene.remove(card);targets.splice(targets.indexOf(card),1);
+  if(!reduced){const burst=makeLetterBurst(card);scene.add(burst.mesh);bursts.push(burst);disposeCard(card,false);}else disposeCard(card);
+  flash.classList.remove('hit');void flash.offsetWidth;flash.classList.add('hit');document.dispatchEvent?.(new CustomEvent('interview:shot'));reticle.classList.remove('shot');void reticle.offsetWidth;reticle.classList.add('shot');
+  spawn(slot);synchronize();invalidate();if(!targets.length){reticle.hidden=true;document.getElementById('answer')?.focus();}
+ }
+ stage.addEventListener('pointermove',e=>{if(!enabled||paused||!targets.length)return;reticle.hidden=false;reticle.style.left=e.clientX+'px';reticle.style.top=e.clientY+'px';reticle.classList.toggle('locked',!!locate(e));});
+ stage.addEventListener('pointerleave',()=>reticle.hidden=true);
+ stage.addEventListener('pointerdown',e=>{if(e.button!==0||!enabled||paused)return;const card=locate(e);if(card){e.preventDefault();shoot(card);}});
+ document.addEventListener('keydown',e=>{if(paused||!enabled||e.repeat||e.altKey||e.ctrlKey||e.metaKey)return;const tag=e.target?.tagName?.toLowerCase();if(['input','textarea','select','button','summary'].includes(tag)||e.target?.isContentEditable)return;const slot=Number(e.key)-1;if(![0,1,2].includes(slot))return;const card=targets.find(c=>c.userData.slot===slot);if(card){e.preventDefault();shoot(card);}});
+ preference.addEventListener('change',e=>{reduced=e.matches;if(reduced){for(const b of bursts){scene.remove(b.mesh);disposeCard(b.mesh);}bursts.length=0;for(const c of targets){c.position.copy(c.userData.base);c.rotation.z=c.userData.angle;}}invalidate();});
+ addEventListener('resize',()=>{compact=innerWidth<650;for(const c of targets){const at=layout(c.userData.slot,compact),oldWidth=c.userData.width;c.geometry.scale(at.w/oldWidth,at.w/oldWidth,1);c.userData.width=at.w;c.userData.height=at.w*160/1024;c.userData.base.set(at.x,at.y,at.z);c.position.copy(c.userData.base);c.userData.angle=at.angle;c.rotation.z=at.angle;}invalidate();});
+ return {
+  setState(next){
+   state={...next};const nextKey=[next.phase,next.normalTurns,next.angryTurns,next.line,next.afterBreak].join('|');if(nextKey===key)return;key=nextKey;const ticket=++revision;clear();enabled=false;synchronize();invalidate();
+   if(next.phase!=='angry'||!next.line)return;
+   fonts.then(loaded=>{if(!loaded||ticket!==revision)return;queue.push(...splitDialogue(next.line));for(let slot=0;slot<3;slot++)spawn(slot);enabled=true;synchronize();invalidate();});
+  },
+  setPaused(value){paused=!!value;reticle.hidden=true;synchronize();invalidate();},
+  update(now,{paused:externalPause=false}={}){
+   const dt=lastTime===null?0:Math.min(.05,Math.max(0,now-lastTime));lastTime=now;if(paused||externalPause||!enabled)return false;time+=dt;
+   if((!targets.length&&!bursts.length)||(reduced&&!bursts.length)||time-lastPaint<1/24)return false;const paintDelta=Number.isFinite(lastPaint)?time-lastPaint:dt;lastPaint=time;
+   const ratio=stage.clientWidth/stage.clientHeight;if(ratio>0&&camera.aspect!==ratio){camera.aspect=ratio;camera.updateProjectionMatrix();}
+   for(const c of targets){c.position.copy(c.userData.base);c.position.y+=reduced?0:Math.sin(time*.85+c.userData.slot*1.7)*.022;c.rotation.z=c.userData.angle+(reduced?0:Math.sin(time*.55+c.userData.slot)*.008);}
+   for(let n=bursts.length-1;n>=0;n--){const b=bursts[n];b.age+=paintDelta;const age=b.age,pos=b.mesh.geometry.attributes.position;
+    b.pieces.forEach((piece,i)=>{const angle=age*piece.spin,cs=Math.cos(angle),sn=Math.sin(angle);piece.local.forEach((p,j)=>pos.setXYZ(i*3+j,piece.center.x+piece.velocity.x*age+p.x*cs-p.y*sn,piece.center.y+piece.velocity.y*age-age*age*2+p.x*sn+p.y*cs,piece.center.z+piece.velocity.z*age+p.z));});pos.needsUpdate=true;b.mesh.material.opacity=Math.max(0,1-age/1.05);
+    if(age>=1.05){scene.remove(b.mesh);disposeCard(b.mesh);bursts.splice(n,1);}
+   }
+   return true;
+  },
+  render(){if(paused||!enabled)return;const previous=renderer.autoClear;renderer.autoClear=false;try{renderer.clearDepth();renderer.render(scene,camera);}finally{renderer.autoClear=previous;}},
+ };
+}

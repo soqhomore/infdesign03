@@ -1,0 +1,799 @@
+{
+  "title": "한국어 공개 취업 이유와 생활 희망 1차 목적표집",
+  "collected_date": "2026-11-09",
+  "counts": {
+    "included_rows": 17,
+    "direct_motivation_rows": 10,
+    "context_rows": 7,
+    "included_unique_source_pages": 14,
+    "direct_motivation_unique_source_pages": 8,
+    "direct_current_jobseeker_self_report_rows": 4,
+    "x_direct_motivation_rows": 4,
+    "x_current_jobseeker_activity_verified_rows": 0,
+    "community_direct_motivation_rows": 6,
+    "excluded_or_unverified_x_candidates": 4,
+    "threads_verified_rows": 0
+  },
+  "method": {
+    "scope": "한국어 X 및 공개 커뮤니티. SNS와 커뮤니티를 분리. 실제 취준 여부는 본인 진술만 확인하며 신원 인증은 하지 않음.",
+    "unit": "게시물/댓글 발언 행. 사람 수·독립 발행처 수가 아님. 같은 페이지 댓글은 동일 URL로 보존.",
+    "quote_policy": "출처 페이지별 합계 25단어 이하 짧은 인용. 원문 전문 자료가 아님.",
+    "source_access": "X는 Firecrawl 공개 X 게시물 처리기 반환, 커뮤니티는 반환된 본문·댓글. X를 원 플랫폼과 별도 라이브 대조하지 않음. 검색 단편 혼합이 확인된 후보는 제외.",
+    "limits": "비확률 목적표집이며 전체 분포·공감 순위·면접에서 숨긴 말의 비율을 추정할 수 없음. 동일인의 면접답변과 SNS를 연결한 데이터가 아님.",
+    "original_schemas": {
+      "x_method": {
+        "scope": "한국어 X 개인 게시물. 15개 키워드 검색, 12개 알려진 URL/프로필 읽기. 목적 표집이며 대표성/빈도 분석용 아님.",
+        "primary_count": 4,
+        "recent_2026_count": 3,
+        "old_2013_count": 1,
+        "strict_current_job_search_activity_confirmed_count": 0,
+        "context_count": 4,
+        "quote_policy": "출처당 최대25단어의 직접 인용. 원문 전체를 무제한 복제한 자료가 아님. raw_x_page는 본문을 재배포하지 않고 메타데이터 및 인용 참조만 보존.",
+        "comparison_policy": "서로 다른 사람과 출처를 비교한 것이며 같은 지원자가 면접에서 말을 숨겼다는 인과증거 아님."
+      },
+      "social_method": {
+        "date": "2026-11-09",
+        "scope": "한국어 Threads 및 공개 커뮤니티. X는 별도 담당.",
+        "queries": 9,
+        "retrieved_pages": 6,
+        "strict_social_network_verified": 0,
+        "community_pages": 6,
+        "rows": 9,
+        "employment_reason_rows": 6,
+        "core_current_job_seeker_rows": 4,
+        "others": "취준확인불명2, 반례1, 취업압박맥락1, 취업후희망1",
+        "caveats": [
+          "비확률 목적표집",
+          "댓글 세 행은 같은 인스티즈 스레드",
+          "공개 커뮤니티를 X/Threads로 부르지 않음",
+          "원문 인용은 페이지별 합계 25단어 이내",
+          "원문 전문 대신 짧은 직접인용과 요약을 분리"
+        ]
+      }
+    },
+    "prior_data": "existing-audit.json은 기존 2026-11-08 자료 재검토. 신규 SNS 수집 행수에 합산하지 않음."
+  },
+  "records": [
+    {
+      "id": "XB01",
+      "data_role": "direct_motivation",
+      "type": "work_motivation",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/Comic_soon001/status/2038966228606460074",
+      "posted_at": "2026-03-31T13:06:45Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "취업하고 싶다는 본인 진술. 실제 지원·시험 준비 여부는 미확인.",
+      "original_excerpt": "아 취업하고 싶다아아....돈이 필요해에에...",
+      "excerpt_scope": "전체",
+      "summary_ko": "돈이 필요해서 취업하고 싶다는 두 진술을 같은 짧은 글에서 직접 연결.",
+      "categories": [
+        "금전 필요"
+      ],
+      "comparison": "회사 기여보다 본인의 금전 필요를 말함. 생활비·빚 등 구체적 용도는 원문에 없어 덧붙이지 않음.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XB01",
+        "type": "work_motivation",
+        "quote": "아 취업하고 싶다아아....돈이 필요해에에...",
+        "url": "https://x.com/Comic_soon001/status/2038966228606460074",
+        "posted_at": "2026-03-31T13:06:45Z",
+        "category": [
+          "금전 필요"
+        ],
+        "jobseeker_evidence": "취업하고 싶다는 본인 진술. 실제 지원·시험 준비 여부는 미확인.",
+        "evidence_scope": "돈이 필요해서 취업하고 싶다는 두 진술을 같은 짧은 글에서 직접 연결.",
+        "comparison": "회사 기여보다 본인의 금전 필요를 말함. 생활비·빚 등 구체적 용도는 원문에 없어 덧붙이지 않음.",
+        "raw_file": "raw_x_page_01.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "전체"
+      }
+    },
+    {
+      "id": "XB02",
+      "data_role": "direct_motivation",
+      "type": "work_motivation",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/mi68533/status/2116516248662257953",
+      "posted_at": "2026-10-31T13:02:51Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "취업하고 싶은 이유라는 본인 진술. 취준 활동·재직 여부는 미확인.",
+      "original_excerpt": "가끔 비슷하긴한데 똑같은 맛은 잘 없고 세상엔 맛있는게 꽤 많아서, 저는 취업하고 싶은 이유의 7~8할 정도 되는 것 같습니다.",
+      "excerpt_scope": "발췌",
+      "summary_ko": "음식 추천 맥락에서 맛있는 것을 취업 동기로 직접 지칭. 7~8할은 개인 표현이며 조사통계가 아님.",
+      "categories": [
+        "음식",
+        "생활의 즐거움"
+      ],
+      "comparison": "본인의 일상적 즐거움을 말함. 취업 전에는 먹지 못했다거나 여행·생활 전체를 미뤘다는 해석은 불가.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XB02",
+        "type": "work_motivation",
+        "quote": "가끔 비슷하긴한데 똑같은 맛은 잘 없고 세상엔 맛있는게 꽤 많아서, 저는 취업하고 싶은 이유의 7~8할 정도 되는 것 같습니다.",
+        "url": "https://x.com/mi68533/status/2116516248662257953",
+        "posted_at": "2026-10-31T13:02:51Z",
+        "category": [
+          "음식",
+          "생활의 즐거움"
+        ],
+        "jobseeker_evidence": "취업하고 싶은 이유라는 본인 진술. 취준 활동·재직 여부는 미확인.",
+        "evidence_scope": "음식 추천 맥락에서 맛있는 것을 취업 동기로 직접 지칭. 7~8할은 개인 표현이며 조사통계가 아님.",
+        "comparison": "본인의 일상적 즐거움을 말함. 취업 전에는 먹지 못했다거나 여행·생활 전체를 미뤘다는 해석은 불가.",
+        "raw_file": "raw_x_page_02.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "발췌"
+      }
+    },
+    {
+      "id": "XB03",
+      "data_role": "direct_motivation",
+      "type": "work_motivation",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/quahn06/status/2027369821491577283",
+      "posted_at": "2026-02-27T13:06:46Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "취직 희망 직접 진술. 같은 스레드에서 아르바이트로만 살기 어려움과 미래를 언급함. 실제 지원 활동은 미확인.",
+      "original_excerpt": "취직하고 싶다.... 의미있는 경력을 쌓고 싶고 인맥도 다지고 싶고 돈 벌고 저축해서 안정적인 삶을 살고 싶어.... 외로워...",
+      "excerpt_scope": "전체",
+      "summary_ko": "경력·인맥·돈·안정·외로움을 복합적으로 언급. 원문의 이유를 하나만 선택해 돈으로 축약하면 안 됨.",
+      "categories": [
+        "경력",
+        "관계",
+        "소득",
+        "저축",
+        "안정",
+        "외로움"
+      ],
+      "comparison": "경력·성장이라는 점에서는 모범답안과 겹치고, 돈·저축·외로움·안정된 삶은 개인 생활 차원이 드러남. A는 가식/B는 진심이라는 이분법의 반례.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XB03",
+        "type": "work_motivation",
+        "quote": "취직하고 싶다.... 의미있는 경력을 쌓고 싶고 인맥도 다지고 싶고 돈 벌고 저축해서 안정적인 삶을 살고 싶어.... 외로워...",
+        "url": "https://x.com/quahn06/status/2027369821491577283",
+        "posted_at": "2026-02-27T13:06:46Z",
+        "category": [
+          "경력",
+          "관계",
+          "소득",
+          "저축",
+          "안정",
+          "외로움"
+        ],
+        "jobseeker_evidence": "취직 희망 직접 진술. 같은 스레드에서 아르바이트로만 살기 어려움과 미래를 언급함. 실제 지원 활동은 미확인.",
+        "evidence_scope": "경력·인맥·돈·안정·외로움을 복합적으로 언급. 원문의 이유를 하나만 선택해 돈으로 축약하면 안 됨.",
+        "comparison": "경력·성장이라는 점에서는 모범답안과 겹치고, 돈·저축·외로움·안정된 삶은 개인 생활 차원이 드러남. A는 가식/B는 진심이라는 이분법의 반례.",
+        "raw_file": "raw_x_page_09.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "전체"
+      }
+    },
+    {
+      "id": "XB04",
+      "data_role": "direct_motivation",
+      "type": "work_motivation_and_post_employment_wish",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/rainluvsu/status/368064288981667840",
+      "posted_at": "2013-08-15T17:38:59Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "취직 희망 직접 진술. 실제 취준 활동·나이·당시 상황은 미확인.",
+      "original_excerpt": "빨리 취직해서 돈 많이 벌어서 우리아빠 멋진 지갑 사줘야 하는데.. 빨리 취직하고 싶다!",
+      "excerpt_scope": "전체",
+      "summary_ko": "취직→소득→아버지 지갑 선물이라는 연결을 직접 말함.",
+      "categories": [
+        "가족 선물",
+        "소득"
+      ],
+      "comparison": "회사 기여보다 가족에게 해주고 싶은 일을 말함. 취업 동기와 취업 후 바람이 한 글에 함께 나타남. 2013년 자료여서 현재 취준생 경향으로 일반화 금지.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XB04",
+        "type": "work_motivation_and_post_employment_wish",
+        "quote": "빨리 취직해서 돈 많이 벌어서 우리아빠 멋진 지갑 사줘야 하는데.. 빨리 취직하고 싶다!",
+        "url": "https://x.com/rainluvsu/status/368064288981667840",
+        "posted_at": "2013-08-15T17:38:59Z",
+        "category": [
+          "가족 선물",
+          "소득"
+        ],
+        "jobseeker_evidence": "취직 희망 직접 진술. 실제 취준 활동·나이·당시 상황은 미확인.",
+        "evidence_scope": "취직→소득→아버지 지갑 선물이라는 연결을 직접 말함.",
+        "comparison": "회사 기여보다 가족에게 해주고 싶은 일을 말함. 취업 동기와 취업 후 바람이 한 글에 함께 나타남. 2013년 자료여서 현재 취준생 경향으로 일반화 금지.",
+        "raw_file": "raw_x_page_10.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "전체"
+      }
+    },
+    {
+      "id": "XC01",
+      "data_role": "context",
+      "type": "context_reemployment_reason_implicit",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/Augustsxxer/status/2038458663292318097",
+      "posted_at": "2026-03-30T03:29:52Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "본인의 퇴사와 빠른 재취업 희망을 명시.",
+      "original_excerpt": "일단 나 퇴사하자마자 실업급여 나오긴 하는데 그래도 얼른 취업하고 싶다 하니",
+      "excerpt_scope": "발췌",
+      "summary_ko": "실업급여가 있어도 빨리 재취업하고 싶다고 말함. 퇴직금을 사용하고 싶지 않다는 동기는 문맥상 추정이며 명시적 단정 불가.",
+      "categories": [
+        "재취업",
+        "퇴직금에 대한 태도"
+      ],
+      "comparison": "금전 맥락 보조자료. 첫 취업준비생 사례나 명확한 노동동기 표본으로 세지 않음.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XC01",
+        "type": "context_reemployment_reason_implicit",
+        "quote": "일단 나 퇴사하자마자 실업급여 나오긴 하는데 그래도 얼른 취업하고 싶다 하니",
+        "url": "https://x.com/Augustsxxer/status/2038458663292318097",
+        "posted_at": "2026-03-30T03:29:52Z",
+        "category": [
+          "재취업",
+          "퇴직금에 대한 태도"
+        ],
+        "jobseeker_evidence": "본인의 퇴사와 빠른 재취업 희망을 명시.",
+        "evidence_scope": "실업급여가 있어도 빨리 재취업하고 싶다고 말함. 퇴직금을 사용하고 싶지 않다는 동기는 문맥상 추정이며 명시적 단정 불가.",
+        "comparison": "금전 맥락 보조자료. 첫 취업준비생 사례나 명확한 노동동기 표본으로 세지 않음.",
+        "raw_file": "raw_x_page_03.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "발췌"
+      }
+    },
+    {
+      "id": "XC02",
+      "data_role": "context",
+      "type": "context_industry_interest",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/letdown_dominic/status/1982310314814386543",
+      "posted_at": "2025-10-26T04:56:23Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "업계에서 일하고 싶은 이유를 말함. 현재 취준 여부 미확인.",
+      "original_excerpt": "아이돌이 좋고 그 업계에서 일하고 싶은 이유는",
+      "excerpt_scope": "발췌",
+      "summary_ko": "창작물이 사람에게 반응과 영감을 주는 경험의 특별함을 이유로 말함(요약).",
+      "categories": [
+        "업계 흥미",
+        "창작의 보람"
+      ],
+      "comparison": "일 자체의 흥미·보람이라는 모범답안과 겹치는 동기가 존재. 돈과 생계만 찾는 표집의 편향을 경계할 사례.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XC02",
+        "type": "context_industry_interest",
+        "quote": "아이돌이 좋고 그 업계에서 일하고 싶은 이유는",
+        "url": "https://x.com/letdown_dominic/status/1982310314814386543",
+        "posted_at": "2025-10-26T04:56:23Z",
+        "category": [
+          "업계 흥미",
+          "창작의 보람"
+        ],
+        "jobseeker_evidence": "업계에서 일하고 싶은 이유를 말함. 현재 취준 여부 미확인.",
+        "evidence_scope": "창작물이 사람에게 반응과 영감을 주는 경험의 특별함을 이유로 말함(요약).",
+        "comparison": "일 자체의 흥미·보람이라는 모범답안과 겹치는 동기가 존재. 돈과 생계만 찾는 표집의 편향을 경계할 사례.",
+        "raw_file": "raw_x_page_05.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "발췌"
+      }
+    },
+    {
+      "id": "XC03",
+      "data_role": "context",
+      "type": "context_humor_not_work_motivation",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/gonnyongdl/status/2041035383685918724",
+      "posted_at": "2026-04-06T06:08:50Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "실제 취준 여부 미확인.",
+      "original_excerpt": "돈 많은 백수에 취업하고 싶다 놀고먹는 백수가 적성에 제일 잘 맞는데",
+      "excerpt_scope": "전체",
+      "summary_ko": "돈 많은 백수를 직업처럼 말하는 농담. 취업을 원하는 이유의 직접 사례로 세면 안 됨.",
+      "categories": [
+        "농담",
+        "노동과 소득 분리"
+      ],
+      "comparison": "전시의 양가감정을 생각할 보조자료지만 실제 취준생 전체의 속마음으로 쓰지 않음.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XC03",
+        "type": "context_humor_not_work_motivation",
+        "quote": "돈 많은 백수에 취업하고 싶다 놀고먹는 백수가 적성에 제일 잘 맞는데",
+        "url": "https://x.com/gonnyongdl/status/2041035383685918724",
+        "posted_at": "2026-04-06T06:08:50Z",
+        "category": [
+          "농담",
+          "노동과 소득 분리"
+        ],
+        "jobseeker_evidence": "실제 취준 여부 미확인.",
+        "evidence_scope": "돈 많은 백수를 직업처럼 말하는 농담. 취업을 원하는 이유의 직접 사례로 세면 안 됨.",
+        "comparison": "전시의 양가감정을 생각할 보조자료지만 실제 취준생 전체의 속마음으로 쓰지 않음.",
+        "raw_file": "raw_x_page_08.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "전체"
+      }
+    },
+    {
+      "id": "XC04",
+      "data_role": "context",
+      "type": "context_interview_recollection",
+      "platform": "X",
+      "source_type": "social_network",
+      "source_url": "https://x.com/teatimeforlife/status/2066211170881818762",
+      "posted_at": "2026-06-14T17:28:26Z",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "activity_not_verified",
+      "jobseeker_evidence": "과거 취준생 시절이라는 직접 회고. 현재 취준생은 아님.",
+      "original_excerpt": "면접 막 보기 시작한 초보 취준생 시절에는 당황해서 '저는 괜찮은 지원자입니다' 어필 하기에 급급했는데",
+      "excerpt_scope": "발췌",
+      "summary_ko": "지원동기 질문에 처음에는 당황했고 이후 준비가 도움이 됐다는 긍정적 회고. 실제 취업 동기는 명시하지 않음.",
+      "categories": [
+        "면접 경험 회고",
+        "답변 준비"
+      ],
+      "comparison": "면접 질문이 무조건 진심을 억압한다는 주장에 바로 연결할 수 없음.",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "original_record": {
+        "id": "XC04",
+        "type": "context_interview_recollection",
+        "quote": "면접 막 보기 시작한 초보 취준생 시절에는 당황해서 '저는 괜찮은 지원자입니다' 어필 하기에 급급했는데",
+        "url": "https://x.com/teatimeforlife/status/2066211170881818762",
+        "posted_at": "2026-06-14T17:28:26Z",
+        "category": [
+          "면접 경험 회고",
+          "답변 준비"
+        ],
+        "jobseeker_evidence": "과거 취준생 시절이라는 직접 회고. 현재 취준생은 아님.",
+        "evidence_scope": "지원동기 질문에 처음에는 당황했고 이후 준비가 도움이 됐다는 긍정적 회고. 실제 취업 동기는 명시하지 않음.",
+        "comparison": "면접 질문이 무조건 진심을 억압한다는 주장에 바로 연결할 수 없음.",
+        "raw_file": "raw_x_page_06.json",
+        "platform": "X",
+        "retrieved_date": "2026-11-09",
+        "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+        "quote_scope": "발췌"
+      }
+    },
+    {
+      "id": "C01",
+      "data_role": "direct_motivation",
+      "type": "employment_reason",
+      "platform": "인스티즈",
+      "source_type": "public_community",
+      "source_url": "https://www.instiz.net/name/43012502",
+      "posted_at": "2021-05-07",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "unknown",
+      "jobseeker_evidence": "취업하고 싶은 이유를 묻고 자기 이유를 말하지만 취준중임을 직접 밝히지는 않음.",
+      "original_excerpt": "나는 돈 벌고싶어서 사람구실 하고싶어서",
+      "excerpt_scope": "발췌",
+      "summary_ko": "돈을 벌고 사회인으로 인정받고 싶은 이유를 취업동기로 제시.",
+      "categories": [
+        "소득",
+        "사회적 인정"
+      ],
+      "comparison": "모범답안의 기업 기여와 달리 자신의 생계·사회적 자격감에 초점.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C01",
+        "url": "https://www.instiz.net/name/43012502",
+        "platform": "인스티즈",
+        "source_type": "public_community",
+        "date": "2021-05-07",
+        "position": "원글",
+        "type": "employment_reason",
+        "original_excerpt": "나는 돈 벌고싶어서 사람구실 하고싶어서",
+        "summary_ko": "돈을 벌고 사회인으로 인정받고 싶은 이유를 취업동기로 제시.",
+        "job_seeker_status": "unknown",
+        "job_seeker_evidence": "취업하고 싶은 이유를 묻고 자기 이유를 말하지만 취준중임을 직접 밝히지는 않음.",
+        "categories": [
+          "소득",
+          "사회적 인정"
+        ],
+        "comparison": "모범답안의 기업 기여와 달리 자신의 생계·사회적 자격감에 초점.",
+        "caution": "‘사람구실’은 작성자 자신의 표현이며 연구자의 가치판단이 아님.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C02",
+      "data_role": "direct_motivation",
+      "type": "employment_reason",
+      "platform": "인스티즈",
+      "source_type": "public_community",
+      "source_url": "https://www.instiz.net/name/43012502",
+      "posted_at": "2021-05-07",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "self_report_current",
+      "jobseeker_evidence": "‘취준스트레스’라고 직접 말함.",
+      "original_excerpt": "취준스트레스때문에 그냥 빨리 돈벌고싶어",
+      "excerpt_scope": "발췌",
+      "summary_ko": "취준 스트레스에서 벗어나 돈을 벌고 싶다는 동기.",
+      "categories": [
+        "취준 종료",
+        "소득"
+      ],
+      "comparison": "회사의 미션보다 준비과정 종료와 수입이 전면에 등장.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C02",
+        "url": "https://www.instiz.net/name/43012502",
+        "platform": "인스티즈",
+        "source_type": "public_community",
+        "date": "2021-05-07",
+        "position": "익인1 댓글",
+        "type": "employment_reason",
+        "original_excerpt": "취준스트레스때문에 그냥 빨리 돈벌고싶어",
+        "summary_ko": "취준 스트레스에서 벗어나 돈을 벌고 싶다는 동기.",
+        "job_seeker_status": "self_report_current",
+        "job_seeker_evidence": "‘취준스트레스’라고 직접 말함.",
+        "categories": [
+          "취준 종료",
+          "소득"
+        ],
+        "comparison": "회사의 미션보다 준비과정 종료와 수입이 전면에 등장.",
+        "caution": "원글과 같은 스레드; 개별댓글 영구링크 미확보.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C03",
+      "data_role": "direct_motivation",
+      "type": "employment_reason",
+      "platform": "인스티즈",
+      "source_type": "public_community",
+      "source_url": "https://www.instiz.net/name/43012502",
+      "posted_at": "2021-05-07",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "unemployed_context_not_verified",
+      "jobseeker_evidence": "자신만 취업하지 않았다는 맥락. 적극 구직중인지는 밝히지 않음.",
+      "original_excerpt": "자존감 낮아져... 주변에서 다하는데 나만 안해서 ㅠㅠ 돈도 벌어야하고:..",
+      "excerpt_scope": "발췌",
+      "summary_ko": "주변과의 비교로 낮아진 자존감 및 돈을 벌어야 할 필요를 말함.",
+      "categories": [
+        "자존감",
+        "비교",
+        "소득"
+      ],
+      "comparison": "자신의 상태·타인과의 비교가 이유. 역량 발휘를 위한 입사 사유와 강조점이 다름.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C03",
+        "url": "https://www.instiz.net/name/43012502",
+        "platform": "인스티즈",
+        "source_type": "public_community",
+        "date": "2021-05-07",
+        "position": "익인6 댓글",
+        "type": "employment_reason",
+        "original_excerpt": "자존감 낮아져... 주변에서 다하는데 나만 안해서 ㅠㅠ 돈도 벌어야하고:..",
+        "summary_ko": "주변과의 비교로 낮아진 자존감 및 돈을 벌어야 할 필요를 말함.",
+        "job_seeker_status": "unemployed_context_not_verified",
+        "job_seeker_evidence": "자신만 취업하지 않았다는 맥락. 적극 구직중인지는 밝히지 않음.",
+        "categories": [
+          "자존감",
+          "비교",
+          "소득"
+        ],
+        "comparison": "자신의 상태·타인과의 비교가 이유. 역량 발휘를 위한 입사 사유와 강조점이 다름.",
+        "caution": "원글과 같은 스레드; 동일인 여부 확인 불가, 개별댓글 영구링크 미확보.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C04",
+      "data_role": "direct_motivation",
+      "type": "employment_reason",
+      "platform": "인스티즈",
+      "source_type": "public_community",
+      "source_url": "https://www.instiz.net/name/60807041",
+      "posted_at": "2024-10-23",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "self_report_current",
+      "jobseeker_evidence": "지원중인 기업 규모와 직무를 원글·작성자 댓글에서 설명.",
+      "original_excerpt": "ott 다 결제하고 싶음...",
+      "excerpt_scope": "본문 발췌; 원본 연구기록의 /는 제목/본문 구분자이므로 통합 인용에서는 제거하고 본문만 인용",
+      "summary_ko": "OTT 구독 등 원하는 소비를 하고 싶은 이유로 취업을 원함. 본문과 댓글에서 중소기업·행정·회계에 지원중이라고 설명.",
+      "categories": [
+        "소비",
+        "소득",
+        "여가"
+      ],
+      "comparison": "회사를 위한 기여보다 자신의 취향과 생활을 위한 수입에 초점.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C04",
+        "url": "https://www.instiz.net/name/60807041",
+        "platform": "인스티즈",
+        "source_type": "public_community",
+        "date": "2024-10-23",
+        "position": "원글",
+        "type": "employment_reason",
+        "original_excerpt": "취업 하고 싶은 이유... 돈 쓰고 싶음... / ott 다 결제하고 싶음...",
+        "summary_ko": "OTT 구독 등 원하는 소비를 하고 싶은 이유로 취업을 원함. 본문과 댓글에서 중소기업·행정·회계에 지원중이라고 설명.",
+        "job_seeker_status": "self_report_current",
+        "job_seeker_evidence": "지원중인 기업 규모와 직무를 원글·작성자 댓글에서 설명.",
+        "categories": [
+          "소비",
+          "소득",
+          "여가"
+        ],
+        "comparison": "회사를 위한 기여보다 자신의 취향과 생활을 위한 수입에 초점.",
+        "caution": "인용의 /는 제목과 본문 경계 표시이며 원문 문자 아님. 모범답안을 실제로 어떻게 답했는지는 모름.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C05",
+      "data_role": "direct_motivation",
+      "type": "employment_reason",
+      "platform": "인스티즈",
+      "source_type": "public_community",
+      "source_url": "https://www.instiz.net/name/53793757",
+      "posted_at": "2023-04-01",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "self_report_current",
+      "jobseeker_evidence": "본문에서 8월 졸업예정·현재 취준중이라고 직접 설명.",
+      "original_excerpt": "빨리 취업하고 싶은 이유가 어차피 다른 학력이나 무엇보다 그냥 “경력자”를 더 중요하게 생각하는 업계야......",
+      "excerpt_scope": "발췌",
+      "summary_ko": "졸업예정 공대생이 취준중이라 밝히며 업계에서 중시하는 실무경험과 경력을 빨리 쌓으려 취업을 원함.",
+      "categories": [
+        "경력",
+        "실무 경험"
+      ],
+      "comparison": "자신의 성장·경력이라는 점에서 모범답안과 겹침. 현실적 동기와 성장동기는 공존 가능.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C05",
+        "url": "https://www.instiz.net/name/53793757",
+        "platform": "인스티즈",
+        "source_type": "public_community",
+        "date": "2023-04-01",
+        "position": "원글",
+        "type": "employment_reason",
+        "original_excerpt": "빨리 취업하고 싶은 이유가 어차피 다른 학력이나 무엇보다 그냥 “경력자”를 더 중요하게 생각하는 업계야......",
+        "summary_ko": "졸업예정 공대생이 취준중이라 밝히며 업계에서 중시하는 실무경험과 경력을 빨리 쌓으려 취업을 원함.",
+        "job_seeker_status": "self_report_current",
+        "job_seeker_evidence": "본문에서 8월 졸업예정·현재 취준중이라고 직접 설명.",
+        "categories": [
+          "경력",
+          "실무 경험"
+        ],
+        "comparison": "자신의 성장·경력이라는 점에서 모범답안과 겹침. 현실적 동기와 성장동기는 공존 가능.",
+        "caution": "모든 실제동기가 모범답안과 정반대라는 서사의 반례.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C06",
+      "data_role": "direct_motivation",
+      "type": "employment_reason",
+      "platform": "링커리어",
+      "source_type": "public_community",
+      "source_url": "https://community.linkareer.com/mentor-qna/3225969",
+      "posted_at": "2024-07-26 07:11",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "self_report_current",
+      "jobseeker_evidence": "댓글에서 지금 취업준비를 하면서 느낀점이라고 직접 말함.",
+      "original_excerpt": "결국엔 먼 미래와 수입의 안정성을 생각하게 되더라구요!",
+      "excerpt_scope": "발췌",
+      "summary_ko": "학교를 마친 후 생활비를 벌며 쉬었지만 장기적 수입 안정성을 고려해 취업준비를 하게 되었다고 말함.",
+      "categories": [
+        "수입 안정성",
+        "미래"
+      ],
+      "comparison": "회사 성장보다 자신의 장기 생계 안정성에 초점.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C06",
+        "url": "https://community.linkareer.com/mentor-qna/3225969",
+        "platform": "링커리어",
+        "source_type": "public_community",
+        "date": "2024-07-26 07:11",
+        "position": "eomvnu 댓글",
+        "type": "employment_reason",
+        "original_excerpt": "결국엔 먼 미래와 수입의 안정성을 생각하게 되더라구요!",
+        "summary_ko": "학교를 마친 후 생활비를 벌며 쉬었지만 장기적 수입 안정성을 고려해 취업준비를 하게 되었다고 말함.",
+        "job_seeker_status": "self_report_current",
+        "job_seeker_evidence": "댓글에서 지금 취업준비를 하면서 느낀점이라고 직접 말함.",
+        "categories": [
+          "수입 안정성",
+          "미래"
+        ],
+        "comparison": "회사 성장보다 자신의 장기 생계 안정성에 초점.",
+        "caution": "같은 페이지 C07과 대화. 개별댓글 영구링크 미확보.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C07",
+      "data_role": "context",
+      "type": "counterexample_no_desire",
+      "platform": "링커리어",
+      "source_type": "public_community",
+      "source_url": "https://community.linkareer.com/mentor-qna/3225969",
+      "posted_at": "2024-07-25 23:47",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "not_currently_seeking_or_delaying",
+      "jobseeker_evidence": "졸업예정이며 취업 시작을 1년 미뤄도 될지 질문.",
+      "original_excerpt": "특히, 취업하고 싶은 욕구가 없어요..",
+      "excerpt_scope": "발췌",
+      "summary_ko": "졸업을 앞둔 24세 대학생이 아르바이트 수입과 현재 상태에 만족하고, 취업의 책임이 부담스러워 쉬고 싶다고 말함.",
+      "categories": [
+        "휴식",
+        "책임 부담",
+        "취업욕구 없음"
+      ],
+      "comparison": "취업을 원한다고 전제하는 모범답안과 다름. 하지만 현재 적극 취준생의 근로동기는 아님.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C07",
+        "url": "https://community.linkareer.com/mentor-qna/3225969",
+        "platform": "링커리어",
+        "source_type": "public_community",
+        "date": "2024-07-25 23:47",
+        "position": "원글",
+        "type": "counterexample_no_desire",
+        "original_excerpt": "특히, 취업하고 싶은 욕구가 없어요..",
+        "summary_ko": "졸업을 앞둔 24세 대학생이 아르바이트 수입과 현재 상태에 만족하고, 취업의 책임이 부담스러워 쉬고 싶다고 말함.",
+        "job_seeker_status": "not_currently_seeking_or_delaying",
+        "job_seeker_evidence": "졸업예정이며 취업 시작을 1년 미뤄도 될지 질문.",
+        "categories": [
+          "휴식",
+          "책임 부담",
+          "취업욕구 없음"
+        ],
+        "comparison": "취업을 원한다고 전제하는 모범답안과 다름. 하지만 현재 적극 취준생의 근로동기는 아님.",
+        "caution": "근로동기 코어에서 제외, 반례로만 보존.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C08",
+      "data_role": "context",
+      "type": "job_seeking_pressure_context",
+      "platform": "링커리어",
+      "source_type": "public_community",
+      "source_url": "https://community.linkareer.com/jayuu/6630932",
+      "posted_at": "2026-10-16 04:36",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "self_report_current",
+      "jobseeker_evidence": "취준 말머리와 본인의 학점·인턴·자격증 준비에도 취업이 안 된 상황 설명.",
+      "original_excerpt": "그냥 그 돈으로 부모님 노후준비하셨으면 마음이 덜 무거웠을까 이제 나만 바라보시는데",
+      "excerpt_scope": "발췌",
+      "summary_ko": "부모의 교육비 지원과 기대, 취업 성과를 내지 못한 것에 대한 미안함·부담을 말함.",
+      "categories": [
+        "부모 기대",
+        "미안함",
+        "가족 부담"
+      ],
+      "comparison": "추천 지원동기가 가리는 취업 압박 맥락을 보여줌.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C08",
+        "url": "https://community.linkareer.com/jayuu/6630932",
+        "platform": "링커리어",
+        "source_type": "public_community",
+        "date": "2026-10-16 04:36",
+        "position": "원글",
+        "type": "job_seeking_pressure_context",
+        "original_excerpt": "그냥 그 돈으로 부모님 노후준비하셨으면 마음이 덜 무거웠을까 이제 나만 바라보시는데",
+        "summary_ko": "부모의 교육비 지원과 기대, 취업 성과를 내지 못한 것에 대한 미안함·부담을 말함.",
+        "job_seeker_status": "self_report_current",
+        "job_seeker_evidence": "취준 말머리와 본인의 학점·인턴·자격증 준비에도 취업이 안 된 상황 설명.",
+        "categories": [
+          "부모 기대",
+          "미안함",
+          "가족 부담"
+        ],
+        "comparison": "추천 지원동기가 가리는 취업 압박 맥락을 보여줌.",
+        "caution": "‘부모님을 위해 일하고 싶다’고 직접 말한 것이 아니므로 근로동기로 단정하지 않음.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    },
+    {
+      "id": "C09",
+      "data_role": "context",
+      "type": "post_employment_wish",
+      "platform": "인스티즈",
+      "source_type": "public_community",
+      "source_url": "https://www.instiz.net/name/18214696",
+      "posted_at": "2016-12-19",
+      "retrieved_date": "2026-11-09",
+      "current_jobseeker_status": "unknown",
+      "jobseeker_evidence": "나중 취업을 조건으로 말하지만 당시 나이·현재 취준 여부 불명.",
+      "original_excerpt": "이거 3개는 돈 제대로 모아서 진짜 좋은걸로 사고싶다 ㅠㅠ",
+      "excerpt_scope": "발췌",
+      "summary_ko": "나중에 취업하면 VR, 카메라, 망원경을 좋은 것으로 사고 싶다는 목록.",
+      "categories": [
+        "취미",
+        "구매",
+        "취업후 희망"
+      ],
+      "comparison": "회사 기여보다 취업이 가능하게 해줄 개인 생활을 보여줌.",
+      "access_level": "page_body_and_comments_retrieved",
+      "original_record": {
+        "id": "C09",
+        "url": "https://www.instiz.net/name/18214696",
+        "platform": "인스티즈",
+        "source_type": "public_community",
+        "date": "2016-12-19",
+        "position": "원글",
+        "type": "post_employment_wish",
+        "original_excerpt": "이거 3개는 돈 제대로 모아서 진짜 좋은걸로 사고싶다 ㅠㅠ",
+        "summary_ko": "나중에 취업하면 VR, 카메라, 망원경을 좋은 것으로 사고 싶다는 목록.",
+        "job_seeker_status": "unknown",
+        "job_seeker_evidence": "나중 취업을 조건으로 말하지만 당시 나이·현재 취준 여부 불명.",
+        "categories": [
+          "취미",
+          "구매",
+          "취업후 희망"
+        ],
+        "comparison": "회사 기여보다 취업이 가능하게 해줄 개인 생활을 보여줌.",
+        "caution": "취업후 희망이며 직접적인 현재 근로동기로 재분류하지 않음.",
+        "collected_date": "2026-11-09",
+        "access_level": "page_body_and_comments_retrieved",
+        "is_full_original": false
+      }
+    }
+  ],
+  "excluded_or_unverified": [
+    {
+      "url": "https://x.com/RealTeslaMan/status/2038789145599054133",
+      "reason": "검색단편은 있었지만 본문 반환 비어 있음. 과거 취업/투자 회고로 보이며 확정 B에서 제외."
+    },
+    {
+      "url": "https://x.com/sararo95/status/2038878762595660120",
+      "reason": "검색결과에 취업 희망이 붙었으나 실제 반환 본문은 인형 제작 후기. 검색단편 혼합으로 제외."
+    },
+    {
+      "url": "https://x.com/shiny_bnl",
+      "reason": "독립 희망 검색단편이 있었으나 해당 게시물 URL/본문 미확보. 프로필을 개별 글 출처로 대신하지 않음."
+    },
+    {
+      "url": "https://x.com/ha2coo_?lang=en",
+      "reason": "독립 희망 검색단편이 있었으나 현재 프로필 반환에는 다른 테스트글만 있음. 개별 글 미확보."
+    }
+  ]
+}

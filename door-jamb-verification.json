@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-10",
+  "evidence": "user screenshot: checkerboard right reveal and dark opening",
+  "cause": "coplanar inner reveal/wall faces and overlapping header/jamb/threshold joints",
+  "checks": {
+    "regression": "observed overlap assertion fail before coordinate fix, pass after all joints separated",
+    "syntax": "npm run check exit 0",
+    "tests": "npm test 82 passed, 0 failed",
+    "light": "far 7x6 diffuse radiance at z=-4.5, depthWrite false and skipAO; weaker near haze",
+    "review": "focused independent review identified additional header/jamb overlap; corrected and regression tested"
+  },
+  "limits": "Actual browser WebGL appearance unverified; browser access host unavailable in prior attempt."
+}

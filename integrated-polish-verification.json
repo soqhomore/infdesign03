@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-10",
+  "request": [
+    "bug fixes",
+    "assignment alignment review",
+    "stronger post-happiness camera and interviewer reactions",
+    "3D and UI polish"
+  ],
+  "implementation": {
+    "camera": "assets/demo/camera-drama.js: bounded3Drecoil then reply-only progressive dolly; normal/menu/editor/reduced-motion reset; projection sync",
+    "characters": "upper-body articulation, fixed legs, finite stronger tremor, gaze/photo mapping preservation and hand/tabletop contact",
+    "lifecycle": [
+      "cancel wish recognition on modal/source/back/select/edit/input",
+      "explicit lobby audio+mic pause for room/face viewing",
+      "resume burst/audio while conversation stays paused until transition end",
+      "show final assistant reply before quiet exit; pause/resume and max12s voice fallback"
+    ],
+    "data": "archive groups for A29, B10, context7; correct R question labels; no source text or counts changed; no population statistics",
+    "quality": "readable source groups/forms/focus/mobile CSS; bed feet/rug/seams/sky/skirting"
+  },
+  "checks": {
+    "syntax": "npm run check exit0",
+    "suite": "npm test106passed0failed",
+    "lifecycle": "node scripts/verify-journey-lifecycle.mjs:3scenario groups passed",
+    "cpu": "character-drama-basic-1.png regenerated; hand contact, camera matrices, gaze, closed bedding, real SSAOPass projection covered",
+    "reviews": [
+      "independent lifecycle audit reproduced3bugs and verified fixes",
+      "whole-change review identified AO matrix issue, regression fixed",
+      "UI/geometry review identified R01-R09 mislabel, regression fixed",
+      "closing lifecycle follow-up review: no remaining required findings"
+    ]
+  },
+  "limits": [
+    "Chrome launch failed: Target page/context/browser closed; browser access host unavailable",
+    "Actual WebGL appearance/mobile layout and real device TTS/microphone not validated",
+    "A is guide examples in optional archive; main interviewer dialogue remains authored/AI-generated fiction",
+    "CPU image is not a WebGL screenshot"
+  ],
+  "deployment": "No push, deploy, paid TTS, or server restart. Existing asset prefix serves new module. Public maintenance entry retained.",
+  "review_report": "docs/reviews/2026-11-10-integrated-polish.md"
+}

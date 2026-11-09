@@ -1,4 +1,7 @@
 import { initInterview } from './game.js';
+import {openingRemaining} from './assets/demo/opening.js';
+const openingStarted=performance.now();
+import {renderAlternateSet,syncAOProjection} from './assets/demo/set-render.js';
 import { createInterviewers } from './characters.js';
 import { initFaceEditor } from './face-editor.js';
 import { createRenderSchedule } from './render-policy.js';
@@ -22,11 +25,12 @@ scene.background=new THREE.Color('#d9e0e4');
 const camera=new THREE.PerspectiveCamera(47,innerWidth/innerHeight,0.045,65);
 const homePosition=new THREE.Vector3(0,1.25,3.42);
 const homeTarget=new THREE.Vector3(0,1.22,-.8);
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
 let renderer;
 try{
-  renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance',preserveDrawingBuffer:true});
+  renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
 }catch(error){
-  document.querySelector('#loading p').textContent='이 브라우저에서 3D 화면을 시작하지 못했어요';
+  document.querySelector('#loading').classList.add('loading-error');document.querySelector('#loading p').textContent='이 브라우저에서 3D 화면을 시작하지 못했어요';
   document.querySelector('#load-detail').textContent='하드웨어 가속을 켠 Chrome 또는 Safari에서 다시 열어 주세요.';
   throw error;
 }
@@ -290,11 +294,12 @@ const pmrem=new THREE.PMREMGenerator(renderer);
 const envScene=new RoomEnvironment();const envTarget=pmrem.fromScene(envScene,.04);scene.environment=envTarget.texture;scene.environmentIntensity=.23;envScene.dispose();pmrem.dispose();
 
 const composer=new EffectComposer(renderer);
-composer.addPass(new RenderPass(scene,camera));
+const roomRenderPass=new RenderPass(scene,camera);composer.addPass(roomRenderPass);
 const aoPass=new SSAOPass(scene,camera,innerWidth,innerHeight,16);
 aoPass.kernelRadius=.15;aoPass.minDistance=.001;aoPass.maxDistance=.18;
 composer.addPass(aoPass);composer.addPass(new OutputPass());
 const fxaa=new ShaderPass(FXAAShader);composer.addPass(fxaa);
+function renderRoom(){syncAOProjection(aoPass,camera);composer.render();}
 function resize(){
   const width=stage.clientWidth,height=stage.clientHeight;
   camera.aspect=width/height;camera.updateProjectionMatrix();renderer.setSize(width,height);composer.setSize(width,height);
@@ -330,35 +335,48 @@ document.querySelector('#ao').onchange=e=>{aoPass.enabled=e.target.checked;rende
 document.querySelector('#quality').onchange=e=>{renderer.setPixelRatio(e.target.checked?Math.min(devicePixelRatio,1.65):1);aoPass.kernelRadius=e.target.checked?.15:.1;resize();};
 document.querySelector('#fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{notice('브라우저의 전체화면 기능을 사용해 주세요.');}};
 document.querySelector('#capture').onclick=()=>{
-  composer.render();const a=document.createElement('a');a.download='interview-room.png';a.href=renderer.domElement.toDataURL('image/png');a.click();notice('현재 시점의 이미지를 저장했어요.');
+  // Draw the visible frame (including overlays) and read it back in the same task; no preserved buffer needed.
+  if(!game.exclusive)renderRoom();game.render();const a=document.createElement('a');a.download='interview-room.png';a.href=renderer.domElement.toDataURL('image/png');a.click();notice('현재 시점의 이미지를 저장했어요.');
 };
 function toggleUI(hidden){uiHidden=hidden;document.querySelector('header').hidden=hidden;document.querySelector('#toolbar').hidden=hidden;document.querySelector('#hint').hidden=hidden;document.querySelector('#settings').hidden=true;document.querySelector('#show-ui').hidden=!hidden;}
 document.querySelector('#hide-ui').onclick=()=>toggleUI(true);document.querySelector('#show-ui').onclick=()=>toggleUI(false);
-addEventListener('keydown',e=>{if(e.target instanceof HTMLInputElement)return;if(e.key==='Escape'){document.querySelector('#settings').hidden=true;home();}if(e.key.toLowerCase()==='h')toggleUI(!uiHidden);});
-function animate(){
+addEventListener('keydown',e=>{if(e.target instanceof HTMLInputElement||e.target instanceof HTMLTextAreaElement||e.target instanceof HTMLSelectElement||e.target.isContentEditable)return;if(e.key==='Escape'){document.querySelector('#settings').hidden=true;home();}if(e.key.toLowerCase()==='h')toggleUI(!uiHidden);});
+function animate(now=0){
   requestAnimationFrame(animate);if(document.hidden)return;
   if(orbitMode)controls.update();
+  if(ready&&characters?.update(now/1000,{paused:faceEditor?.isOpen||game.presentationPaused})){renderer.shadowMap.needsUpdate=true;renderSchedule.invalidate();}
+  if(ready&&game.update?.(now/1000,{paused:faceEditor?.isOpen}))renderSchedule.invalidate();
   if(!renderSchedule.shouldRender({ready,animated:game.animating}))return;
-  composer.render();game.render();frames++;
+  if(!game.exclusive)renderRoom();game.render();frames++;
 }
 document.addEventListener('visibilitychange',()=>renderSchedule.invalidate());
 // Inspection hook for verification, not a product control.
 let characters=null,faceEditor=null;
+motionPreference.addEventListener('change',event=>{characters?.setReducedMotion(event.matches);game.setReducedMotion?.(event.matches);});
 window.__room={scene,camera,renderer,composer,controls,home,setBlinds,failedAssets,get characters(){return characters;},get ready(){return ready;},get frames(){return frames;},get objectCount(){let n=0;scene.traverse(o=>{if(o.isMesh)n++;});return n;}};
 manager.onLoad=async()=>{
   try{await renderer.compileAsync(scene,camera);}catch(e){console.warn('Shader preparation:',e);}
+  if(document.body.dataset.experience==='conversation'){const remaining=openingRemaining(openingStarted,performance.now());if(remaining>0)await new Promise(resolve=>setTimeout(resolve,remaining));}
   ready=true;document.querySelector('#loading').classList.add('done');
   document.querySelector('#load-detail').textContent='준비 완료';
   if(failedAssets.length)notice('일부 재질을 불러오지 못했어요. 로컬 서버로 실행 중인지 확인해 주세요.');
 };
 renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();notice('3D 연결이 끊겼어요. 새로고침해 주세요.');});
 renderer.domElement.addEventListener('webglcontextrestored',()=>{renderer.shadowMap.needsUpdate=true;renderSchedule.invalidate();});
-const game=initInterview({renderer,stage,home,openFaces:()=>faceEditor?.open()});
 manager.itemStart('면접관 모델');
-createInterviewers({scene,manager,anisotropy,onChange:()=>renderSchedule.invalidate()}).then(result=>{
-  characters=result;faceEditor=initFaceEditor(result);
+const conversationMode=document.body.dataset.experience==='conversation';
+const game=conversationMode
+  ? (await import('./local/stage.js')).initConversationStage({
+      renderer,stage,camera,home,reducedMotion:motionPreference.matches,environment:scene.environment,renderSet:(alternateScene,alternateCamera)=>renderAlternateSet({composer,renderPass:roomRenderPass,aoPass},alternateScene,alternateCamera),openFaces:()=>faceEditor?.open(),isFaceEditorOpen:()=>faceEditor?.isOpen,invalidate:()=>renderSchedule.invalidate(),
+      onMood:(mood,anger=0)=>{frontFill.color.set(mood==='offended'?'#fff0e5':'#f3f6ff').lerp(new THREE.Color('#ff9474'),anger*.45);renderer.shadowMap.needsUpdate=true;},
+    })
+  : initInterview({renderer,stage,camera,home,openFaces:()=>faceEditor?.open()});
+createInterviewers({scene,manager,anisotropy,gazeTarget:homePosition,reducedMotion:motionPreference.matches,onChange:()=>{renderer.shadowMap.needsUpdate=true;renderSchedule.invalidate();}}).then(result=>{
+  result.setReducedMotion(motionPreference.matches);
+  characters=result;faceEditor=initFaceEditor(result,{onClose:()=>game.resume?.()});
+  game.setCharacters?.(result);
   renderer.shadowMap.needsUpdate=true;renderSchedule.invalidate();
-  document.querySelector('#faces-toggle').disabled=false;document.querySelector('#game-faces').disabled=false;
+  for(const id of ['faces-toggle','game-faces','local-faces']){const button=document.getElementById(id);if(button)button.disabled=false;}
 }).catch(error=>{
   console.error('면접관 모델 로딩:',error);failedAssets.push('면접관 모델');
   notice('면접관을 불러오지 못했어요. 새로고침해 주세요.');

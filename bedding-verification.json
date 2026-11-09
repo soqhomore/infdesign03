@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-10",
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "tests": "npm test 90 passed, 0 failed",
+    "geometry": "closed padded duvet; manifold edge count 2; bounded drape, rounded mattress and loft pillows",
+    "review": "independent CPU inspection found no reversed/zero-area triangles or duvet top penetration; underside contact <=2.1mm",
+    "lighting": "warm directional sunlight with bounded shadow camera, window area fill and floor light patch skipAO",
+    "copy": "completed small achievements; authored lines remain distinct from sourced quotes; appear after finite action"
+  },
+  "limits": "Fresh Chrome launch failed; actual WebGL bedding appearance/tonal balance unverified."
+}

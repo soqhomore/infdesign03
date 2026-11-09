@@ -61,8 +61,8 @@
     ],
     "nested_sns_archive_integrity": "passed",
     "core_data_json_parse": "passed",
-    "syntax_check": "npm run check: passed 2026-11-09",
-    "state_tests": "npm test: 29 passed 2026-11-09",
+    "syntax_check": "npm run check: passed 2026-11-10",
+    "state_tests": "npm test:106passed0failed2026-11-10",
     "browser": "이전 3D 수동 검증은 flow-verification.json. 새 대화·면접관·사진 교체 화면은 환경 제약으로 실제 브라우저 미검증.",
     "work_reasons": {
       "collection_date": "2026-11-09",
@@ -73,9 +73,16 @@
       "first_person_quotes": "짧은 원문 인용 5개를 공개 페이지 추출 텍스트와 완전 일치 확인. 개인 신원·진정성은 미검증."
     },
     "dialogue": "별도 대화 시제품 구현. 실제 HTTP 처리기/DOM/음성 대역 검증. live API·실제 화면·실음성은 미검증: dialogue-verification.json 참고.",
-    "characters": "3D 세 인물 + 로컬 사진 매핑·교체. 코드/CPU 형상 확인. 실제 WebGL·시각 UI 미검증: character-verification.json",
+    "characters": "기본 회백색 가면 / 카피바라 입체 마스크 / 사용자 사진 곡면 가면 중 면접관별 선택. 기본값 basic. 로컬 사진 전환/초기화/텍스처 해제/대기 취소/반복 적용 알파 회귀 검증. CPU 형상과 독립 리뷰 수행. 실제 WebGL/UI 외관 미검증: face-modes-verification.json",
     "performance": "정지 화면/고정 그림자 재사용·인물 175→111 draw calls·사진 전송량 88% 감소·병렬 로딩·ETag. 실제 FPS/로딩 시간 미측정: performance-verification.json",
-    "maintenance": "루트 및 interview.html은 점검 문구 한 개만 표시, script 없음. 원래 HTML은 references/app-templates에 보존. 구문 검사 및 테스트 29개 통과. 실제 브라우저 미검증."
+    "maintenance": "루트 및 interview.html은 점검 문구 한 개만 표시, script 없음. 원래 HTML은 references/app-templates에 보존. 구문 검사 및 테스트 29개 통과. 실제 브라우저 미검증.",
+    "local_flow": "로컬 /local/에서 기존 3D와 다회 대화 연결. 4175 서버 리스닝 확인. HTTP 처리기/클라이언트/장면 대역 검증. 실제 WebGL/마이크/TTS/API 품질 미검증: local-flow-verification.json",
+    "character_rebuild": "추가 다운로드 없이 기존 CC0 전체 인체로 가운데 착석 몸체/의상 재구성. 경계 연결·패널 내부 간격·칼라·피부색 보정. CPU 정면/측면, 독립 리뷰와 테스트 통과; 실제 WebGL 미검증: offline-character-verification.json",
+    "interviewer_motion": "세 면접관이 지원자 home 위치 주시, 독립 간헐 소동작/중앙 감정 자세 합성. changed pose만 최대24fps 갱신 및 정지 프레임 재사용. reduced-motion/얼굴 편집 일시정지. CPU 시선/시간 테스트와 독립 리뷰 완료. 실제 WebGL/hidden 이벤트 통합 미검증: interviewer-motion-verification.json",
+    "happiness_drama": "행복버튼 확정 전환 시 CSS 충격/클릭 위치 잔상/고리. 다음 반박부터 4단계 얼굴 열감/유한 부들거림, 세 얼굴 유형/초기화/편집 정지/reduced-motion 유지. hidden 버튼 rect 회귀 RED→GREEN 포함 53테스트 통과, CPU 색/형상 및 독립 리뷰. 실제 WebGL/CSS 외관 미검증: happiness-drama-verification.json",
+    "dialogue_shooting": "사용자 Bithumb ZIP/OTF 보존·내용 대조, Basic→Original 전환 및 native Canvas 글자 확인. 대사 전체 마디 큐/Three Raycaster/32삼각형 배치/수명·대사 교체·입력 보존 검증. 독립 리뷰 2건 보완. WebGL/실제 UI/라이브 HTTP는 미검증: dialogue-shooting-verification.json",
+    "life_ending": "64 tests passed; source/provenance, Three geometry/disposal, modal lifecycle/pause regression and handler routes. Headless Chrome SIGABRT; actual WebGL/CSS unverified. life-ending-verification.json",
+    "integrated_polish": "Bug, assignment, 3D camera/body, UI/bedroom review and106tests; lifecycle smoke3groups; WebGL/audio unverified. integrated-polish-verification.json and docs/reviews/2026-11-10-integrated-polish.md"
   },
   "missing_originals": [
     {
@@ -109,13 +116,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 17472,
-      "sha256": "4b8bded225fad3fbb028789d79bb4c12498311af1f9d5bf844ddd8f5f6ef112e"
+      "bytes": 62683,
+      "sha256": "220050f2522e6a988c43a2760778ba77def1cd4995592b0fdb9b392eed889fb3"
     },
     {
       "path": "README.md",
-      "bytes": 11863,
-      "sha256": "aef920944999857e50737cfd7130c1fafa9772aac13c7c14d7521555c9d0f170"
+      "bytes": 56949,
+      "sha256": "90cf4b02c2a941fc9695f28769144fecd35cd8fd969521c5a8124fa66c297948"
     },
     {
       "path": "assets/brick-ao.jpg",
@@ -153,6 +160,26 @@
       "sha256": "d941a126dffcfad714e0ae9e726dedac1717da050bae40cbf822f202e10838df"
     },
     {
+      "path": "assets/characters/seated-human.json",
+      "bytes": 735330,
+      "sha256": "74d8fca32d3895f562a3b7f0e60baeee1215870c127bb0c469e6df034baf50fd"
+    },
+    {
+      "path": "assets/fonts/BithumbGothicBasic.otf",
+      "bytes": 452008,
+      "sha256": "75a628aeae5306d36ff9d2ab6d321bcd71e49aad02a2293dc6d67110323a4401"
+    },
+    {
+      "path": "assets/fonts/BithumbGothicOriginal.otf",
+      "bytes": 434100,
+      "sha256": "a91ecaf9d784c883dafb5f97a7fa6cd26e60a4ad306a406fa6605a8b9a93fd02"
+    },
+    {
+      "path": "assets/fonts/bithumb.css",
+      "bytes": 1181846,
+      "sha256": "6ea3efedc3ef1b1dbfa792767eda0ac76b929dc63c7201a5c903fd151cdc921a"
+    },
+    {
       "path": "assets/wood-ao.jpg",
       "bytes": 729315,
       "sha256": "749042f43d34c0f41f6955d21d5623e6727b3cee7ae02c6852db45627bb44c20"
@@ -173,9 +200,79 @@
       "sha256": "9d7492db1197f1386466dfd7dd43f692446166c1433ddeebf66c10e8b226a6d0"
     },
     {
+      "path": "character-drama-basic-0.25.png",
+      "bytes": 82525,
+      "sha256": "7ad2db2888b3cf153892bb4557e697c033c7d1f9c6dd1f9828cbd0f0a80bc05f"
+    },
+    {
+      "path": "character-drama-basic-1.png",
+      "bytes": 115699,
+      "sha256": "beb22507b20cb206060be80b2beceb946fff81f06a9cdfbe2ebf9ea55100d419"
+    },
+    {
+      "path": "character-drama-capybara-1.png",
+      "bytes": 74860,
+      "sha256": "46b37742713d1c9242f2d8c37b96db115def4c32678fe4b5ecaf9ff5d774b4d3"
+    },
+    {
+      "path": "character-drama-photo-1.png",
+      "bytes": 138997,
+      "sha256": "5cee35345df942d14b9cd89d9a1c40857e93a10bd41275187a48da30a2a2b467"
+    },
+    {
+      "path": "character-gaze-basic-group-0.png",
+      "bytes": 107674,
+      "sha256": "95e88adb621f10dcbda62da93eb9751711417d87adb482082c13d0dd5151a6f6"
+    },
+    {
+      "path": "character-gaze-basic-group-2.2.png",
+      "bytes": 107524,
+      "sha256": "0ace54ca5719ecd4d20e9b1e1f1b7f9f7a847d6645350500ad759183a0936929"
+    },
+    {
       "path": "character-geometry-preview.png",
       "bytes": 129657,
       "sha256": "9660c1a45a6b1abcec5c4c9dfcad5eb9aa23c96f28e685f1ae769ce56dc51cd7"
+    },
+    {
+      "path": "character-mask-basic-head.png",
+      "bytes": 79366,
+      "sha256": "a3358471ed0b52a544c70125168d534187b0070b95e3f418fdfc68f93cd7595f"
+    },
+    {
+      "path": "character-mask-capybara-head.png",
+      "bytes": 72777,
+      "sha256": "a962c07abb9405e60829938836faedeb45b1da9c39857059aee182defde04250"
+    },
+    {
+      "path": "character-mask-capybara-side.png",
+      "bytes": 35984,
+      "sha256": "4dcc03dcb5b4280747e5f0aae3c1c7344738d929ea80b441829fbabcf8a3929e"
+    },
+    {
+      "path": "character-mask-photo-head.png",
+      "bytes": 144329,
+      "sha256": "3eb2c3ec6846e2a653be3e32388783bf8918fd0a296c39947825a48bf0e0ba21"
+    },
+    {
+      "path": "character-rebuild-verification.json",
+      "bytes": 1129,
+      "sha256": "760e0fc6864de1f9a7ddd0b35a662d0e4e53d16b4726ffa86d4b9f1411bd25e9"
+    },
+    {
+      "path": "character-seated-front.png",
+      "bytes": 70811,
+      "sha256": "8cc8661d93e5543de036eb22c41eaa183f4af5ec7efffc3e0660e9fca7ee9057"
+    },
+    {
+      "path": "character-seated-preview.png",
+      "bytes": 130306,
+      "sha256": "16b644cdab39acb3a6d1599e6fe7f163a1c64628290c6a9cc6a4d4bc17e124cd"
+    },
+    {
+      "path": "character-seated-side.png",
+      "bytes": 40824,
+      "sha256": "993a01f13ec2449f4096b98b7dd9432c640d211210827015e4f48c96af88aca7"
     },
     {
       "path": "character-verification.json",
@@ -184,13 +281,28 @@
     },
     {
       "path": "character.test.js",
-      "bytes": 3342,
-      "sha256": "083250d9c21b9cef2384d2b9d8269fc4a0789c5b7efebb83d6f195c620958e26"
+      "bytes": 4649,
+      "sha256": "f77d5cabec84439081f14ba03902d747cf8530aa511b7a81941d76d82fefa0ff"
     },
     {
       "path": "characters.js",
-      "bytes": 15862,
-      "sha256": "2bdd9186bd32801a0fc6da8155d6749cf284e2fd63ae3447581656d1009753c0"
+      "bytes": 27036,
+      "sha256": "a0d9470e6cda7c7c96533db25a387fc12dbfc325caba485ef402ae8012e5c3b8"
+    },
+    {
+      "path": "dialogue-font-preview.png",
+      "bytes": 180829,
+      "sha256": "db591d808ef570d1b6b6253ea6a123b2c59800b8f9bfa5be0baf9887b9b087a5"
+    },
+    {
+      "path": "dialogue-shooting-verification.json",
+      "bytes": 2916,
+      "sha256": "53b952d4bdca96bcd9ce3c435e66752cfee81f40014053370e02604cb34dfb97"
+    },
+    {
+      "path": "dialogue-shooting.test.js",
+      "bytes": 5144,
+      "sha256": "15524bec8dc5cf37487ae261dc9d84f0e812b084e392296c272a12cdbe5dd654"
     },
     {
       "path": "dialogue-verification.json",
@@ -208,24 +320,64 @@
       "sha256": "172b7e53577ff7ce46d5b08071ce48075a65af2a29e3199a045c923f530fc95a"
     },
     {
+      "path": "docs/superpowers/plans/2026-11-09-local-interview-flow.md",
+      "bytes": 3278,
+      "sha256": "d19b6d0b6fa3696fdc945912b0ce5fb34e8c900e72b1b3188eed041489f8a785"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-character-rebuild.md",
+      "bytes": 3144,
+      "sha256": "2e13b5bc4b60d234ef6b30f5b76bf9db02e0c8cc8c796fccaa8da1604a8dd34b"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-face-modes.md",
+      "bytes": 4016,
+      "sha256": "e6b08e97a9006f44ad78e26bab1ab703a65c7163e15d73dd108a49cf01c28b78"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-happiness-drama.md",
+      "bytes": 3810,
+      "sha256": "5bf4710304651c59e2ac922cd25a7b0fe8caeb2841059fb852b36cb2a4f4e251"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-interviewer-motion.md",
+      "bytes": 3479,
+      "sha256": "5a22aff6c2328274997f3a7757f0532487b4148f206f74596fec6438d6b36595"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-offline-character.md",
+      "bytes": 3275,
+      "sha256": "3633b904f6e16f7491fafecc0092c453c24ffccd7b121606e5fd4ca2abd83ebb"
+    },
+    {
       "path": "face-editor.css",
-      "bytes": 2328,
-      "sha256": "17eb31f2e558de183b65b48e37da1f476dbfe9bc39f76cc1b92984254dd19a13"
+      "bytes": 4031,
+      "sha256": "7b95f92349813527ebbf3a83b722ae6e4123cb41a027dbd190bc85219b7f94cb"
     },
     {
       "path": "face-editor.js",
-      "bytes": 7168,
-      "sha256": "001ec96b934ba66dd64dcb5287e1d2bdbf3daf39bb018d4e5e9e97d4b966ccf7"
+      "bytes": 5019,
+      "sha256": "ab9b459ccd80c54d8d807ae29e363240a52995104fa1483f5eb29db3083ef06e"
     },
     {
       "path": "face-editor.test.js",
-      "bytes": 3794,
-      "sha256": "0bbfb25fa0b72aa3062edc0469ab911277c61eeef36089e2463af64b8b74c7ce"
+      "bytes": 4380,
+      "sha256": "820a3fe4155304ca39f916f98672ce6a3e6234d4389e839478041b1e9ba61c67"
+    },
+    {
+      "path": "face-modes-verification.json",
+      "bytes": 3162,
+      "sha256": "da5f5ad9a81b115aa5ea75a8b3bfcc10cec43e54560a00f53bec844fa1c7daaf"
+    },
+    {
+      "path": "face-modes.test.js",
+      "bytes": 4092,
+      "sha256": "33c17111844c26a56154d68bc83dfabca49ef077ddca1b3dd6c2d119abc7fe26"
     },
     {
       "path": "face-photo.js",
-      "bytes": 2177,
-      "sha256": "862b135a45764cb254c59d4def1c4e22a37acdf771a672b86fb432e25509963b"
+      "bytes": 3327,
+      "sha256": "e879b854fd6020c920406e1dbf9e8ea295474f2e23c3c42fc7c3403fb406e77a"
     },
     {
       "path": "flow-verification.json",
@@ -249,18 +401,18 @@
     },
     {
       "path": "game.js",
-      "bytes": 19516,
-      "sha256": "d30535929e902db5afe863769936cd8ca8c72ba40f8a34c70a3f1f39958b07a8"
+      "bytes": 30034,
+      "sha256": "42c74ce4724c1c64049b187953267a65cdbfbda40f1d87181cfabea2699fcc10"
     },
     {
       "path": "handoff/DATA_INDEX.md",
-      "bytes": 5418,
-      "sha256": "e1e406c9d46fe88eb9b0f56dda5cde467959dbf8fd7850bcbcd84f9a9912e898"
+      "bytes": 8298,
+      "sha256": "601dc1a391df3af8531eb773331f534a1190560699f64e104d11a5d56cde9400"
     },
     {
       "path": "handoff/PROJECT_CONTEXT.md",
-      "bytes": 24069,
-      "sha256": "80db47484656f379c6f73c01be662cf03fafcbc1bd588b3858da85f3d8b5e04b"
+      "bytes": 47771,
+      "sha256": "2428e19a26ea41bafbe5612dcc845c1f84294542ce95fed20d0ab4f838b780bc"
     },
     {
       "path": "handoff/data/life-on-hold/SNS_검색목록.csv",
@@ -638,19 +790,29 @@
       "sha256": "1f01689992d5da0caea6b8e0fec084bafe91e10a7705598628a826b914806dc0"
     },
     {
+      "path": "happiness-drama-verification.json",
+      "bytes": 3041,
+      "sha256": "4c739d773db57c3448b4761b029dfac061b6e178e62c4da3c23ebe157c8048b7"
+    },
+    {
+      "path": "happiness-drama.test.js",
+      "bytes": 8319,
+      "sha256": "6c967b973c9bdc76ca614d2e7bdbd3f866f4b155a792475a84f8b3603ef19dad"
+    },
+    {
       "path": "index.html",
       "bytes": 596,
       "sha256": "0b7a9ed093e45fa3e69d5578fe6fcd006baa9f85ab3e6c654e99e823b31a1767"
     },
     {
       "path": "interview-client.test.js",
-      "bytes": 3687,
-      "sha256": "6d51693d199e6d779ef0c5000839865dbfa978fdbc21aca573795586608d2380"
+      "bytes": 12153,
+      "sha256": "df3824ebc6d8e23f424241be4b23e290d4c36da5e18a61323e2555a676295892"
     },
     {
       "path": "interview-service.js",
-      "bytes": 11001,
-      "sha256": "79a3166ad0d4116e228806561243f039b2ed943652d0fa80e45936a93fdf174b"
+      "bytes": 11187,
+      "sha256": "ee5c888aae86fdc17d7c059b76f389b7557ddec1e4af15cdee7735e868149cf1"
     },
     {
       "path": "interview.css",
@@ -664,13 +826,53 @@
     },
     {
       "path": "interview.js",
-      "bytes": 10104,
-      "sha256": "a75f39cde61ba5d793f7fd47bd93cb426c7539214fd9261aa6ce8d4525d43f1e"
+      "bytes": 15566,
+      "sha256": "e4f52ae8a93421c65c332fa66fae7b39ea1ea230a81760ce0ff76212724e0f22"
     },
     {
       "path": "interview.test.js",
-      "bytes": 5626,
-      "sha256": "bd8c6ead87319fb5712afaf3e10d68a1fe69bb0974cf9208dcbd6edab5f98821"
+      "bytes": 6020,
+      "sha256": "cf769776ced44f6e9c571718f34bf06f5a1ccb75fd7b787ed400636ba76f710b"
+    },
+    {
+      "path": "interviewer-motion-verification.json",
+      "bytes": 2140,
+      "sha256": "aabd0799efb4df2a2bb487de50cb9c2bd31420b24492bbfd62f2a9b617c56f2d"
+    },
+    {
+      "path": "interviewer-motion.test.js",
+      "bytes": 2969,
+      "sha256": "10fbcc32c800d5d872eba0153114a95750498de42e7aea46a6c4163cf3134308"
+    },
+    {
+      "path": "local-flow-verification.json",
+      "bytes": 1839,
+      "sha256": "45022837d9ebfdbcee1ddfa7d8aceb6279e8798fd18fa3d24bfec18cf9354b2e"
+    },
+    {
+      "path": "local-stage.test.js",
+      "bytes": 2785,
+      "sha256": "256890a35baca781f009a00b84d5cec67965b3c1c03b13338a5f8f7c9d2dadc7"
+    },
+    {
+      "path": "local/conversation.css",
+      "bytes": 20336,
+      "sha256": "6b005b519ef277341063cbb6b65f8d01bc3c6e59c943c4f8d565dfceb8ae609f"
+    },
+    {
+      "path": "local/room.html",
+      "bytes": 6218,
+      "sha256": "c70a05c379291c93fff0923db6e40e3f6438a1e85a24d7ad83b78e7a8e277652"
+    },
+    {
+      "path": "local/stage.js",
+      "bytes": 5628,
+      "sha256": "c16f4986fb1717749427b88bcaf5c0418f326b379dd8c0203c3407db51d4c3e3"
+    },
+    {
+      "path": "offline-character-verification.json",
+      "bytes": 2918,
+      "sha256": "df56fb96a9337278c268e2c44672c3e8607478bd597789edc9e7167552e867a1"
     },
     {
       "path": "package-lock.json",
@@ -679,8 +881,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 783,
-      "sha256": "742d38843da3887d55267dc9e69f2fbe56a8c14afdc129772947b1d3456e7cc4"
+      "bytes": 2300,
+      "sha256": "39fd655c0d34160430c31d2c6b0fe85c8bf6a8c3ca3f9584e2e363d0bc6ba8ed"
     },
     {
       "path": "performance-verification.json",
@@ -709,8 +911,8 @@
     },
     {
       "path": "references/REFERENCE_INDEX.md",
-      "bytes": 2836,
-      "sha256": "ce35757dd360ba049c72d41317d115a37cb0030610b38d3797e291d40dea3fa2"
+      "bytes": 7119,
+      "sha256": "4a367dddeb4f7970564164e8bd2437e630406cb02a5c3835e07f4578a2b7172d"
     },
     {
       "path": "references/app-templates/index.html",
@@ -724,8 +926,8 @@
     },
     {
       "path": "references/character-source/README.md",
-      "bytes": 4787,
-      "sha256": "9f588d36a916c12caa5f311bcc286971681d7f4d6327d3cf696e264f96c5d85a"
+      "bytes": 8856,
+      "sha256": "c4d261e823728536fd994086a2f9542cdb325b6d3bb243197c1c01544e8950f3"
     },
     {
       "path": "references/character-source/makehuman-base.obj",
@@ -736,6 +938,16 @@
       "path": "references/early-concept/1080x1620.mp4",
       "bytes": 14074186,
       "sha256": "7500fde9501aa51cd1393576a25e7436fba7b9694b69419e1232c35cdcb6ddf0"
+    },
+    {
+      "path": "references/fonts/README.md",
+      "bytes": 1238,
+      "sha256": "70171da16c4bb1b272df88cf79d0830293412752f2785b3933809ace2d32cfe7"
+    },
+    {
+      "path": "references/fonts/bithumb_gothic_otf.zip",
+      "bytes": 650707,
+      "sha256": "3cadd2b0add749be569169ecb7c35f254f970883ec11722d6ee7f30dc807830d"
     },
     {
       "path": "references/sketches/IMG_2298.HEIC",
@@ -774,8 +986,13 @@
     },
     {
       "path": "scene.js",
-      "bytes": 24700,
-      "sha256": "56c31877feb440d9cd94a0491b8b4b470451118eab2806ad68396183b05772b8"
+      "bytes": 26902,
+      "sha256": "f6ba39a52b87b211e56aaeb92b0a977a35628cf6b3b7ebe012417fd46ee308a8"
+    },
+    {
+      "path": "scripts/build-bithumb-css.mjs",
+      "bytes": 725,
+      "sha256": "a23d28c48adc3450bcca785df6df08b216cee43a7cbbfee7ff3da88a7f743bee"
     },
     {
       "path": "scripts/build-character-mesh.mjs",
@@ -783,9 +1000,24 @@
       "sha256": "17c359e6521ed34702c13873520d5bc55215bb297849e98c3978c5a199a36a9e"
     },
     {
+      "path": "scripts/build-seated-human.mjs",
+      "bytes": 622,
+      "sha256": "6c46c89a02fb91b275e015b0fece6be3d4d2e9635099ca00543c090ba10e4d71"
+    },
+    {
       "path": "scripts/character-verification/render.mjs",
-      "bytes": 4852,
-      "sha256": "e4f16497cdda1396b898a94117703ca9b135f0ce2194ecd8c8d1d043702cf43b"
+      "bytes": 6276,
+      "sha256": "ea46347dcd9f79459cc5bb31bf27b5bcb2326f071fb2f32e164c517f800e1964"
+    },
+    {
+      "path": "scripts/fetch-character-library.py",
+      "bytes": 7513,
+      "sha256": "f0284b5a0765ca2b5301102f23f6bc2fb5860f85c777d98617f6ba46a7fcf269"
+    },
+    {
+      "path": "scripts/seated-human.mjs",
+      "bytes": 12741,
+      "sha256": "5165ab1b3d71f78d3f6850d24a1681b2c018115f29d4c253ba0158050d6ce0b8"
     },
     {
       "path": "scripts/verify-dialogue.mjs",
@@ -793,14 +1025,19 @@
       "sha256": "e4599ce6ed3a0a34b721faa9ec4a268b7d776167d2257968420e0f08f99b392a"
     },
     {
+      "path": "seated-character.test.js",
+      "bytes": 4296,
+      "sha256": "88c55a1028fe65c360133f671ee905bf72307c7510f7ef31ca7fe7d8e1874ad8"
+    },
+    {
       "path": "server.mjs",
-      "bytes": 5608,
-      "sha256": "b35f79b4829fe7a37b77b750c18a985eb4a8c5ea365b454ceba928ee45ffaa5a"
+      "bytes": 5908,
+      "sha256": "a85badf6b4f2890efacaaa9d5ca5b1f02c517c58a3864a3fdb971a5e97d12fb1"
     },
     {
       "path": "server.test.js",
-      "bytes": 4650,
-      "sha256": "b0ea3e18d34a3a262e00e21c3aebe99a63cb0cf34346baa2f8d5c8ff3e7f8628"
+      "bytes": 6777,
+      "sha256": "ad48c2d20d3ecbe1bcdc32786ca4823cb1bc8de59ee4d88d435a50c6a55baddb"
     },
     {
       "path": "style.css",
@@ -3384,9 +3621,329 @@
     },
     {
       "path": "면접실 실행.command",
-      "bytes": 365,
-      "sha256": "e453e0c926bd6a4030ae1cabc78e9c5947f948b41dfa4dac02c765109c26523d"
+      "bytes": 513,
+      "sha256": "82a11ba89ec07b90427deaf6439b7506be44292deb108b9d54cfd9b1ab2aaafb"
+    },
+    {
+      "path": "assets/demo/life-data.js",
+      "bytes": 2482,
+      "sha256": "c8dd4443989f016206a3e03a98e05720e9bb5ced9e5a55426a4e4e60928ca695"
+    },
+    {
+      "path": "assets/demo/life-ending.js",
+      "bytes": 5956,
+      "sha256": "7c0ba2c2c2118f3386ec6ecc2e50f72609a6290a9c87b388469dcea76684a739"
+    },
+    {
+      "path": "life-ending.test.js",
+      "bytes": 6170,
+      "sha256": "594fd72036df0d4ace66823c5c8304668194376fb7a4f7ec84b2403fb5439144"
+    },
+    {
+      "path": "life-ending-verification.json",
+      "bytes": 1410,
+      "sha256": "6d42e861bf7a704fba7b059a386b5c47afd7bf264c1942eddd86b67cf72ea412"
+    },
+    {
+      "path": "life-ending-geometry-preview.png",
+      "bytes": 94376,
+      "sha256": "c431ff7a577b80360e14a869f1d88dfdd4d9b7a71d697f10c1b9acedc8bbd362"
+    },
+    {
+      "path": "assets/demo/journey.js",
+      "bytes": 19694,
+      "sha256": "be2d1651268ce8bfd3b6ebfb3e64d59c81cc5b03dd87516f9cd0a6e4ac02b04c"
+    },
+    {
+      "path": "assets/demo/journey.css",
+      "bytes": 15757,
+      "sha256": "23d032acff6597945a70d68fd25d9aae91c738cb0f941615dbe19d78282766c2"
+    },
+    {
+      "path": "assets/demo/journey-model.js",
+      "bytes": 353,
+      "sha256": "2b91cd2bbbed7607682052a71b055f5f6b4c4ee0f8a27614c3b0457e69d4c0a2"
+    },
+    {
+      "path": "assets/demo/journey-data.js",
+      "bytes": 19631,
+      "sha256": "6b687859c7cf82141327901b5e322ee12647b1ea3682092135f41fc3c8177bef"
+    },
+    {
+      "path": "assets/demo/vestibule.js",
+      "bytes": 5729,
+      "sha256": "d4f69266870265af3f2e63f1d3505e331743c86c384828816f8f6cf0494c1ca6"
+    },
+    {
+      "path": "journey.test.js",
+      "bytes": 6891,
+      "sha256": "1b6637bb5bcfe4a6e6a7ce0dc1d4391c55132c5acf0b2011d50ef56e04545b5d"
+    },
+    {
+      "path": "journey-verification.json",
+      "bytes": 915,
+      "sha256": "b8590a3fe621058f5e9529361f0dc598eaaef71e28ccf24ec444cb08c1ce7f03"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-journey.md",
+      "bytes": 1371,
+      "sha256": "0a7161291dd9f3b7e7a4c32fc28fcd52fc116a8792bc552457413c32df9386eb"
+    },
+    {
+      "path": "assets/fonts/PretendardVariable.woff2",
+      "bytes": 2057688,
+      "sha256": "9599f12fd42fc0bce1cd50b47a0c022e108d7aa64dd0d1bb0ed44f3282d900b4"
+    },
+    {
+      "path": "assets/fonts/Pretendard-LICENSE.txt",
+      "bytes": 4419,
+      "sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e"
+    },
+    {
+      "path": "assets/fonts/interface.css",
+      "bytes": 5268936,
+      "sha256": "13bd0486853e7a95f8bd39d8ff02c7eae1617c1bc48106a85b11a33526f352b0"
+    },
+    {
+      "path": "assets/fonts/README.md",
+      "bytes": 1496,
+      "sha256": "2308d9ed8f43925db40a1b98ba4de5f2703afb9e5568b2b283813b6af40f49cd"
+    },
+    {
+      "path": "references/fonts/OTF.zip",
+      "bytes": 1893960,
+      "sha256": "33e4c834423fe5e6fd7f555e1858cdcb1db390b6c6d71230f4d2b7e927d2b7b5"
+    },
+    {
+      "path": "assets/fonts/Rising_CHAI_OTF_Light.otf",
+      "bytes": 927056,
+      "sha256": "136eeb96d553b863a1c93a3aacebd252c7ec024628c61abc75f98cbd0e2bd9a8"
+    },
+    {
+      "path": "assets/fonts/Rising_CHAI_OTF_Extra_Bold.otf",
+      "bytes": 966456,
+      "sha256": "d5b26fb93a8eb298a2bdcde74d852f676e9ff162215f7b6a83d86f1dcdbd9545"
+    },
+    {
+      "path": "scripts/build-interface-fonts.mjs",
+      "bytes": 935,
+      "sha256": "60bdfea303f7a5747c571da3cf3d760b496d16b4efdeb2efff2057f283ff8c90"
+    },
+    {
+      "path": "assets/demo/entry-flow.js",
+      "bytes": 308,
+      "sha256": "50a5a5fdc3ad8c2020b63890e9281683e61aa33dca07022f56cbf1b0af02d69d"
+    },
+    {
+      "path": "assets/demo/entry-sound.js",
+      "bytes": 3304,
+      "sha256": "f3c21659b101c591f0fe4b2ab2cbf4f655d2f74a358c2896709053198122284f"
+    },
+    {
+      "path": "entry-flow.test.js",
+      "bytes": 1547,
+      "sha256": "bd4a85ea8377fe512c249a91a5ff0e1b21316e21679ee00f69e887b39f64037e"
+    },
+    {
+      "path": "entry-narrative-verification.json",
+      "bytes": 538,
+      "sha256": "3ad0f3b95e434de142e10289d69c30370a620e990a335eaa59e7296f2085ae1b"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-waiting-entry.md",
+      "bytes": 672,
+      "sha256": "bd4986ee183f2154575fe6dedc98155a05a6535643d414f3bbaf2548604a2391"
+    },
+    {
+      "path": "references/ending/bed.jpeg",
+      "bytes": 36252,
+      "sha256": "3c89eefd8a76131a78577738bd9b283d3fb2316a8b8548f0f6513c32798c2350"
+    },
+    {
+      "path": "assets/demo/rain-bedroom.js",
+      "bytes": 12576,
+      "sha256": "29f68468ba493bc57f420f3a7c42b0f62af1d1691c0cfafd94e8b8df7e3a2285"
+    },
+    {
+      "path": "assets/demo/rain.js",
+      "bytes": 1924,
+      "sha256": "a1d17c086b1d5da32dbbb16d6051788cd7a4ccc3e915ba4171e97c14586e4494"
+    },
+    {
+      "path": "assets/demo/rain-sound.js",
+      "bytes": 1775,
+      "sha256": "3ed1ae1c21da86ff98ca103f8c0d03ec4d5fb8ff632797e7ac6ca799ef2e8e97"
+    },
+    {
+      "path": "rain-ending.test.js",
+      "bytes": 2265,
+      "sha256": "891253be4e401bc513681124b21207a007adc21b6da1866e30546f388fea6fcd"
+    },
+    {
+      "path": "rain-ending-verification.json",
+      "bytes": 935,
+      "sha256": "f47c1d80508aedc93529f3fb514dc984feac950e3453825ede4535f5f02cb2e3"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-rain-ending.md",
+      "bytes": 708,
+      "sha256": "5982abf3660eab0524e2780bd4e199c7f4fe8bf3cbdf9500af496a004e8721ba"
+    },
+    {
+      "path": "assets/demo/set-materials.js",
+      "bytes": 2038,
+      "sha256": "50fca4e92d442302c9a4108f7abd601cc630ed0ddff2f19b30901c9b0ff82f00"
+    },
+    {
+      "path": "assets/demo/set-render.js",
+      "bytes": 1309,
+      "sha256": "19e91040e908a8953efbab32429a526c9023ae2b8958516d13c988f5c3ef9135"
+    },
+    {
+      "path": "set-realism.test.js",
+      "bytes": 3815,
+      "sha256": "bb548743ffcb301d1e8109b1a747f8c6500ff66aa1c07315c4e692fd871752bd"
+    },
+    {
+      "path": "set-realism-verification.json",
+      "bytes": 770,
+      "sha256": "861d61f458292b45fb7f91c92fb04a6608a497de2cabb73cea7362088d272b83"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-set-realism.md",
+      "bytes": 674,
+      "sha256": "42eabe373e4cc3046fd57a5e3074ae3a3bb8fdfaa2e34f0eaf324180348b3f88"
+    },
+    {
+      "path": "assets/demo/life-moment.js",
+      "bytes": 213,
+      "sha256": "4b25cc8c5269570fe1afa9adde2237bd28ad523474752a80ba34a51d745b18f8"
+    },
+    {
+      "path": "life-moment.test.js",
+      "bytes": 1161,
+      "sha256": "10f96c1048cec1a4d2417fec446fa514e0e1d865a6f8281728a588268d1e95ab"
+    },
+    {
+      "path": "life-moment-verification.json",
+      "bytes": 514,
+      "sha256": "e3d0ef4e5e851541a86c89ffe243486acf59346a917a5e7c0b65b6d02abd3d8b"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-small-comfort.md",
+      "bytes": 516,
+      "sha256": "235d193643cf7cd67099ca656e9edfc23719901112253964b4157709f30fa6f3"
+    },
+    {
+      "path": "doorway.test.js",
+      "bytes": 2844,
+      "sha256": "cd9d72abafe333172a52e326154853e81a7d12fc9ceb4a3b28a59f2b37347867"
+    },
+    {
+      "path": "doorway-verification.json",
+      "bytes": 679,
+      "sha256": "23c5058f313c3148406033444829162070149370c50e745a45603add28a988fc"
+    },
+    {
+      "path": "door-light-verification.json",
+      "bytes": 584,
+      "sha256": "8651ed069fd8e7c9760cc9902d8ac283d4e3df5dc963c4aa219f3c08989f1dcb"
+    },
+    {
+      "path": "door-jamb-verification.json",
+      "bytes": 731,
+      "sha256": "899f897e7ecec7195ce73290280b9426855994a0d58a828c111fc662f3df1571"
+    },
+    {
+      "path": "assets/demo/opening.js",
+      "bytes": 140,
+      "sha256": "687ccb5ed499ca83e6fb6d4b6e2ce8c0ca9bbd796d38d5b5f2a124cef20d1781"
+    },
+    {
+      "path": "gentle-ending.test.js",
+      "bytes": 1188,
+      "sha256": "e82c8fb706e734c1571be96f01c084060db17b1cc6cb3e3b9dbe6fe6d2d28999"
+    },
+    {
+      "path": "gentle-ending-verification.json",
+      "bytes": 616,
+      "sha256": "5037e07e1f6f1165d969ec389f1517884d28cf13ba16fbfc68ef19f6852a4506"
+    },
+    {
+      "path": "assets/demo/happiness-burst.js",
+      "bytes": 2160,
+      "sha256": "f956c621cec6e38d0a41dacb92712eeb15dff6773b683b1d86ebab6cf6a478f8"
+    },
+    {
+      "path": "local/sound.js",
+      "bytes": 15007,
+      "sha256": "ed0729190614f11c121997a29ee7542eac4f7a16a410fdb4d1808f84d6bad712"
+    },
+    {
+      "path": "happiness-burst.test.js",
+      "bytes": 1824,
+      "sha256": "88b7909194ca053fade80400421d030c17eeb7d34700de55da2971e6093f9f7b"
+    },
+    {
+      "path": "local-sound.test.js",
+      "bytes": 3026,
+      "sha256": "9274536b83319d7f8b3a627cac2e65f1cac076ec523eada10a05c0fa428f4b4a"
+    },
+    {
+      "path": "happiness-burst-verification.json",
+      "bytes": 644,
+      "sha256": "ed746603b758af4e13716564feaf82471ec2ad2639791a5c15c9f056669027c0"
+    },
+    {
+      "path": "assets/demo/bedding.js",
+      "bytes": 1791,
+      "sha256": "1e8ba11751c2f22f381c45e48ff83cdcea4f6356e199380cd440b0c6a3fc3834"
+    },
+    {
+      "path": "bedding.test.js",
+      "bytes": 2023,
+      "sha256": "7436cd65655ab2554f9526f0031d7e8e82ce211554edb8f56ba14304d2b0adcc"
+    },
+    {
+      "path": "bedding-verification.json",
+      "bytes": 718,
+      "sha256": "3cd13943f4093a98b1b5e91d3421ebd06c2b5f8f8854bce47380fa5be22f0bc6"
+    },
+    {
+      "path": "voice-verification.json",
+      "bytes": 1238,
+      "sha256": "3035e0bee5abe718deca16b60cb1d0b407607253b4b5bde62b45885a30fcdc43"
+    },
+    {
+      "path": "camera-drama.test.js",
+      "bytes": 3277,
+      "sha256": "1c4303dd820efd7397fb666f7240df8b76298ae9c1b54e6b137a02d28532ec6f"
+    },
+    {
+      "path": "assets/demo/camera-drama.js",
+      "bytes": 3087,
+      "sha256": "03549ef3ae541949ebaefbcd3539d3c957aa13f8a28301f9391021754b0898fe"
+    },
+    {
+      "path": "scripts/verify-journey-lifecycle.mjs",
+      "bytes": 5254,
+      "sha256": "dfe09804d6df8e24a5060ec13c7297da2833c004767e325d44151f47e2e19a60"
+    },
+    {
+      "path": "integrated-polish-verification.json",
+      "bytes": 2287,
+      "sha256": "35cbb585a4debc39bd88f46a57e3d99bc8429d184b257f2c1d4cc54eb93f7d06"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-integrated-polish.md",
+      "bytes": 5420,
+      "sha256": "3993657bcd45ff2f2134edc73bcb5c9a4c9b2cd27751f3ae964ec5b60460e938"
+    },
+    {
+      "path": "docs/reviews/2026-11-10-integrated-polish.md",
+      "bytes": 7167,
+      "sha256": "d6d2abf6e1612133df8d2491898ba7a22f56cee47647e0453d0d30cb6e738cff"
     }
   ],
-  "updated_date": "2026-11-09"
+  "updated_date": "2026-11-10"
 }

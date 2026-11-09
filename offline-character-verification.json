@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-10",
+  "scope": "Center interviewer only; no asset downloads",
+  "implementation": {
+    "source": "references/character-source/makehuman-base.obj",
+    "sourceLicense": "CC0",
+    "generatedAsset": "assets/characters/seated-human.json",
+    "rebuild": "npm run build:character",
+    "networkRequired": false,
+    "centerClothesPhotoProjection": false,
+    "fullHumanSurface": true,
+    "closedMaterialBoundarySidewalls": 220,
+    "faceReplacement": "Preserved local-only face projection, now samples cheek/forehead color for surrounding skin",
+    "dialogueHeadRootInterfacePreserved": true,
+    "publicMaintenanceChanged": false,
+    "pushed": false
+  },
+  "metrics": {
+    "assetBytes": 735330,
+    "before": [
+      {
+        "triangles": 43618,
+        "basePassDrawCalls": 34
+      },
+      {
+        "triangles": 46598,
+        "basePassDrawCalls": 42
+      },
+      {
+        "triangles": 72562,
+        "basePassDrawCalls": 35
+      }
+    ],
+    "after": [
+      {
+        "triangles": 43618,
+        "basePassDrawCalls": 34
+      },
+      {
+        "triangles": 43862,
+        "basePassDrawCalls": 25
+      },
+      {
+        "triangles": 72562,
+        "basePassDrawCalls": 35
+      }
+    ],
+    "measurement": "CPU model counts; base pass only, excludes shadows, room, GPU frame time and FPS"
+  },
+  "checks": {
+    "syntax": "npm run check passed",
+    "tests": "npm test: 41 passed",
+    "regressions": [
+      "Invalid negative-coordinate clothing GLSL subtraction",
+      "Open cuff/skin spatial edges",
+      "Panel interiors occluded near neckline",
+      "Facial skin sample filtering",
+      "Center uses full human body and no garment photo uniforms",
+      "Server serves generated asset and preserves public maintenance"
+    ],
+    "review": "Independent review found open garment boundaries and panel penetration; added connecting sidewalls, interior fitting and 3mm curvature reserve",
+    "independentGeometryReview": {
+      "materialBoundaryOpenEdges": 0,
+      "shirtInteriorSamples": 12096,
+      "eachLapelInteriorSamples": 14112,
+      "occludedPanelSamples": 0,
+      "minShirtClearanceMM": 1.268,
+      "minLapelClearanceMM": 1.71,
+      "limit": "Finite 1/8 barycentric sample grid, not proof of every point or GPU outcome"
+    }
+  },
+  "visual": {
+    "cpuPreviews": [
+      "character-seated-front.png",
+      "character-seated-side.png",
+      "character-seated-preview.png"
+    ],
+    "kind": "CPU geometry inspection; NOT a WebGL/room screenshot",
+    "browserVerified": false,
+    "webglShaderVerified": false,
+    "actualRoomAppearanceVerified": false,
+    "limits": "Browser launch/host unavailable in this environment; no GPU lighting, shadows, UI or actual microphone verification",
+    "quality": "Custom fitted garment prototype on common anatomical body; not photoreal personalized reconstruction; left/right remain earlier body construction"
+  }
+}

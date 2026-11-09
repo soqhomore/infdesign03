@@ -1,0 +1,189 @@
+{
+  "method": {
+    "scope": "한국어 X 개인 게시물. 15개 키워드 검색, 12개 알려진 URL/프로필 읽기. 목적 표집이며 대표성/빈도 분석용 아님.",
+    "primary_count": 4,
+    "recent_2026_count": 3,
+    "old_2013_count": 1,
+    "strict_current_job_search_activity_confirmed_count": 0,
+    "context_count": 4,
+    "quote_policy": "출처당 최대25단어의 직접 인용. 원문 전체를 무제한 복제한 자료가 아님. raw_x_page는 본문을 재배포하지 않고 메타데이터 및 인용 참조만 보존.",
+    "comparison_policy": "서로 다른 사람과 출처를 비교한 것이며 같은 지원자가 면접에서 말을 숨겼다는 인과증거 아님."
+  },
+  "records": [
+    {
+      "id": "XB01",
+      "type": "work_motivation",
+      "quote": "아 취업하고 싶다아아....돈이 필요해에에...",
+      "url": "https://x.com/Comic_soon001/status/2038966228606460074",
+      "posted_at": "2026-03-31T13:06:45Z",
+      "category": [
+        "금전 필요"
+      ],
+      "jobseeker_evidence": "취업하고 싶다는 본인 진술. 실제 지원·시험 준비 여부는 미확인.",
+      "evidence_scope": "돈이 필요해서 취업하고 싶다는 두 진술을 같은 짧은 글에서 직접 연결.",
+      "comparison": "회사 기여보다 본인의 금전 필요를 말함. 생활비·빚 등 구체적 용도는 원문에 없어 덧붙이지 않음.",
+      "raw_file": "raw_x_page_01.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "전체"
+    },
+    {
+      "id": "XB02",
+      "type": "work_motivation",
+      "quote": "가끔 비슷하긴한데 똑같은 맛은 잘 없고 세상엔 맛있는게 꽤 많아서, 저는 취업하고 싶은 이유의 7~8할 정도 되는 것 같습니다.",
+      "url": "https://x.com/mi68533/status/2116516248662257953",
+      "posted_at": "2026-10-31T13:02:51Z",
+      "category": [
+        "음식",
+        "생활의 즐거움"
+      ],
+      "jobseeker_evidence": "취업하고 싶은 이유라는 본인 진술. 취준 활동·재직 여부는 미확인.",
+      "evidence_scope": "음식 추천 맥락에서 맛있는 것을 취업 동기로 직접 지칭. 7~8할은 개인 표현이며 조사통계가 아님.",
+      "comparison": "본인의 일상적 즐거움을 말함. 취업 전에는 먹지 못했다거나 여행·생활 전체를 미뤘다는 해석은 불가.",
+      "raw_file": "raw_x_page_02.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "발췌"
+    },
+    {
+      "id": "XB03",
+      "type": "work_motivation",
+      "quote": "취직하고 싶다.... 의미있는 경력을 쌓고 싶고 인맥도 다지고 싶고 돈 벌고 저축해서 안정적인 삶을 살고 싶어.... 외로워...",
+      "url": "https://x.com/quahn06/status/2027369821491577283",
+      "posted_at": "2026-02-27T13:06:46Z",
+      "category": [
+        "경력",
+        "관계",
+        "소득",
+        "저축",
+        "안정",
+        "외로움"
+      ],
+      "jobseeker_evidence": "취직 희망 직접 진술. 같은 스레드에서 아르바이트로만 살기 어려움과 미래를 언급함. 실제 지원 활동은 미확인.",
+      "evidence_scope": "경력·인맥·돈·안정·외로움을 복합적으로 언급. 원문의 이유를 하나만 선택해 돈으로 축약하면 안 됨.",
+      "comparison": "경력·성장이라는 점에서는 모범답안과 겹치고, 돈·저축·외로움·안정된 삶은 개인 생활 차원이 드러남. A는 가식/B는 진심이라는 이분법의 반례.",
+      "raw_file": "raw_x_page_09.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "전체"
+    },
+    {
+      "id": "XB04",
+      "type": "work_motivation_and_post_employment_wish",
+      "quote": "빨리 취직해서 돈 많이 벌어서 우리아빠 멋진 지갑 사줘야 하는데.. 빨리 취직하고 싶다!",
+      "url": "https://x.com/rainluvsu/status/368064288981667840",
+      "posted_at": "2013-08-15T17:38:59Z",
+      "category": [
+        "가족 선물",
+        "소득"
+      ],
+      "jobseeker_evidence": "취직 희망 직접 진술. 실제 취준 활동·나이·당시 상황은 미확인.",
+      "evidence_scope": "취직→소득→아버지 지갑 선물이라는 연결을 직접 말함.",
+      "comparison": "회사 기여보다 가족에게 해주고 싶은 일을 말함. 취업 동기와 취업 후 바람이 한 글에 함께 나타남. 2013년 자료여서 현재 취준생 경향으로 일반화 금지.",
+      "raw_file": "raw_x_page_10.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "전체"
+    }
+  ],
+  "context_records": [
+    {
+      "id": "XC01",
+      "type": "context_reemployment_reason_implicit",
+      "quote": "일단 나 퇴사하자마자 실업급여 나오긴 하는데 그래도 얼른 취업하고 싶다 하니",
+      "url": "https://x.com/Augustsxxer/status/2038458663292318097",
+      "posted_at": "2026-03-30T03:29:52Z",
+      "category": [
+        "재취업",
+        "퇴직금에 대한 태도"
+      ],
+      "jobseeker_evidence": "본인의 퇴사와 빠른 재취업 희망을 명시.",
+      "evidence_scope": "실업급여가 있어도 빨리 재취업하고 싶다고 말함. 퇴직금을 사용하고 싶지 않다는 동기는 문맥상 추정이며 명시적 단정 불가.",
+      "comparison": "금전 맥락 보조자료. 첫 취업준비생 사례나 명확한 노동동기 표본으로 세지 않음.",
+      "raw_file": "raw_x_page_03.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "발췌"
+    },
+    {
+      "id": "XC02",
+      "type": "context_industry_interest",
+      "quote": "아이돌이 좋고 그 업계에서 일하고 싶은 이유는",
+      "url": "https://x.com/letdown_dominic/status/1982310314814386543",
+      "posted_at": "2025-10-26T04:56:23Z",
+      "category": [
+        "업계 흥미",
+        "창작의 보람"
+      ],
+      "jobseeker_evidence": "업계에서 일하고 싶은 이유를 말함. 현재 취준 여부 미확인.",
+      "evidence_scope": "창작물이 사람에게 반응과 영감을 주는 경험의 특별함을 이유로 말함(요약).",
+      "comparison": "일 자체의 흥미·보람이라는 모범답안과 겹치는 동기가 존재. 돈과 생계만 찾는 표집의 편향을 경계할 사례.",
+      "raw_file": "raw_x_page_05.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "발췌"
+    },
+    {
+      "id": "XC03",
+      "type": "context_humor_not_work_motivation",
+      "quote": "돈 많은 백수에 취업하고 싶다 놀고먹는 백수가 적성에 제일 잘 맞는데",
+      "url": "https://x.com/gonnyongdl/status/2041035383685918724",
+      "posted_at": "2026-04-06T06:08:50Z",
+      "category": [
+        "농담",
+        "노동과 소득 분리"
+      ],
+      "jobseeker_evidence": "실제 취준 여부 미확인.",
+      "evidence_scope": "돈 많은 백수를 직업처럼 말하는 농담. 취업을 원하는 이유의 직접 사례로 세면 안 됨.",
+      "comparison": "전시의 양가감정을 생각할 보조자료지만 실제 취준생 전체의 속마음으로 쓰지 않음.",
+      "raw_file": "raw_x_page_08.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "전체"
+    },
+    {
+      "id": "XC04",
+      "type": "context_interview_recollection",
+      "quote": "면접 막 보기 시작한 초보 취준생 시절에는 당황해서 '저는 괜찮은 지원자입니다' 어필 하기에 급급했는데",
+      "url": "https://x.com/teatimeforlife/status/2066211170881818762",
+      "posted_at": "2026-06-14T17:28:26Z",
+      "category": [
+        "면접 경험 회고",
+        "답변 준비"
+      ],
+      "jobseeker_evidence": "과거 취준생 시절이라는 직접 회고. 현재 취준생은 아님.",
+      "evidence_scope": "지원동기 질문에 처음에는 당황했고 이후 준비가 도움이 됐다는 긍정적 회고. 실제 취업 동기는 명시하지 않음.",
+      "comparison": "면접 질문이 무조건 진심을 억압한다는 주장에 바로 연결할 수 없음.",
+      "raw_file": "raw_x_page_06.json",
+      "platform": "X",
+      "retrieved_date": "2026-11-09",
+      "access_level": "Firecrawl X post processor returned post body; social identity not independently verified",
+      "quote_scope": "발췌"
+    }
+  ],
+  "excluded_or_unverified": [
+    {
+      "url": "https://x.com/RealTeslaMan/status/2038789145599054133",
+      "reason": "검색단편은 있었지만 본문 반환 비어 있음. 과거 취업/투자 회고로 보이며 확정 B에서 제외."
+    },
+    {
+      "url": "https://x.com/sararo95/status/2038878762595660120",
+      "reason": "검색결과에 취업 희망이 붙었으나 실제 반환 본문은 인형 제작 후기. 검색단편 혼합으로 제외."
+    },
+    {
+      "url": "https://x.com/shiny_bnl",
+      "reason": "독립 희망 검색단편이 있었으나 해당 게시물 URL/본문 미확보. 프로필을 개별 글 출처로 대신하지 않음."
+    },
+    {
+      "url": "https://x.com/ha2coo_?lang=en",
+      "reason": "독립 희망 검색단편이 있었으나 현재 프로필 반환에는 다른 테스트글만 있음. 개별 글 미확보."
+    }
+  ]
+}

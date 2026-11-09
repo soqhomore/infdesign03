@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-10",
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "tests": "npm test 78 passed, 0 failed",
+    "flow": "wish-specific finite action, authored ordinary lines, warm local lighting, original rain/credits retained",
+    "review": "one independent focused review; food lid intersection and reduced-motion first-frame initialization fixed"
+  },
+  "limits": {
+    "browser": "Actual WebGL appearance and device audio unverified; Chrome headless launch failed in prior verification."
+  }
+}

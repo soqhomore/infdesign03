@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-10",
+  "checks": {
+    "syntax": "npm run check exit 0",
+    "suite": "npm test 85 passed, 0 failed",
+    "opening": "exact requested question, black background, minimum 3500ms for conversation only, error instructions preserved",
+    "ending": "no rain objects/droplet pane and no rain audio controller in current journey; hopeful fictional lines and soft warm lighting",
+    "review": "independent focused read-only review found no major issues; 8 focused tests passed"
+  },
+  "limits": "Actual WebGL/CSS appearance unverified; browser execution/connection unavailable in this environment."
+}

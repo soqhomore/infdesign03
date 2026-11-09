@@ -22,6 +22,17 @@ export function photoTransform(eyes,{x=0,y=0,zoom=1,rotation=0}={}){
  return {a,b,c:-b,d:a,e:512+x-a*cx+b*cy,f:448+y-b*cx-a*cy};
 }
 export function transformPoint(m,p){return {x:m.a*p.x+m.c*p.y+m.e,y:m.b*p.x+m.d*p.y+m.f};}
+export function skinColorFromSamples(pixels){
+ const channels=[[],[],[]];
+ for(let i=0;i<pixels.length;i+=4){const [r,g,b,a]=pixels.slice(i,i+4);if(a<180||Math.max(r,g,b)<35||Math.min(r,g,b)>244)continue;channels[0].push(r);channels[1].push(g);channels[2].push(b);}
+ if(!channels[0].length)return null;
+ return '#'+channels.map(c=>{c.sort((a,b)=>a-b);return c[Math.floor(c.length/2)].toString(16).padStart(2,'0');}).join('');
+}
+export function sampleFaceSkin(canvas){
+ const ctx=canvas.getContext('2d',{willReadFrequently:true}),pixels=[];
+ for(const [x,y] of [[420,600],[604,600],[512,335]])pixels.push(...ctx.getImageData(x-8,y-8,16,16).data);
+ return skinColorFromSamples(pixels);
+}
 export function paintFace(canvas,image,eyes,adjust={}){
  canvas.width=canvas.height=FACE_SIZE;
  const ctx=canvas.getContext('2d',{willReadFrequently:true}),m=photoTransform(eyes,adjust);
@@ -33,4 +44,10 @@ export function paintFace(canvas,image,eyes,adjust={}){
  mask.addColorStop(0,'#fff');mask.addColorStop(.55,'#fff');mask.addColorStop(1,'#fff0');
  ctx.fillStyle=mask;ctx.fillRect(0,0,FACE_SIZE,FACE_SIZE);ctx.globalCompositeOperation='source-over';
  return canvas;
+}
+
+// Preserve the entire image, its aspect ratio and transparency; no landmark alignment.
+export function paintWholePhoto(canvas,image){
+ const scale=Math.min(1,1024/Math.max(image.width,image.height));canvas.width=Math.max(1,Math.round(image.width*scale));canvas.height=Math.max(1,Math.round(image.height*scale));
+ const ctx=canvas.getContext('2d');ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(image,0,0,canvas.width,canvas.height);return canvas;
 }
