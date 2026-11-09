@@ -37,15 +37,15 @@ test('사용자가 제공한 Bithumb 두 서체를 올바른 MIME으로 제공�
  for(const kind of ['Basic','Original']){const response=await fetch(base+'/assets/fonts/BithumbGothic'+kind+'.otf');assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'font/otf');const bytes=new Uint8Array(await response.arrayBuffer());assert.equal(new TextDecoder().decode(bytes.slice(0,4)),'OTTO');assert.ok(bytes.length>400000);}
  const css=await fetch(base+'/assets/fonts/bithumb.css');assert.match(css.headers.get('content-type'),/text\/css/);const text=await css.text();assert.match(text,/Bithumb Basic/);assert.match(text,/Bithumb Original/);const embedded=[...text.matchAll(/data:font\/otf;base64,([^"\)]+)/g)];assert.equal(embedded.length,2);for(const match of embedded)assert.equal(Buffer.from(match[1],'base64').toString('ascii',0,4),'OTTO');
 }));
-test('공개 진입은 점검 화면이고 로컬 주소는 3D 다회 면접을 연다',()=>withServer(async(base,fetch)=>{
- for(const route of ['/','/interview.html']){const text=await(await fetch(base+route)).text();assert.match(text,/서버 오류 수정중입니다/);assert.doesNotMatch(text,/<script/);}
+test('공개 주소는 브라우저 면접이고 로컬 주소는 서버 다회 면접을 연다',()=>withServer(async(base,fetch)=>{
+ for(const route of ['/','/interview.html']){const text=await(await fetch(base+route)).text();assert.match(text,/data-transport="browser"/);assert.match(text,/public-interview.js/);assert.doesNotMatch(text,/서버 오류 수정중입니다/);}
  const local=await fetch(base+'/local/');assert.equal(local.status,200);const html=await local.text();
  assert.match(html,/data-experience="conversation"/);assert.match(html,/<base href="\/">/);assert.match(html,/id="stage"/);assert.match(html,/id="answer-form"/);assert.match(html,/src="\/scene.js"/);assert.match(html,/src="\/interview.js"/);
  for(const route of ['/local/stage.js','/assets/demo/camera-drama.js','/local/conversation.css'])assert.equal((await fetch(base+route)).status,200);
 }));
-test('로컬 UI를 끄면 로컬 진입과 파일을 제공하지 않는다',()=>withServer(async(base,fetch)=>{
- for(const route of ['/local/','/local/stage.js','/local/conversation.css','/local/dialogue-shooting.js'])assert.equal((await fetch(base+route)).status,404);
- assert.equal((await fetch(base+'/')).status,200);
+test('로컬 UI를 끄면 로컬 진입만 닫고 공개 체험의 실행 자원은 제공한다',()=>withServer(async(base,fetch)=>{
+ for(const route of ['/local/','/local/room.html','/local/dialogue-shooting.js'])assert.equal((await fetch(base+route)).status,404);
+ assert.equal((await fetch(base+'/')).status,200);for(const route of ['/local/stage.js','/local/conversation.css','/local/sound.js'])assert.equal((await fetch(base+route)).status,200);
 },{localUI:false}));
 test('정적 비밀 파일·서버 소스·교차출처·과대 본문·잘못된 JSON을 차단한다',()=>withServer(async (base,fetch)=>{
  for(const file of ['/.env','/.env.example','/interview-service.js','/server.mjs','/handoff/MANIFEST.json','/package.json','/vendor/../server.mjs'])assert.equal((await fetch(base+file)).status,404,file);

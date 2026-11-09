@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-10",
+  "scope": "Public maintenance removal and static Vercel interview demo",
+  "public_mode": "Authored browser-only demo; AI unused; submitted answers are in page memory only",
+  "local_mode": "Existing localhost AI/API mode preserved",
+  "build": "npm run build, framework:null, outputDirectory:dist",
+  "checks": {
+    "syntax": "npm run check exit0",
+    "tests": "npm test112passed0failed",
+    "lifecycle": "3scenario groups passed",
+    "dependencies": "all app JS imports resolve in dist; no external or Node imports",
+    "output": "public entries working; server/.env/docs/source data excluded; nonempty custom build directory protected",
+    "review": "independent read-only review found no remaining major issues"
+  },
+  "limits": [
+    "Remote GitHub DNS unavailable from tool runtime",
+    "Browser access host unavailable; actual Vercel deployment/WebGL/device audio unverified"
+  ],
+  "sources": [
+    "https://vercel.com/docs/project-configuration/vercel-json"
+  ]
+}

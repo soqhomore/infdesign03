@@ -62,7 +62,7 @@
     "nested_sns_archive_integrity": "passed",
     "core_data_json_parse": "passed",
     "syntax_check": "npm run check: passed 2026-11-10",
-    "state_tests": "npm test:106passed0failed2026-11-10",
+    "state_tests": "npm test: 112 passed, 0 failed (2026-11-10)",
     "browser": "이전 3D 수동 검증은 flow-verification.json. 새 대화·면접관·사진 교체 화면은 환경 제약으로 실제 브라우저 미검증.",
     "work_reasons": {
       "collection_date": "2026-11-09",
@@ -75,14 +75,15 @@
     "dialogue": "별도 대화 시제품 구현. 실제 HTTP 처리기/DOM/음성 대역 검증. live API·실제 화면·실음성은 미검증: dialogue-verification.json 참고.",
     "characters": "기본 회백색 가면 / 카피바라 입체 마스크 / 사용자 사진 곡면 가면 중 면접관별 선택. 기본값 basic. 로컬 사진 전환/초기화/텍스처 해제/대기 취소/반복 적용 알파 회귀 검증. CPU 형상과 독립 리뷰 수행. 실제 WebGL/UI 외관 미검증: face-modes-verification.json",
     "performance": "정지 화면/고정 그림자 재사용·인물 175→111 draw calls·사진 전송량 88% 감소·병렬 로딩·ETag. 실제 FPS/로딩 시간 미측정: performance-verification.json",
-    "maintenance": "루트 및 interview.html은 점검 문구 한 개만 표시, script 없음. 원래 HTML은 references/app-templates에 보존. 구문 검사 및 테스트 29개 통과. 실제 브라우저 미검증.",
+    "maintenance": "Superseded by user approval: index/interview now public browser demo; local API mode preserved. public-release-verification.json",
     "local_flow": "로컬 /local/에서 기존 3D와 다회 대화 연결. 4175 서버 리스닝 확인. HTTP 처리기/클라이언트/장면 대역 검증. 실제 WebGL/마이크/TTS/API 품질 미검증: local-flow-verification.json",
     "character_rebuild": "추가 다운로드 없이 기존 CC0 전체 인체로 가운데 착석 몸체/의상 재구성. 경계 연결·패널 내부 간격·칼라·피부색 보정. CPU 정면/측면, 독립 리뷰와 테스트 통과; 실제 WebGL 미검증: offline-character-verification.json",
     "interviewer_motion": "세 면접관이 지원자 home 위치 주시, 독립 간헐 소동작/중앙 감정 자세 합성. changed pose만 최대24fps 갱신 및 정지 프레임 재사용. reduced-motion/얼굴 편집 일시정지. CPU 시선/시간 테스트와 독립 리뷰 완료. 실제 WebGL/hidden 이벤트 통합 미검증: interviewer-motion-verification.json",
     "happiness_drama": "행복버튼 확정 전환 시 CSS 충격/클릭 위치 잔상/고리. 다음 반박부터 4단계 얼굴 열감/유한 부들거림, 세 얼굴 유형/초기화/편집 정지/reduced-motion 유지. hidden 버튼 rect 회귀 RED→GREEN 포함 53테스트 통과, CPU 색/형상 및 독립 리뷰. 실제 WebGL/CSS 외관 미검증: happiness-drama-verification.json",
     "dialogue_shooting": "사용자 Bithumb ZIP/OTF 보존·내용 대조, Basic→Original 전환 및 native Canvas 글자 확인. 대사 전체 마디 큐/Three Raycaster/32삼각형 배치/수명·대사 교체·입력 보존 검증. 독립 리뷰 2건 보완. WebGL/실제 UI/라이브 HTTP는 미검증: dialogue-shooting-verification.json",
     "life_ending": "64 tests passed; source/provenance, Three geometry/disposal, modal lifecycle/pause regression and handler routes. Headless Chrome SIGABRT; actual WebGL/CSS unverified. life-ending-verification.json",
-    "integrated_polish": "Bug, assignment, 3D camera/body, UI/bedroom review and106tests; lifecycle smoke3groups; WebGL/audio unverified. integrated-polish-verification.json and docs/reviews/2026-11-10-integrated-polish.md"
+    "integrated_polish": "Bug, assignment, 3D camera/body, UI/bedroom review and106tests; lifecycle smoke3groups; WebGL/audio unverified. integrated-polish-verification.json and docs/reviews/2026-11-10-integrated-polish.md",
+    "public_release": "npm run build/check,112tests,lifecycle3scenarios,static dependency resolution and independent review passed. Remote deployment unverified: GitHub DNS/browser unavailable."
   },
   "missing_originals": [
     {
@@ -106,8 +107,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 50,
-      "sha256": "03cdbfd61491d0b7f724851db5c90d8bed6267b7f3487beac5394a9ecd9e5da0"
+      "bytes": 65,
+      "sha256": "a241c8391837ac4791c037fac6fb8f003b406236a8328f8080cb422c99178b40"
     },
     {
       "path": "AGENTS.md",
@@ -116,13 +117,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 62683,
-      "sha256": "220050f2522e6a988c43a2760778ba77def1cd4995592b0fdb9b392eed889fb3"
+      "bytes": 64973,
+      "sha256": "49fdf023a0ce586081ee86d2000c130b54b394059d50e92ea165966db801de4c"
     },
     {
       "path": "README.md",
-      "bytes": 56949,
-      "sha256": "90cf4b02c2a941fc9695f28769144fecd35cd8fd969521c5a8124fa66c297948"
+      "bytes": 59239,
+      "sha256": "0b6282264721e74166fe1437ac9dbdc8c3a35aa9848c6e67ada75ca003a4f7b5"
     },
     {
       "path": "assets/brick-ao.jpg",
@@ -406,13 +407,13 @@
     },
     {
       "path": "handoff/DATA_INDEX.md",
-      "bytes": 8298,
-      "sha256": "601dc1a391df3af8531eb773331f534a1190560699f64e104d11a5d56cde9400"
+      "bytes": 8803,
+      "sha256": "2eaead9f3409fe77876d2d26166c28f40ffa2d81f6cac3ffb731a772847ade74"
     },
     {
       "path": "handoff/PROJECT_CONTEXT.md",
-      "bytes": 47771,
-      "sha256": "2428e19a26ea41bafbe5612dcc845c1f84294542ce95fed20d0ab4f838b780bc"
+      "bytes": 50061,
+      "sha256": "6672b03567647921f6183b0a270e079b5df0d9d2db4dd011b224936f27d7f10b"
     },
     {
       "path": "handoff/data/life-on-hold/SNS_검색목록.csv",
@@ -801,18 +802,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 596,
-      "sha256": "0b7a9ed093e45fa3e69d5578fe6fcd006baa9f85ab3e6c654e99e823b31a1767"
+      "bytes": 6095,
+      "sha256": "133b7237853db2e1eea9a26b65917df3e1bf6858d60269388ddd0fe736959033"
     },
     {
       "path": "interview-client.test.js",
-      "bytes": 12153,
-      "sha256": "df3824ebc6d8e23f424241be4b23e290d4c36da5e18a61323e2555a676295892"
+      "bytes": 13208,
+      "sha256": "a7d7a7b4fb864045ffd4e4f870fcef0d868f39cdda395dcdaac49f3f25c9ffbe"
     },
     {
       "path": "interview-service.js",
-      "bytes": 11187,
-      "sha256": "ee5c888aae86fdc17d7c059b76f389b7557ddec1e4af15cdee7735e868149cf1"
+      "bytes": 8512,
+      "sha256": "5ab4778598caf916742b7be63f0acdbead82095888a9ae6d495ee0167a7d8b83"
     },
     {
       "path": "interview.css",
@@ -821,13 +822,13 @@
     },
     {
       "path": "interview.html",
-      "bytes": 596,
-      "sha256": "0b7a9ed093e45fa3e69d5578fe6fcd006baa9f85ab3e6c654e99e823b31a1767"
+      "bytes": 6095,
+      "sha256": "133b7237853db2e1eea9a26b65917df3e1bf6858d60269388ddd0fe736959033"
     },
     {
       "path": "interview.js",
-      "bytes": 15566,
-      "sha256": "e4f52ae8a93421c65c332fa66fae7b39ea1ea230a81760ce0ff76212724e0f22"
+      "bytes": 16202,
+      "sha256": "1c717c9ababde4c350f58bb698632a966517c19f1ea9d66ef05ef8b0720f8f50"
     },
     {
       "path": "interview.test.js",
@@ -881,8 +882,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 2300,
-      "sha256": "39fd655c0d34160430c31d2c6b0fe85c8bf6a8c3ca3f9584e2e363d0bc6ba8ed"
+      "bytes": 2557,
+      "sha256": "b26b90b40aa9a8be041425734decd0718728416fbf283f91f53eee7558e6a330"
     },
     {
       "path": "performance-verification.json",
@@ -1031,13 +1032,13 @@
     },
     {
       "path": "server.mjs",
-      "bytes": 5908,
-      "sha256": "a85badf6b4f2890efacaaa9d5ca5b1f02c517c58a3864a3fdb971a5e97d12fb1"
+      "bytes": 6017,
+      "sha256": "62b2896fc02ec19dc9fe649b002ce9483eafef8a0e61e6f3e56605015cf6978b"
     },
     {
       "path": "server.test.js",
-      "bytes": 6777,
-      "sha256": "ad48c2d20d3ecbe1bcdc32786ca4823cb1bc8de59ee4d88d435a50c6a55baddb"
+      "bytes": 6975,
+      "sha256": "a0e78d108c1444979ae6cd65c87a6632fe67efd579324880762b1712decf8f33"
     },
     {
       "path": "style.css",
@@ -3943,6 +3944,51 @@
       "path": "docs/reviews/2026-11-10-integrated-polish.md",
       "bytes": 7167,
       "sha256": "d6d2abf6e1612133df8d2491898ba7a22f56cee47647e0453d0d30cb6e738cff"
+    },
+    {
+      "path": "assets/demo/interview-model.js",
+      "bytes": 2874,
+      "sha256": "7bc215e102555e39641be17bd2ebed4b25b5a047295553bb2544460d295099c1"
+    },
+    {
+      "path": "assets/demo/browser-interview.js",
+      "bytes": 3304,
+      "sha256": "120788a9e3462644b277160f01009aa2aabc322e7bc9c3983355cccb5e9baa32"
+    },
+    {
+      "path": "assets/demo/public-interview.js",
+      "bytes": 453,
+      "sha256": "83042d1e6dd469c617859baa75f7da9e1cb4f4173b02b2709300dc4124f65dda"
+    },
+    {
+      "path": "scripts/build-public.mjs",
+      "bytes": 2983,
+      "sha256": "e012fd40e0c27943496abd8f9b2be90311e820f75e34239befabcb468c754562"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 367,
+      "sha256": "1d649f993cebc3f85a8c04e2cd2e64cbc319f09868da715bc6d85c79b40edf16"
+    },
+    {
+      "path": "public-deployment.test.js",
+      "bytes": 5267,
+      "sha256": "817ace67c5a9897ff6ec127b77d34d728e471843a4362521a6ed1e86969047b6"
+    },
+    {
+      "path": "public-release-verification.json",
+      "bytes": 1007,
+      "sha256": "0a5d9471977aed82662230527780703827f5ea895f55a48082bc527b6461e8d0"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-public-release.md",
+      "bytes": 3455,
+      "sha256": "8c015391d77f4cba4c8d19f0744cd0dc24ce0a978867ce0c42e139853af249ee"
+    },
+    {
+      "path": "docs/reviews/2026-11-10-public-release.md",
+      "bytes": 2604,
+      "sha256": "c2ef622c4112743bd3bdebf4d681a85aa9725c2cadc8f2527c6e3f1b5f78d100"
     }
   ],
   "updated_date": "2026-11-10"

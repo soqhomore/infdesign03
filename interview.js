@@ -6,6 +6,7 @@ let presentationPaused = false;
 let pendingSpeech = null, activeSpeech = null, speechCleanup = () => {}, lastVoiceWarning = '';
 const synth = window.speechSynthesis;
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const browserTransport = window.__interviewTransport;
 
 function error(text = '') { $('error').textContent = text; }
 function publishState(impact=null){
@@ -80,6 +81,7 @@ function speak(text, retry = true, attempt = 0, preview = false) {
   synth.speak(utterance);
 }
 async function api(path, { method = 'GET', data, signal } = {}) {
+  if (browserTransport) return browserTransport.request(path, { method, data, signal });
   const res = await fetch('/api/interview/' + path, { method, signal, headers: data ? { 'Content-Type': 'application/json' } : {}, body: data ? JSON.stringify(data) : undefined });
   let value;
   try { value = await res.json(); } catch { throw Error('서버를 다시 실행하고 연결해 주세요.'); }
@@ -99,7 +101,7 @@ function render(impact=null) {
   if (!session) return;
   document.body.classList.toggle('angry', session.phase === 'angry' || (session.phase === 'done' && session.angryTurns > 0));
   $('line').textContent = session.line;
-  $('connection').textContent = session.mode === 'ai' ? 'AI 연결' : '로컬 대사 시험';
+  $('connection').textContent = session.mode === 'ai' ? 'AI 연결' : browserTransport ? '준비된 대사' : '로컬 대사 시험';
   $('mode-label').textContent = session.mode === 'ai' ? 'AI 생성 대사 · 기기 음성' : '미리 작성한 대사 · AI 미사용';
   $('happiness').hidden = session.phase !== 'normal';
   $('answer-form').hidden = session.phase === 'done'; $('finished').hidden = session.phase !== 'done';
@@ -109,7 +111,7 @@ function render(impact=null) {
     const li = document.createElement('li'), who = document.createElement('small'), content = document.createElement('span');
     who.textContent = m.role === 'assistant' ? '면접관' : '나'; content.textContent = m.content; li.append(who, content); return li;
   }));
-  $('usage').textContent = session.mode === 'ai' ? `AI 요청 ${session.usage.requests}회 · 입력 ${session.usage.inputTokens} / 출력 ${session.usage.outputTokens} 토큰` : '로컬 규칙으로 대사를 선택합니다. 모델 품질을 시험하는 모드는 아니에요.';
+  $('usage').textContent = session.mode === 'ai' ? `AI 요청 ${session.usage.requests}회 · 입력 ${session.usage.inputTokens} / 출력 ${session.usage.outputTokens} 토큰` : browserTransport ? '미리 준비된 질문과 반응으로 진행합니다. AI를 사용하지 않습니다.' : '로컬 규칙으로 대사를 선택합니다. 모델 품질을 시험하는 모드는 아니에요.';
   controls();
   publishState(impact);
 }
@@ -194,7 +196,7 @@ async function end({ reset = false } = {}) {
   else { session = { ...old, phase: 'done', canReply: false, canBreak: false }; render(); }
 }
 $('end').onclick = () => end(); $('again').onclick = () => end({ reset: true });
-addEventListener('pagehide', () => { stopMic(); stopSpeech(); if (session) fetch(`/api/interview/sessions/${session.id}`, { method: 'DELETE', keepalive: true }).catch(() => {}); });
+addEventListener('pagehide', () => { stopMic(); stopSpeech(); if (session) {if(browserTransport)api(`sessions/${session.id}`,{method:'DELETE'}).catch(()=>{});else fetch(`/api/interview/sessions/${session.id}`, { method: 'DELETE', keepalive: true }).catch(() => {});} });
 function pauseSpeech() {
   if (activeSpeech && !activeSpeech.preview) pendingSpeech = { text: activeSpeech.text, generation };
   stopMic(); stopSpeech(false);
@@ -211,7 +213,8 @@ document.addEventListener('interview:resume',event=>{presentationPaused=!!event.
 async function configure() {
   try {
     const config = await api('config'); window.__interviewConfig=config; window.__interviewJourney?.configure?.(config); $('start-ai').disabled = !config.aiAvailable; $('start-demo').disabled = false;
-    $('setup-note').textContent = config.aiAvailable ? '말하거나 입력해서 답할 수 있어요. AI 면접의 답변은 OpenAI로 전송됩니다.' : 'AI 키가 아직 없어요. 로컬 대사로 흐름을 먼저 시험할 수 있습니다.';
+    if(config.browserOnly){$('start-ai').hidden=true;$('start-demo').textContent='준비된 대사로 들어가기';}
+    $('setup-note').textContent = config.aiAvailable ? '말하거나 입력해서 답할 수 있어요. AI 면접의 답변은 OpenAI로 전송됩니다.' : config.browserOnly ? '공개 체험은 준비된 대사로 진행됩니다. 입력한 답변은 서버로 보내지 않습니다.' : 'AI 키가 아직 없어요. 로컬 대사로 흐름을 먼저 시험할 수 있습니다.';
   } catch { const message='서버에 연결하지 못했어요. 서버를 실행한 뒤 다시 시도해 주세요.';window.__interviewConfig={error:message};window.__interviewJourney?.configure?.(window.__interviewConfig);$('setup-note').textContent=message; }
 }
 configure();

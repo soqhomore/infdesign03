@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { createInterviewService, InterviewError } from './interview-service.js';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.jpg': 'image/jpeg', '.png': 'image/png', '.json': 'application/json', '.wasm': 'application/wasm', '.otf':'font/otf', '.mp3': 'audio/mpeg' };
-const publicFiles = new Set(['index.html', 'scene.js', 'game.js', 'flow.js', 'style.css', 'game.css', 'interview.html', 'interview.js', 'interview.css', 'characters.js', 'face-photo.js', 'face-editor.js', 'face-editor.css', 'render-policy.js']);
+const publicFiles = new Set(['index.html', 'scene.js', 'game.js', 'flow.js', 'style.css', 'game.css', 'interview.html', 'interview.js', 'interview.css', 'characters.js', 'face-photo.js', 'face-editor.js', 'face-editor.css', 'render-policy.js','local/stage.js','local/conversation.css','local/sound.js']);
 const localFiles=new Set(['local/room.html','local/stage.js','local/conversation.css','local/sound.js']);
 function json(res, status, value) {
   res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' });
@@ -68,6 +68,6 @@ export function createServer({ service = createInterviewService({ apiKey: proces
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const port = Number(process.env.PORT || 4173); const server = createServer();
-  server.listen(port, '127.0.0.1', () => console.log(`로컬 면접: http://127.0.0.1:${port}/local/\n점검 화면: http://127.0.0.1:${port}/`));
+  server.listen(port, '127.0.0.1', () => console.log(`로컬 AI·대사 면접: http://127.0.0.1:${port}/local/\n공개 체험: http://127.0.0.1:${port}/`));
   server.on('error', e => { console.error(e.code === 'EADDRINUSE' ? `포트 ${port}가 사용 중입니다. PORT=4174 npm start 로 실행하세요.` : e.message); process.exit(1); });
 }

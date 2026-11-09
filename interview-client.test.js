@@ -4,8 +4,9 @@ import vm from 'node:vm';
 import fs from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import { createInterviewService } from './interview-service.js';
+import {createBrowserInterview} from './assets/demo/browser-interview.js';
 
-async function client({local=false,speech=false,voices,beforeTurn=async()=>{},journey}={}) {
+async function client({local=false,browser=false,speech=false,voices,beforeTurn=async()=>{},journey}={}) {
  const service=createInterviewService();const html=await fs.readFile(new URL(local?'./local/room.html':'./references/app-templates/interview.html',import.meta.url),'utf8');
  class Element {
   constructor(){this.value='';this.textContent='';this.disabled=false;this.hidden=false;this.children=[];this.attributes={};this.listeners={};this.classes=new Set();this.classList={add:(c)=>this.classes.add(c),remove:(c)=>this.classes.delete(c),toggle:(c,on)=>on?this.classes.add(c):this.classes.delete(c)};}
@@ -17,7 +18,8 @@ async function client({local=false,speech=false,voices,beforeTurn=async()=>{},jo
  const synth={cancel(){},getVoices:()=>voices??(speech?[{lang:'ko-KR',name:'Yuna',localService:true}]:[]),speak(u){utterances.push(u);},addEventListener(type,fn){(speechListeners[type]??=new Set()).add(fn);},removeEventListener(type,fn){speechListeners[type]?.delete(fn);}};
  const document={body:new Element(),getElementById:id=>elements[id]??null,createElement:()=>new Element(),addEventListener(type,fn){(listeners[type]??=[]).push(fn);},dispatchEvent(e){events.push(e);for(const fn of listeners[e.type]||[])fn(e);}};
  let mic;class SpeechRecognition{constructor(){mic=this;}start(){}abort(){}}
- const ctx={document,setTimeout(fn){timers.set(++timerId,fn);return timerId;},clearTimeout(id){timers.delete(id);},CustomEvent:class{constructor(type,{detail}={}){this.type=type;this.detail=detail;}},window:{__interviewJourney:journey,SpeechRecognition,speechSynthesis:synth},SpeechSynthesisUtterance:class{constructor(text){this.text=text;}},AbortController,crypto:{randomUUID},addEventListener(){},fetch:async(url,init={})=>{
+ const ctx={document,setTimeout(fn){timers.set(++timerId,fn);return timerId;},clearTimeout(id){timers.delete(id);},CustomEvent:class{constructor(type,{detail}={}){this.type=type;this.detail=detail;}},window:{__interviewTransport:browser?createBrowserInterview():null,__interviewJourney:journey,SpeechRecognition,speechSynthesis:synth},SpeechSynthesisUtterance:class{constructor(text){this.text=text;}},AbortController,crypto:{randomUUID},addEventListener(){},fetch:async(url,init={})=>{
+  if(browser)throw Error('공개 체험에서 서버 요청이 발생했습니다.');
   const data=init.body?JSON.parse(init.body):{};let value;
   try {
    if(url.endsWith('/config'))value=service.config();
@@ -148,5 +150,14 @@ test('목소리 시험이 성공하면 이전 음성 오류만 지우고 다른 
   c.e['voice-test'].onclick();c.utterances.at(-1).onstart();assert.doesNotMatch(c.e.status.textContent,/차단/);
   c.e.status.textContent='확인한 뒤 답하기를 눌러 주세요.';c.utterances.at(-1).onend();
   assert.equal(c.e.status.textContent,'확인한 뒤 답하기를 눌러 주세요.');
+ }finally{c.service.dispose();}
+});
+test('공개 클라이언트는 서버 연결 없이 입장·다회 대화·행복버튼·종료를 진행한다',async()=>{
+ const c=await client({local:true,browser:true});try{
+  await c.e['start-demo'].onclick();assert.match(c.e.line.textContent,/지원한 이유/);
+  await c.submit('비전에 공감했어요.');await c.submit('고객을 응대했어요.');assert.equal(c.e.happiness.disabled,false);
+  await c.e.happiness.onclick();await c.submit('돈 벌려고요.');assert.match(c.e.line.textContent,/월급/);
+  await c.submit('대가는 받아야죠.');await c.submit('제 말도 들어 주세요.');await c.submit('제 생활이 있어요.');
+  assert.equal(c.e.finished.hidden,false);assert.equal(c.events.filter(e=>e.type==='interview:state').at(-1).detail.phase,'done');
  }finally{c.service.dispose();}
 });

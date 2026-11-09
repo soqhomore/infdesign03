@@ -1,5 +1,17 @@
 # 행복버튼 MVP · CLI 인계
 
+## 공개 점검 해제·Vercel 체험 연결 · 2026-11-10 최신
+
+사용자가 공개 주소의 점검 화면을 해제하고 게임을 연결하도록 승인했다. 이전의 공개 점검 화면 유지 지침은 이번 요청으로 대체된다. index.html과 interview.html은 현재 3D 면접 여정으로 교체했다. local/room.html을 원본으로 npm run build가 공개 진입점과 dist 산출물을 생성한다.
+
+기존 Node API는 로컬 전용이고 메모리 세션에 의존한다. 구현 선택으로 공개 버전은 기존 준비 대사 규칙을 브라우저에서 실행한다. 대사 규칙은 assets/demo/interview-model.js로 추출해 로컬/공개 버전이 공유한다. 공개 버전은 AI 미사용·준비 대사임을 안내하며 답변을 브라우저 메모리에만 두고 서버나 AI로 전송하지 않는다. 음성 인식의 브라우저 서비스 전송 가능성과 기기 TTS는 기존과 같다. 로컬 /local/의 AI/API 모드는 유지한다. 새 유료 서비스나 공개 AI API는 도입하지 않았다.
+
+vercel.json은 Other 프레임워크와 npm run build, 출력 dist를 명시한다. 공개 /, /interview.html, 정적 배포의 /local/·/local/room.html에서 같은 공개 체험을 시작한다. 실행 파일·assets·vendor만 복사하고 서버 소스·.env·node_modules·기획/원본 자료는 배포 폴더에 넣지 않는다. dist와 .vercel은 Git에서 제외한다.
+
+검증: npm run build, npm run check 및 npm test 전체 112개 통과. 준비 대사 서버와 공개 엔진의 다회 대화 일치, 공개 클라이언트의 서버 요청 없는 종료, 중복 요청/만료/취소/입력 검증, 공개 진입점/비공개 파일 제외/출력 폴더 보호와 실행 의존 경로를 검사했다. 기존 여정 lifecycle 3시나리오도 통과했고 독립 읽기 전용 리뷰에서 중대한 오류를 찾지 못했다.
+
+현재 환경에서 GitHub DNS와 브라우저 접근 호스트가 연결되지 않아 원격 업로드·Vercel 빌드·실제 WebGL 화면은 확인하지 못했다. 배포 완료로 간주하지 않는다. GitHub 푸시와 Vercel 빌드 완료 뒤 실제 사이트를 확인해야 한다. 상세 기록: docs/reviews/2026-11-10-public-release.md 및 public-release-verification.json.
+
 ## 통합 버그 점검·3D 반응·UI 마감 · 2026-11-10 최신
 
 사용자가 자리를 비운 동안 버그 수정, 과제 적합성 검토, 행복버튼 이후 카메라·면접관 반응 강화, 3D/UI 마감을 순서대로 요청했다. 기존 /local/ 흐름과 공개 점검 화면은 유지하며 푸시·배포·유료 음성 연결은 하지 않았다.
