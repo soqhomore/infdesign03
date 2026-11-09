@@ -1,0 +1,1596 @@
+[
+  {
+    "candidate_index": 0,
+    "url": "https://www.reddit.com/r/Millennials/comments/1e7k6ns/you_ever_feel_like_youre_waiting_for_your_life_to/",
+    "title": "You ever feel like you're waiting for your life to start? : r/Millennials",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_000.json",
+    "visible_line_count": 645,
+    "reported_total_lines": 2477
+  },
+  {
+    "candidate_index": 0,
+    "url": "https://www.reddit.com/r/Millennials/comments/1e7k6ns/you_ever_feel_like_youre_waiting_for_your_life_to/",
+    "title": "You ever feel like you're waiting for your life to start? : r/Millennials",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 620,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_000_L620.json",
+    "visible_line_count": 656,
+    "reported_total_lines": 2477
+  },
+  {
+    "candidate_index": 1,
+    "url": "https://www.reddit.com/r/AskWomenOver30/comments/140u56t/does_anyone_else_feel_like_theyre_just_waiting/",
+    "title": "Does anyone else feel like they're just waiting for their life to ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_001.json",
+    "visible_line_count": 500,
+    "reported_total_lines": 1355
+  },
+  {
+    "candidate_index": 1,
+    "url": "https://www.reddit.com/r/AskWomenOver30/comments/140u56t/does_anyone_else_feel_like_theyre_just_waiting/",
+    "title": "Does anyone else feel like they're just waiting for their life to ...",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 620,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_001_L620.json",
+    "visible_line_count": 450,
+    "reported_total_lines": 1355
+  },
+  {
+    "candidate_index": 2,
+    "url": "https://www.reddit.com/r/Life/comments/1ulpanc/i_feel_like_im_always_waiting_for_my_life_to/",
+    "title": "I feel like I'm always waiting for my life to \"start,\" but the ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_002.json",
+    "visible_line_count": 281,
+    "reported_total_lines": 626
+  },
+  {
+    "candidate_index": 3,
+    "url": "https://www.reddit.com/r/Stoicism/comments/13i7q11/i_dont_know_what_im_waiting_for_in_life_to_start/",
+    "title": "I don't know what I'm waiting for in life to start something but I'm ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_003.json",
+    "visible_line_count": 490,
+    "reported_total_lines": 850
+  },
+  {
+    "candidate_index": 4,
+    "url": "https://www.reddit.com/r/getdisciplined/comments/1patyic/i_quit_waiting_for_my_life_to_start_and/",
+    "title": "I quit waiting for my life to start and everything shifted - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_004.json",
+    "visible_line_count": 368,
+    "reported_total_lines": 428
+  },
+  {
+    "candidate_index": 5,
+    "url": "https://www.reddit.com/r/self/comments/1wtvikd/i_feel_like_im_constantly_waiting_for_my_life_to/",
+    "title": "I feel like I'm constantly waiting for my life to begin, I don't know ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_005.json"
+  },
+  {
+    "candidate_index": 6,
+    "url": "https://www.reddit.com/r/CasualConversation/comments/vxwl07/anyone_else_just_waiting_for_life_to_start/",
+    "title": "Anyone else just waiting for life to start? : r/CasualConversation",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_006.json",
+    "visible_line_count": 363,
+    "reported_total_lines": 661
+  },
+  {
+    "candidate_index": 7,
+    "url": "https://www.reddit.com/r/offmychest/comments/96nsg4/i_feel_like_im_still_waiting_for_my_life_to_start/",
+    "title": "I feel like I'm still waiting for my life to start : r/offmychest - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_007.json",
+    "visible_line_count": 67,
+    "reported_total_lines": 347
+  },
+  {
+    "candidate_index": 8,
+    "url": "https://www.reddit.com/r/Life/comments/1syqiqd/i_think_im_always_waiting_for_life_to_start/",
+    "title": "I think I'm always waiting for life to “start” : r/Life - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_008.json",
+    "visible_line_count": 180,
+    "reported_total_lines": 608
+  },
+  {
+    "candidate_index": 9,
+    "url": "https://www.reddit.com/r/findapath/comments/1mdw7dc/im_31_still_waiting_to_start_living_my_life/",
+    "title": "I'm 31, Still Waiting to Start Living My Life : r/findapath - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_009.json",
+    "visible_line_count": 663,
+    "reported_total_lines": 1053
+  },
+  {
+    "candidate_index": 10,
+    "url": "https://www.reddit.com/r/jobhunting/comments/1xmqhzz/how_do_you_stop_putting_your_life_on_hold_while/",
+    "title": "How do you stop putting your life on hold while job hunting?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_010.json"
+  },
+  {
+    "candidate_index": 11,
+    "url": "https://www.reddit.com/r/self/comments/1h16lkl/putting_your_life_on_hold/",
+    "title": "Putting your life on hold? : r/self - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_011.json",
+    "visible_line_count": 88,
+    "reported_total_lines": 399
+  },
+  {
+    "candidate_index": 12,
+    "url": "https://www.reddit.com/r/expats/comments/1dzzmfl/feeling_like_youre_putting_your_life_on_hold/",
+    "title": "Feeling like you're putting your life on hold? : r/expats - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_012.json",
+    "visible_line_count": 445,
+    "reported_total_lines": 502
+  },
+  {
+    "candidate_index": 14,
+    "url": "https://www.reddit.com/r/LifeAdvice/comments/1x62wu7/how_do_i_stop_putting_my_life_on_hold_until_i_get/",
+    "title": "How do I stop putting my life on hold until I get a job? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_014.json"
+  },
+  {
+    "candidate_index": 16,
+    "url": "https://www.reddit.com/r/GradSchool/comments/vxcoow/does_anyone_feel_like_they_are_putting_their_life/",
+    "title": "Does anyone feel like they are putting their life on hold for grad ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_016.json",
+    "visible_line_count": 505,
+    "reported_total_lines": 958
+  },
+  {
+    "candidate_index": 16,
+    "url": "https://www.reddit.com/r/GradSchool/comments/vxcoow/does_anyone_feel_like_they_are_putting_their_life/",
+    "title": "Does anyone feel like they are putting their life on hold for grad ...",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 600,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_016_L600.json",
+    "visible_line_count": 284,
+    "reported_total_lines": 958
+  },
+  {
+    "candidate_index": 17,
+    "url": "https://www.reddit.com/r/PhD/comments/1boypgs/is_your_life_on_hold/",
+    "title": "Is your life on hold? : r/PhD - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_017.json",
+    "visible_line_count": 581,
+    "reported_total_lines": 1640
+  },
+  {
+    "candidate_index": 17,
+    "url": "https://www.reddit.com/r/PhD/comments/1boypgs/is_your_life_on_hold/",
+    "title": "Is your life on hold? : r/PhD - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 560,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_017_L560.json",
+    "visible_line_count": 582,
+    "reported_total_lines": 1640
+  },
+  {
+    "candidate_index": 18,
+    "url": "https://www.reddit.com/r/GradSchool/comments/8m31jg/another_reminder_that_graduate_school_is_not/",
+    "title": "Another reminder that graduate school is not worth your life.",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_018.json",
+    "visible_line_count": 513,
+    "reported_total_lines": 1008
+  },
+  {
+    "candidate_index": 19,
+    "url": "https://www.reddit.com/r/GradSchool/comments/n9b858/cohort_graduated_today_and_im_left_behind/",
+    "title": "Cohort graduated today and I'm left behind - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_019.json",
+    "visible_line_count": 124,
+    "reported_total_lines": 407
+  },
+  {
+    "candidate_index": 20,
+    "url": "https://www.reddit.com/r/premed/comments/17mwco7/life_on_hold/",
+    "title": "“Life on hold”…? : r/premed - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_020.json",
+    "visible_line_count": 396,
+    "reported_total_lines": 805
+  },
+  {
+    "candidate_index": 21,
+    "url": "https://www.reddit.com/r/GradSchool/comments/u6vn8d/phd_graduates_does_life_get_better_after_leaving/",
+    "title": "PhD graduates: does life get better after leaving grad school?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_021.json",
+    "visible_line_count": 578,
+    "reported_total_lines": 635
+  },
+  {
+    "candidate_index": 22,
+    "url": "https://www.reddit.com/r/GradSchool/comments/bo75u4/my_wife_and_i_just_walked_for_our_phds_my/",
+    "title": "My wife and I just walked for our PhDs. My thoughts on starting ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_022.json",
+    "visible_line_count": 656,
+    "reported_total_lines": 707
+  },
+  {
+    "candidate_index": 23,
+    "url": "https://www.reddit.com/r/loseit/comments/7yxkh6/nsv_i_stopped_putting_my_life_on_hold_until_after/",
+    "title": "I stopped putting my life on hold until \"after I lose the weight\".",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_023.json",
+    "visible_line_count": 617,
+    "reported_total_lines": 901
+  },
+  {
+    "candidate_index": 23,
+    "url": "https://www.reddit.com/r/loseit/comments/7yxkh6/nsv_i_stopped_putting_my_life_on_hold_until_after/",
+    "title": "I stopped putting my life on hold until \"after I lose the weight\".",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 600,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_023_L600.json",
+    "visible_line_count": 401,
+    "reported_total_lines": 901
+  },
+  {
+    "candidate_index": 24,
+    "url": "https://www.reddit.com/r/loseit/comments/r59463/i_feel_like_i_cant_move_on_with_my_life_until_i/",
+    "title": "I feel like I can't move on with my life until I lose weight ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_024.json",
+    "visible_line_count": 527,
+    "reported_total_lines": 2016
+  },
+  {
+    "candidate_index": 25,
+    "url": "https://www.reddit.com/r/loseit/comments/20lxh5/i_put_my_life_on_hold_to_lose_weight_100_lbs_1_yr/",
+    "title": "I put my life on hold to lose weight (100 lbs, 1 yr) and I ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_025.json",
+    "visible_line_count": 456,
+    "reported_total_lines": 766
+  },
+  {
+    "candidate_index": 26,
+    "url": "https://www.reddit.com/r/loseit/comments/9cfrpl/its_okay_to_put_dating_on_hold_while_you_lose/",
+    "title": "It's okay to put dating on hold while you lose weight - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_026.json",
+    "visible_line_count": 541,
+    "reported_total_lines": 795
+  },
+  {
+    "candidate_index": 27,
+    "url": "https://www.reddit.com/r/loseit/comments/8h6h51/cant_lose_weight_without_putting_life_on_hold/",
+    "title": "can't lose weight without putting life on hold? : r/loseit - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_027.json",
+    "visible_line_count": 622,
+    "reported_total_lines": 741
+  },
+  {
+    "candidate_index": 28,
+    "url": "https://www.reddit.com/r/loseit/comments/1qzs594/fixing_avoiding_life_until_youre_slimmer/",
+    "title": "Fixing avoiding life until you're slimmer? : r/loseit - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_028.json",
+    "visible_line_count": 574,
+    "reported_total_lines": 600
+  },
+  {
+    "candidate_index": 29,
+    "url": "https://www.reddit.com/r/loseit/comments/isnuq4/stop_putting_your_life_on_hold_until_you_achieve/",
+    "title": "Stop putting your life on hold until you achieve weight X - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_029.json",
+    "visible_line_count": 614,
+    "reported_total_lines": 1593
+  },
+  {
+    "candidate_index": 30,
+    "url": "https://www.reddit.com/r/loseit/comments/40kptw/feels_like_my_life_is_on_pause_while_i_lose_weight/",
+    "title": "Feels like my life is on pause while I lose weight. : r/loseit - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_030.json",
+    "visible_line_count": 561,
+    "reported_total_lines": 663
+  },
+  {
+    "candidate_index": 31,
+    "url": "https://www.reddit.com/r/loseit/comments/sin7o2/ladies_of_loseit_did_your_life_change_after/",
+    "title": "Ladies of LoseIt, did your life change after losing weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_031.json",
+    "visible_line_count": 517,
+    "reported_total_lines": 2162
+  },
+  {
+    "candidate_index": 32,
+    "url": "https://www.reddit.com/r/loseit/comments/1gfaa7i/how_do_you_not_put_things_off_until_the_weight_is/",
+    "title": "How do you not put things off until the weight is lost? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_032.json",
+    "visible_line_count": 555,
+    "reported_total_lines": 611
+  },
+  {
+    "candidate_index": 33,
+    "url": "https://www.reddit.com/r/loseit/comments/1cl9p8w/will_i_have_an_easier_time_dating_after_i_lose/",
+    "title": "Will I have an easier time dating after I lose weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_033.json",
+    "visible_line_count": 653,
+    "reported_total_lines": 653
+  },
+  {
+    "candidate_index": 34,
+    "url": "https://www.reddit.com/r/loseit/comments/1m8g89x/can_online_dating_improve_after_i_lose_weight/",
+    "title": "Can online dating improve after I lose weight? : r/loseit - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_034.json",
+    "visible_line_count": 436,
+    "reported_total_lines": 493
+  },
+  {
+    "candidate_index": 35,
+    "url": "https://www.reddit.com/r/AskWomenOver30/comments/1rrjdz9/dating_while_losing_weight/",
+    "title": "Dating while losing weight : r/AskWomenOver30 - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_035.json",
+    "visible_line_count": 675,
+    "reported_total_lines": 709
+  },
+  {
+    "candidate_index": 36,
+    "url": "https://www.reddit.com/r/loseit/comments/1b35t9c/im_putting_off_dating_until_i_lose_weight_by_that/",
+    "title": "I'm putting off dating until I lose weight. By that point I'll be 26 ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_036.json",
+    "visible_line_count": 524,
+    "reported_total_lines": 2237
+  },
+  {
+    "candidate_index": 37,
+    "url": "https://www.reddit.com/r/PlusSize/comments/1q2t8to/i_feel_like_ill_only_find_true_love_after_i_lose/",
+    "title": "I feel like I'll only find true love after I lose weight - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_037.json",
+    "visible_line_count": 425,
+    "reported_total_lines": 733
+  },
+  {
+    "candidate_index": 38,
+    "url": "https://www.reddit.com/r/Zepbound/comments/1x6lp4q/has_anyone_been_on_dating_apps_throughout_your/",
+    "title": "Has anyone been on dating apps throughout your weight loss ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_038.json",
+    "visible_line_count": 128,
+    "reported_total_lines": 396
+  },
+  {
+    "candidate_index": 39,
+    "url": "https://www.reddit.com/r/dating_advice/comments/7wc280/advice_on_asking_our_girls_now_or_after_i_lose/",
+    "title": "Advice on asking our girls: Now or after I lose weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_039.json",
+    "visible_line_count": 681,
+    "reported_total_lines": 681
+  },
+  {
+    "candidate_index": 40,
+    "url": "https://www.reddit.com/r/dating/comments/1uegqay/will_losing_weight_help_please_read_whole_post/",
+    "title": "Will losing weight help? Please read whole post : r/dating - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_040.json",
+    "visible_line_count": 588,
+    "reported_total_lines": 1468
+  },
+  {
+    "candidate_index": 41,
+    "url": "https://www.reddit.com/r/I_DONT_LIKE/comments/1nfx8r0/idl_how_losing_weight_as_a_woman_instantly_makes/",
+    "title": "IDL how losing weight as a woman instantly makes people ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_041.json"
+  },
+  {
+    "candidate_index": 42,
+    "url": "https://www.reddit.com/r/loseit/comments/v93ivf/does_anyone_else_feel_like_theyre_waiting_to_wear/",
+    "title": "Does anyone else feel like they're waiting to wear nice clothes ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_042.json",
+    "visible_line_count": 543,
+    "reported_total_lines": 1185
+  },
+  {
+    "candidate_index": 43,
+    "url": "https://www.reddit.com/r/loseit/comments/1ishk2h/be_honest_what_are_you_not_doing_until_you_lose/",
+    "title": "Be honest- what are you not doing until you lose weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_043.json",
+    "visible_line_count": 744,
+    "reported_total_lines": 2132
+  },
+  {
+    "candidate_index": 43,
+    "url": "https://www.reddit.com/r/loseit/comments/1ishk2h/be_honest_what_are_you_not_doing_until_you_lose/",
+    "title": "Be honest- what are you not doing until you lose weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 1400,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_043_L1400.json",
+    "visible_line_count": 592,
+    "reported_total_lines": 2132
+  },
+  {
+    "candidate_index": 43,
+    "url": "https://www.reddit.com/r/loseit/comments/1ishk2h/be_honest_what_are_you_not_doing_until_you_lose/",
+    "title": "Be honest- what are you not doing until you lose weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 2000,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_043_L2000.json",
+    "visible_line_count": 440,
+    "reported_total_lines": 2132
+  },
+  {
+    "candidate_index": 43,
+    "url": "https://www.reddit.com/r/loseit/comments/1ishk2h/be_honest_what_are_you_not_doing_until_you_lose/",
+    "title": "Be honest- what are you not doing until you lose weight? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 720,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_043_L720.json",
+    "visible_line_count": 784,
+    "reported_total_lines": 2132
+  },
+  {
+    "candidate_index": 44,
+    "url": "https://www.reddit.com/r/loseit/comments/lmcbyg/how_to_stop_putting_off_doing_things_until_i_lose/",
+    "title": "How to stop putting off doing things until I “lose weight”? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_044.json",
+    "visible_line_count": 352,
+    "reported_total_lines": 403
+  },
+  {
+    "candidate_index": 45,
+    "url": "https://www.reddit.com/r/loseit/comments/jtaq8b/please_buy_clothes_that_fit_you_where_you_are_not/",
+    "title": "Please, buy clothes that fit you where you are, not ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_045.json",
+    "visible_line_count": 586,
+    "reported_total_lines": 729
+  },
+  {
+    "candidate_index": 46,
+    "url": "https://www.reddit.com/r/declutter/comments/1g0y11b/clothes_i_will_fit_when_i_lose_weight/",
+    "title": "clothes I will fit when I lose weight. : r/declutter - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_046.json",
+    "visible_line_count": 674,
+    "reported_total_lines": 1433
+  },
+  {
+    "candidate_index": 47,
+    "url": "https://www.reddit.com/r/loseit/comments/5vcv5e/not_waiting_until_i_lose_weight_to_wear_makeup/",
+    "title": "(Not) Waiting until I lose weight to wear makeup, buy ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_047.json",
+    "visible_line_count": 346,
+    "reported_total_lines": 402
+  },
+  {
+    "candidate_index": 48,
+    "url": "https://www.reddit.com/r/sewing/comments/1lsxap8/being_overweight_is_stopping_me_from_sewing/",
+    "title": "Being overweight is stopping me from sewing. - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_048.json",
+    "visible_line_count": 544,
+    "reported_total_lines": 2331
+  },
+  {
+    "candidate_index": 49,
+    "url": "https://www.reddit.com/r/loseit/comments/ud28uj/anyone_else_have_clothes_ill_wear_at_my_gw/",
+    "title": "Anyone else have “clothes I'll wear at my GW” collection? : r/loseit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_049.json",
+    "visible_line_count": 555,
+    "reported_total_lines": 987
+  },
+  {
+    "candidate_index": 50,
+    "url": "https://www.reddit.com/r/loseit/comments/m9y1p7/just_bought_some_pants/",
+    "title": "Just bought some pants : r/loseit - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_050.json"
+  },
+  {
+    "candidate_index": 51,
+    "url": "https://www.reddit.com/r/loseit/comments/bajbhs/stop_waiting_to_try_to_look_good/",
+    "title": "Stop Waiting to Try to Look Good : r/loseit - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_051.json",
+    "visible_line_count": 451,
+    "reported_total_lines": 722
+  },
+  {
+    "candidate_index": 52,
+    "url": "https://www.reddit.com/r/GradSchool/comments/107tagy/returning_to_grad_school_later_in_life_is_it/",
+    "title": "Returning to grad school later in life - is it worth it? : r/GradSchool",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_052.json",
+    "visible_line_count": 507,
+    "reported_total_lines": 881
+  },
+  {
+    "candidate_index": 53,
+    "url": "https://www.reddit.com/r/OlderGenZ/comments/1l936pn/for_those_who_graduated_college_hows_life_been/",
+    "title": "For those who graduated college, how's life been for you ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_053.json",
+    "visible_line_count": 641,
+    "reported_total_lines": 1058
+  },
+  {
+    "candidate_index": 54,
+    "url": "https://www.reddit.com/r/needadvice/comments/m8zwfy/i_need_help_figuring_out_what_to_do_once_i/",
+    "title": "I need help figuring out what to do once I graduate from high ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_054.json",
+    "visible_line_count": 676,
+    "reported_total_lines": 747
+  },
+  {
+    "candidate_index": 55,
+    "url": "https://www.reddit.com/r/careerguidance/comments/pmr5oa/any_stories_of_people_going_to_university_later/",
+    "title": "Any stories of people going to University later in life? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_055.json",
+    "visible_line_count": 560,
+    "reported_total_lines": 959
+  },
+  {
+    "candidate_index": 56,
+    "url": "https://www.reddit.com/r/csMajors/comments/11w47ea/do_yall_enjoy_the_postgrad_life/",
+    "title": "Do y'all enjoy the post-grad life? : r/csMajors - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_056.json",
+    "visible_line_count": 861,
+    "reported_total_lines": 1178
+  },
+  {
+    "candidate_index": 57,
+    "url": "https://www.reddit.com/r/findapath/comments/1v7k7nu/ive_been_daydreaming_about_reentering_college_as/",
+    "title": "I've been daydreaming about re-entering college as a graduate ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_057.json"
+  },
+  {
+    "candidate_index": 58,
+    "url": "https://www.reddit.com/r/offmychest/comments/p181ya/its_so_depressing_to_think_that_life_after/",
+    "title": "It's so depressing to think that life after graduation is just ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_058.json",
+    "visible_line_count": 587,
+    "reported_total_lines": 2136
+  },
+  {
+    "candidate_index": 59,
+    "url": "https://www.reddit.com/r/college/comments/otx0ui/is_anyone_else_terrified_of_life_postcollege/",
+    "title": "Is anyone else terrified of life post-college? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_059.json",
+    "visible_line_count": 568,
+    "reported_total_lines": 953
+  },
+  {
+    "candidate_index": 60,
+    "url": "https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1f2ni29/does_anyone_else_feel_like_this_process_has_put/",
+    "title": "Does anyone else feel like this process has \"put your life ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_060.json",
+    "visible_line_count": 648,
+    "reported_total_lines": 648
+  },
+  {
+    "candidate_index": 61,
+    "url": "https://www.reddit.com/r/irishpersonalfinance/comments/1x2qpdd/ever_get_the_feeling_youre_putting_life_on_hold/",
+    "title": "Ever get the feeling you're putting life on hold until you can ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_061.json",
+    "visible_line_count": 535,
+    "reported_total_lines": 809
+  },
+  {
+    "candidate_index": 61,
+    "url": "https://www.reddit.com/r/irishpersonalfinance/comments/1x2qpdd/ever_get_the_feeling_youre_putting_life_on_hold/",
+    "title": "Ever get the feeling you're putting life on hold until you can ...",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 600,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_061_L600.json",
+    "visible_line_count": 410,
+    "reported_total_lines": 809
+  },
+  {
+    "candidate_index": 62,
+    "url": "https://www.reddit.com/r/Adulting/comments/1bgtw3c/life_on_hold_until_i_buy_a_house/",
+    "title": "Life on hold until I buy a house : r/Adulting",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_062.json",
+    "visible_line_count": 478,
+    "reported_total_lines": 478
+  },
+  {
+    "candidate_index": 63,
+    "url": "https://www.reddit.com/r/AskIreland/comments/1nqjj8i/has_anyone_stopped_putting_their_life_on_hold/",
+    "title": "Has anyone stopped putting their life on hold saving trying ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_063.json",
+    "visible_line_count": 561,
+    "reported_total_lines": 1021
+  },
+  {
+    "candidate_index": 64,
+    "url": "https://www.reddit.com/r/amiwrong/comments/1jhfito/am_i_wrong_for_not_putting_my_life_on_hold/",
+    "title": "Am I wrong for not putting my life on hold? : r/amiwrong",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_064.json",
+    "visible_line_count": 645,
+    "reported_total_lines": 1322
+  },
+  {
+    "candidate_index": 65,
+    "url": "https://www.reddit.com/r/australia/comments/1h6mcft/share_with_parents_or_rent_forever_i_have_put/",
+    "title": "'I have put life on hold while trying to buy a house' : r/australia",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_065.json",
+    "visible_line_count": 620,
+    "reported_total_lines": 1217
+  },
+  {
+    "candidate_index": 66,
+    "url": "https://www.reddit.com/r/StudentLoans/comments/ijn0jv/anyone_think_student_loans_hold_them_back_from/",
+    "title": "Anyone think student loans hold them back from life growth?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_066.json",
+    "visible_line_count": 532,
+    "reported_total_lines": 1183
+  },
+  {
+    "candidate_index": 67,
+    "url": "https://www.reddit.com/r/povertyfinancecanada/comments/1u7w7po/how_to_continue_to_live_life_while_in_debt/",
+    "title": "How to continue to live life while in debt? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_067.json",
+    "visible_line_count": 500,
+    "reported_total_lines": 1064
+  },
+  {
+    "candidate_index": 68,
+    "url": "https://www.reddit.com/r/MedSpouse/comments/ue7bsy/resident_spouses_tired_of_waiting_around_with/",
+    "title": "Resident Spouses - tired of waiting around with life on hold and ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_068.json",
+    "visible_line_count": 524,
+    "reported_total_lines": 581
+  },
+  {
+    "candidate_index": 69,
+    "url": "https://www.reddit.com/r/WhatShouldIDo/comments/1t92ny9/should_i_put_my_education_on_hold_to_help_pay_off/",
+    "title": "Should I put my education on hold to help pay off my parents ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_069.json"
+  },
+  {
+    "candidate_index": 70,
+    "url": "https://www.reddit.com/r/debtfree/comments/1sxhs5l/weird_feeling_after_becoming_debt_free/",
+    "title": "Weird feeling after becoming debt free : r/debtfree - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_070.json",
+    "visible_line_count": 226,
+    "reported_total_lines": 526
+  },
+  {
+    "candidate_index": 71,
+    "url": "https://www.reddit.com/r/datingoverforty/comments/1qu8ohs/debt_and_dating/",
+    "title": "Debt and Dating : r/datingoverforty - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_071.json",
+    "visible_line_count": 664,
+    "reported_total_lines": 1520
+  },
+  {
+    "candidate_index": 72,
+    "url": "https://www.reddit.com/r/MarriedAtFirstSight/comments/iiumvt/how_many_people_are_debt_free/",
+    "title": "How many people are debt free? : r/MarriedAtFirstSight - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_072.json",
+    "visible_line_count": 652,
+    "reported_total_lines": 1418
+  },
+  {
+    "candidate_index": 73,
+    "url": "https://www.reddit.com/r/physicaltherapy/comments/1sdjdiu/200k_in_sl_debt_but_not_stressed/",
+    "title": "200k in SL debt but not stressed : r/physicaltherapy - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_073.json",
+    "visible_line_count": 708,
+    "reported_total_lines": 836
+  },
+  {
+    "candidate_index": 74,
+    "url": "https://www.reddit.com/r/StudentLoans/comments/puc27f/when_people_say_they_will_always_be_in_debt_from/",
+    "title": "When people say they will always be in debt from student loans.",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_074.json",
+    "visible_line_count": 478,
+    "reported_total_lines": 854
+  },
+  {
+    "candidate_index": 75,
+    "url": "https://www.reddit.com/r/PhD/comments/1cx9sq7/does_being_in_a_phd_program_delay_your_adult_life/",
+    "title": "Does being in a PhD program delay your adult life and ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_075.json",
+    "visible_line_count": 527,
+    "reported_total_lines": 2304
+  },
+  {
+    "candidate_index": 75,
+    "url": "https://www.reddit.com/r/PhD/comments/1cx9sq7/does_being_in_a_phd_program_delay_your_adult_life/",
+    "title": "Does being in a PhD program delay your adult life and ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 580,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_075_L580.json",
+    "visible_line_count": 447,
+    "reported_total_lines": 2304
+  },
+  {
+    "candidate_index": 76,
+    "url": "https://www.reddit.com/r/PhD/comments/ja5i5y/do_you_feel_like_you_traded_away_part_of_your/",
+    "title": "Do you feel like you traded away part of your life for your PhD?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_076.json",
+    "visible_line_count": 336,
+    "reported_total_lines": 798
+  },
+  {
+    "candidate_index": 77,
+    "url": "https://www.reddit.com/r/PhD/comments/xw6c4l/any_older_phd_students_feeling_stuck_in_life/",
+    "title": "Any older PhD students feeling stuck in life? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_077.json",
+    "visible_line_count": 596,
+    "reported_total_lines": 692
+  },
+  {
+    "candidate_index": 78,
+    "url": "https://www.reddit.com/r/academia/comments/17fgj1s/falling_behind_postdocs_in_their_thirties_tire_of/",
+    "title": "Falling behind: postdocs in their thirties tire of putting life on hold",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_078.json",
+    "visible_line_count": 683,
+    "reported_total_lines": 1015
+  },
+  {
+    "candidate_index": 79,
+    "url": "https://www.reddit.com/r/academia/comments/17li9fr/falling_behind_postdocs_in_their_thirties_tire_of/",
+    "title": "Falling behind: postdocs in their thirties tire of putting life on hold",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_079.json",
+    "visible_line_count": 481,
+    "reported_total_lines": 538
+  },
+  {
+    "candidate_index": 80,
+    "url": "https://www.reddit.com/r/PhD/comments/17i8x1p/falling_behind_postdocs_in_their_thirties_tire_of/",
+    "title": "Falling behind: postdocs in their thirties tire of putting life on hold",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_080.json",
+    "visible_line_count": 707,
+    "reported_total_lines": 707
+  },
+  {
+    "candidate_index": 81,
+    "url": "https://www.reddit.com/r/PhD/comments/1ifj5ip/is_it_possible_to_really_live_while_doing_a_phd/",
+    "title": "Is it possible to really live while doing a PhD? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_081.json",
+    "visible_line_count": 462,
+    "reported_total_lines": 893
+  },
+  {
+    "candidate_index": 82,
+    "url": "https://www.reddit.com/r/AnxiousAttachment/comments/mz0ezv/putting_my_life_on_hold_for_my_relationship/",
+    "title": "Putting my life on hold for my relationship : r/AnxiousAttachment",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_082.json",
+    "visible_line_count": 124,
+    "reported_total_lines": 182
+  },
+  {
+    "candidate_index": 83,
+    "url": "https://www.reddit.com/r/datingoverforty/comments/174l43j/putting_a_relationship_on_hold/",
+    "title": "Putting a relationship “on hold” : r/datingoverforty - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_083.json",
+    "visible_line_count": 652,
+    "reported_total_lines": 956
+  },
+  {
+    "candidate_index": 84,
+    "url": "https://www.reddit.com/r/dating_advice/comments/bivgee/never_put_your_life_on_hold/",
+    "title": "Never put your life on hold : r/dating_advice - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_084.json",
+    "visible_line_count": 744,
+    "reported_total_lines": 1122
+  },
+  {
+    "candidate_index": 85,
+    "url": "https://www.reddit.com/r/dating/comments/1imd54m/my_life_is_on_hold_while_i_wait_for_my_boyfriend/",
+    "title": "My life is on hold while I wait for my boyfriend. What do I do?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_085.json",
+    "visible_line_count": 471,
+    "reported_total_lines": 528
+  },
+  {
+    "candidate_index": 86,
+    "url": "https://www.reddit.com/r/dating_advice/comments/nsat5y/have_you_ever_put_your_dating_life_on_hold/",
+    "title": "Have you ever put your dating life on hold because ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_086.json"
+  },
+  {
+    "candidate_index": 87,
+    "url": "https://www.reddit.com/r/stepparents/comments/1isrcqw/should_i_put_my_life_on_hold_for_my_bf_kids_i/",
+    "title": "Should I put my life on hold for my BF kids I have nothing to do ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_087.json",
+    "visible_line_count": 610,
+    "reported_total_lines": 640
+  },
+  {
+    "candidate_index": 88,
+    "url": "https://www.reddit.com/r/ADHD_partners/comments/1uo437l/life_on_hold/",
+    "title": "Life on hold? : r/ADHD_partners - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_088.json",
+    "visible_line_count": 457,
+    "reported_total_lines": 649
+  },
+  {
+    "candidate_index": 89,
+    "url": "https://www.reddit.com/r/Life/comments/1n8dbv0/if_youre_financially_stable_what_steps_got_you/",
+    "title": "If you're financially stable, what steps got you there? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_089.json",
+    "visible_line_count": 647,
+    "reported_total_lines": 1558
+  },
+  {
+    "candidate_index": 90,
+    "url": "https://www.reddit.com/r/datingoverthirty/comments/m9ty6z/should_i_try_to_start_dating_soon_or_wait_until/",
+    "title": "Should I try to start dating soon or wait until my finances are ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_090.json",
+    "visible_line_count": 656,
+    "reported_total_lines": 2098
+  },
+  {
+    "candidate_index": 91,
+    "url": "https://www.reddit.com/r/povertyfinance/comments/1mjn3eo/can_anyone_tell_me_about_what_its_like_to_be/",
+    "title": "Can anyone tell me about what its like to be financially stable?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_091.json",
+    "visible_line_count": 519,
+    "reported_total_lines": 805
+  },
+  {
+    "candidate_index": 92,
+    "url": "https://www.reddit.com/r/UKPersonalFinance/comments/dkyxp0/anyone_feel_like_they_are_living_a_financially/",
+    "title": "Anyone feel like they are living a financially stable but boring life?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_092.json",
+    "visible_line_count": 598,
+    "reported_total_lines": 1748
+  },
+  {
+    "candidate_index": 93,
+    "url": "https://www.reddit.com/r/findapath/comments/1dvnair/is_it_ok_to_hold_off_on_datingrelationships_until/",
+    "title": "Is it ok to hold off on dating/relationships until you're financially ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_093.json",
+    "visible_line_count": 713,
+    "reported_total_lines": 713
+  },
+  {
+    "candidate_index": 94,
+    "url": "https://www.reddit.com/r/AskMenOver30/comments/132lkme/is_feeling_financially_safe_and_stable_an/",
+    "title": "is FEELING financially safe and stable an achievable goal?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_094.json",
+    "visible_line_count": 329,
+    "reported_total_lines": 733
+  },
+  {
+    "candidate_index": 95,
+    "url": "https://www.reddit.com/r/AskWomenOver40/comments/1ichtlr/when_did_you_meet_the_love_of_your_life_and_when/",
+    "title": "When did you meet the love of your life and when did ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_095.json",
+    "visible_line_count": 687,
+    "reported_total_lines": 1436
+  },
+  {
+    "candidate_index": 96,
+    "url": "https://www.reddit.com/r/AskWomen/comments/qcerzm/those_of_you_who_are_financially_stable_what_are/",
+    "title": "Those of you who are financially stable, what are some steps ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_096.json",
+    "visible_line_count": 645,
+    "reported_total_lines": 1478
+  },
+  {
+    "candidate_index": 97,
+    "url": "https://www.reddit.com/r/AskMenOver30/comments/nd2lav/financially_well_off_men_are_you_happy_why_or_why/",
+    "title": "Financially well off men, are you happy? Why or why not?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_097.json",
+    "visible_line_count": 708,
+    "reported_total_lines": 1999
+  },
+  {
+    "candidate_index": 98,
+    "url": "https://www.reddit.com/r/AskWomen/comments/6xyey9/if_you_are_financially_stablerichdont_have_to/",
+    "title": "If you are financially stable/'rich'/don't have to worry ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_098.json",
+    "visible_line_count": 495,
+    "reported_total_lines": 1181
+  },
+  {
+    "candidate_index": 99,
+    "url": "https://www.reddit.com/r/AskReddit/comments/17q88f1/what_did_you_see_happen_in_the_hospital_waiting/",
+    "title": "What did you see happen in the hospital waiting room? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_099.json",
+    "visible_line_count": 580,
+    "reported_total_lines": 2741
+  },
+  {
+    "candidate_index": 100,
+    "url": "https://www.reddit.com/r/selfimprovement/comments/1l0jqwo/i_stopped_waiting_for_someday_and_my_life/",
+    "title": "I stopped waiting for \"someday\" and my life completely changed",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_100.json",
+    "visible_line_count": 760,
+    "reported_total_lines": 1140
+  },
+  {
+    "candidate_index": 101,
+    "url": "https://www.reddit.com/r/selfimprovement/comments/1nfsit1/i_wasted_years_waiting_to_feel_ready_before/",
+    "title": "I wasted years waiting to feel “ready” before living my life - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_101.json",
+    "visible_line_count": 319,
+    "reported_total_lines": 671
+  },
+  {
+    "candidate_index": 102,
+    "url": "https://www.reddit.com/r/Fibromyalgia/comments/1u6qda3/has_anyone_stopped_waiting_to_feel_better_before/",
+    "title": "Has anyone stopped waiting to feel better before just living life ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_102.json",
+    "visible_line_count": 583,
+    "reported_total_lines": 1053
+  },
+  {
+    "candidate_index": 103,
+    "url": "https://www.reddit.com/r/self/comments/1x880mk/i_finally_stopped_waiting_for_a_big_moment_to_fix/",
+    "title": "I finally stopped waiting for a big “moment” to fix my life - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_103.json"
+  },
+  {
+    "candidate_index": 104,
+    "url": "https://www.reddit.com/r/simpleliving/comments/i93i85/how_do_i_stop_waiting_for_my_life_to_become/",
+    "title": "How do I stop waiting for my life to become simple - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_104.json",
+    "visible_line_count": 480,
+    "reported_total_lines": 535
+  },
+  {
+    "candidate_index": 105,
+    "url": "https://www.reddit.com/r/DecidingToBeBetter/comments/1k54jlj/i_stopped_waiting_for_the_right_time_and_just/",
+    "title": "I stopped waiting for the “right time” and just started. - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_105.json",
+    "visible_line_count": 362,
+    "reported_total_lines": 422
+  },
+  {
+    "candidate_index": 106,
+    "url": "https://www.reddit.com/r/CasualConversation/comments/1wnh8ry/i_stopped_waiting_to_feel_ready_and_my_life/",
+    "title": "I stopped waiting to feel ready and my life changed ridiculously ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_106.json",
+    "visible_line_count": 410,
+    "reported_total_lines": 763
+  },
+  {
+    "candidate_index": 107,
+    "url": "https://www.reddit.com/r/PinoyUnsentLetters/comments/1mmb7um/the_day_i_stopped_waiting/",
+    "title": "The day i stopped waiting : r/PinoyUnsentLetters - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_107.json",
+    "visible_line_count": 732,
+    "reported_total_lines": 732
+  },
+  {
+    "candidate_index": 108,
+    "url": "https://www.reddit.com/r/DeepThoughts/comments/1g37fjg/stop_waiting_to_feel_ready_start_now_and_watch/",
+    "title": "Stop Waiting to Feel Ready: Start Now, and Watch Your Life ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_108.json",
+    "visible_line_count": 650,
+    "reported_total_lines": 795
+  },
+  {
+    "candidate_index": 109,
+    "url": "https://www.reddit.com/r/Adulting/comments/1tb5g33/dont_wait_until_retirement_to_travel/",
+    "title": "Don't wait until retirement to travel : r/Adulting - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_109.json",
+    "visible_line_count": 826,
+    "reported_total_lines": 2030
+  },
+  {
+    "candidate_index": 109,
+    "url": "https://www.reddit.com/r/Adulting/comments/1tb5g33/dont_wait_until_retirement_to_travel/",
+    "title": "Don't wait until retirement to travel : r/Adulting - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 1500,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_109_L1500.json",
+    "visible_line_count": 538,
+    "reported_total_lines": 2030
+  },
+  {
+    "candidate_index": 109,
+    "url": "https://www.reddit.com/r/Adulting/comments/1tb5g33/dont_wait_until_retirement_to_travel/",
+    "title": "Don't wait until retirement to travel : r/Adulting - Reddit",
+    "retrieved_date": "2026-11-08",
+    "requested_line": 800,
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_109_L800.json",
+    "visible_line_count": 824,
+    "reported_total_lines": 2030
+  },
+  {
+    "candidate_index": 110,
+    "url": "https://www.reddit.com/r/retirement/comments/14flda3/when_did_you_slow_down_in_retirement_from_travel/",
+    "title": "When did you slow down in retirement, from travel and lots of ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_110.json",
+    "visible_line_count": 668,
+    "reported_total_lines": 1379
+  },
+  {
+    "candidate_index": 111,
+    "url": "https://www.reddit.com/r/travel/comments/1bu74uh/do_you_postpone_your_expensive_trips_for_later_in/",
+    "title": "Do you postpone your expensive trips for later in life? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_111.json",
+    "visible_line_count": 638,
+    "reported_total_lines": 2150
+  },
+  {
+    "candidate_index": 112,
+    "url": "https://www.reddit.com/r/solotravel/comments/1ic1dnl/i_want_to_solo_travel_but_will_i_miss_out_on/",
+    "title": "I want to solo travel, but will I miss out on building a life? Is it ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_112.json",
+    "visible_line_count": 447,
+    "reported_total_lines": 2238
+  },
+  {
+    "candidate_index": 113,
+    "url": "https://www.reddit.com/r/financialindependence/comments/8ba1pa/thoughts_on_delaying_fire_for_life_experiences/",
+    "title": "Thoughts on delaying FIRE for life experiences? : r ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_113.json",
+    "visible_line_count": 658,
+    "reported_total_lines": 717
+  },
+  {
+    "candidate_index": 114,
+    "url": "https://www.reddit.com/r/PhD/comments/1d8l4x4/how_much_did_your_phd_interfere_with/",
+    "title": "How much did your PhD interfere with dating/romantic ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_114.json",
+    "visible_line_count": 609,
+    "reported_total_lines": 2023
+  },
+  {
+    "candidate_index": 115,
+    "url": "https://www.reddit.com/r/PhD/comments/1iz4pwc/being_a_phd_student_not_attractive_to_dating/",
+    "title": "Being a PhD student not attractive to dating prospects? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_115.json",
+    "visible_line_count": 622,
+    "reported_total_lines": 1716
+  },
+  {
+    "candidate_index": 116,
+    "url": "https://www.reddit.com/r/GradSchool/comments/oejgeo/how_have_yall_handled_dating_during_your_phd/",
+    "title": "How have y'all handled dating during your PhD? : r/GradSchool",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_116.json",
+    "visible_line_count": 490,
+    "reported_total_lines": 938
+  },
+  {
+    "candidate_index": 117,
+    "url": "https://www.reddit.com/r/PhD/comments/1kg6t4q/dating_while_pursuing_phd/",
+    "title": "Dating while pursuing PhD - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_117.json",
+    "visible_line_count": 601,
+    "reported_total_lines": 1011
+  },
+  {
+    "candidate_index": 118,
+    "url": "https://www.reddit.com/r/PhD/comments/1w7sa4c/dating_when_applying_to_programs/",
+    "title": "Dating when applying to programs? : r/PhD - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_118.json",
+    "visible_line_count": 616,
+    "reported_total_lines": 616
+  },
+  {
+    "candidate_index": 119,
+    "url": "https://www.reddit.com/r/PhD/comments/1x9mtm8/single_as_a_doctoral_student/",
+    "title": "Single as a doctoral student : r/PhD - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_119.json",
+    "visible_line_count": 387,
+    "reported_total_lines": 671
+  },
+  {
+    "candidate_index": 120,
+    "url": "https://www.reddit.com/r/work/comments/1gtq2jm/how_long_does_it_take_you_to_befriend_people_at_a/",
+    "title": "How long does it take you to befriend people at a new job?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_120.json",
+    "visible_line_count": 793,
+    "reported_total_lines": 1002
+  },
+  {
+    "candidate_index": 121,
+    "url": "https://www.reddit.com/r/Adulting/comments/1gpal4b/is_it_actually_possible_to_make_friends_without/",
+    "title": "Is it actually possible to make friends without having a job or ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_121.json",
+    "visible_line_count": 616,
+    "reported_total_lines": 673
+  },
+  {
+    "candidate_index": 122,
+    "url": "https://www.reddit.com/r/AskDad/comments/wkaand/do_i_have_the_right_to_spend_money_when_going_out/",
+    "title": "Do I have the right to spend money when going out with my ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_122.json"
+  },
+  {
+    "candidate_index": 123,
+    "url": "https://www.reddit.com/r/jobs/comments/16b4l3i/is_anyone_else_unemployed_and_too_broke_to_make/",
+    "title": "Is anyone else unemployed and too broke to make friends : r/jobs",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_123.json"
+  },
+  {
+    "candidate_index": 124,
+    "url": "https://www.reddit.com/r/jobs/comments/5s1bk0/im_17_ive_been_trying_to_get_a_job_for_15_years/",
+    "title": "I'm 17, I've been trying to get a job for 1.5 years with no luck, what ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_124.json",
+    "visible_line_count": 385,
+    "reported_total_lines": 657
+  },
+  {
+    "candidate_index": 125,
+    "url": "https://www.reddit.com/r/UXDesign/comments/13bi8cw/how_many_interviews_until_you_landed_a_job/",
+    "title": "How many interviews until you landed a job? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_125.json",
+    "visible_line_count": 765,
+    "reported_total_lines": 1617
+  },
+  {
+    "candidate_index": 126,
+    "url": "https://www.reddit.com/r/careerguidance/comments/182jhwy/cant_keep_a_job_for_more_than_a_few_months_is/",
+    "title": "Can't keep a job for more than a few months, is possible to just ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_126.json",
+    "visible_line_count": 631,
+    "reported_total_lines": 812
+  },
+  {
+    "candidate_index": 127,
+    "url": "https://www.reddit.com/r/Life/comments/1x62ud0/i_feel_like_my_life_is_on_pause_until_i_get_a_job/",
+    "title": "I feel like my life is on pause until I get a job, and I don't ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_127.json"
+  },
+  {
+    "candidate_index": 128,
+    "url": "https://www.reddit.com/r/Architects/comments/1wgh2p0/should_i_quit_and_get_a_temporary_job_until_i/",
+    "title": "Should I quit and get a temporary job until I find another ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_128.json",
+    "visible_line_count": 234,
+    "reported_total_lines": 592
+  },
+  {
+    "candidate_index": 129,
+    "url": "https://www.reddit.com/r/jobsearch/comments/1tc4fhn/how_am_i_supposed_to_get_a_job_out_of_state_when/",
+    "title": "How am I supposed to get a job out of state when they only do ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_129.json",
+    "visible_line_count": 567,
+    "reported_total_lines": 567
+  },
+  {
+    "candidate_index": 130,
+    "url": "https://www.reddit.com/r/InsuranceAgent/comments/193rjw8/going_to_take_the_florida_health_agent_exam_what/",
+    "title": "Going to take the Florida Health Agent exam. What can I study ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_130.json",
+    "visible_line_count": 202,
+    "reported_total_lines": 491
+  },
+  {
+    "candidate_index": 131,
+    "url": "https://www.reddit.com/r/InsuranceAgent/comments/1oqynqg/how_hard_did_you_study_for_the_property_casualty/",
+    "title": "How hard did you study for the Property & Casualty license ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_131.json",
+    "visible_line_count": 729,
+    "reported_total_lines": 1162
+  },
+  {
+    "candidate_index": 132,
+    "url": "https://www.reddit.com/r/InsuranceAgent/comments/1sfbp68/health_and_life_insurance_producer_exam_advice_mn/",
+    "title": "Health and life Insurance Producer Exam advice (MN) - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_132.json",
+    "visible_line_count": 144,
+    "reported_total_lines": 526
+  },
+  {
+    "candidate_index": 133,
+    "url": "https://www.reddit.com/r/FE_Exam/comments/1d4pq4l/attempted_fe_exam_4_times_may_quit/",
+    "title": "Attempted FE exam 4 times, may quit : r/FE_Exam - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_133.json",
+    "visible_line_count": 244,
+    "reported_total_lines": 573
+  },
+  {
+    "candidate_index": 134,
+    "url": "https://www.reddit.com/r/realtors/comments/11jxooy/how_long_after_passing_your_exam_did_it_take_for/",
+    "title": "How long after passing your exam did it take for you to be ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_134.json",
+    "visible_line_count": 554,
+    "reported_total_lines": 923
+  },
+  {
+    "candidate_index": 135,
+    "url": "https://www.reddit.com/r/CPA/comments/133tp1h/anyone_else_trying_to_studypass_secretly/",
+    "title": "Anyone else trying to study/pass secretly? : r/CPA - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_135.json",
+    "visible_line_count": 444,
+    "reported_total_lines": 761
+  },
+  {
+    "candidate_index": 136,
+    "url": "https://www.reddit.com/r/CompTIA/comments/szk5ht/am_i_the_only_one_that_feels_like_once_i_pass_an/",
+    "title": "Am I the only one that feels like once I pass an exam I ... - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_136.json"
+  },
+  {
+    "candidate_index": 137,
+    "url": "https://www.reddit.com/r/RealEstateExam/comments/1rynvzl/passed_the_ca_exam_with_a_3_day_cram/",
+    "title": "Passed the CA EXAM with a 3 Day CRAM : r/RealEstateExam",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_137.json",
+    "visible_line_count": 575,
+    "reported_total_lines": 575
+  },
+  {
+    "candidate_index": 138,
+    "url": "https://www.reddit.com/r/CFE/comments/1njt6xa/i_passed/",
+    "title": "I passed!! : r/CFE - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_138.json",
+    "visible_line_count": 199,
+    "reported_total_lines": 719
+  },
+  {
+    "candidate_index": 139,
+    "url": "https://www.reddit.com/r/CPA/comments/16t6n27/hows_life_after_passing_all_4_exams/",
+    "title": "How's life after passing all 4 exams? : r/CPA - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_139.json",
+    "visible_line_count": 790,
+    "reported_total_lines": 1128
+  },
+  {
+    "candidate_index": 140,
+    "url": "https://www.reddit.com/r/retirement/comments/170r0en/why_is_it_everyones_wish_to_travel_in_retirement/",
+    "title": "Why is it everyone's wish to travel in retirement? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_140.json",
+    "visible_line_count": 678,
+    "reported_total_lines": 1219
+  },
+  {
+    "candidate_index": 141,
+    "url": "https://www.reddit.com/r/Fire/comments/1pyqov0/do_you_prefer_to_travel_when_youre_young_or_after/",
+    "title": "Do you prefer to travel when you're young or after you've retired?",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_141.json",
+    "visible_line_count": 702,
+    "reported_total_lines": 1894
+  },
+  {
+    "candidate_index": 142,
+    "url": "https://www.reddit.com/r/retirement/comments/1fpznbl/am_i_the_only_retired_person_that_thinks/",
+    "title": "Am I The Only Retired Person That Thinks International Travel ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_142.json",
+    "visible_line_count": 631,
+    "reported_total_lines": 2047
+  },
+  {
+    "candidate_index": 143,
+    "url": "https://www.reddit.com/r/retirement/comments/1o6wqnl/retirement_travel_which_trips_to_do_first/",
+    "title": "Retirement Travel - which trips to do first : r/retirement - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_143.json",
+    "visible_line_count": 477,
+    "reported_total_lines": 886
+  },
+  {
+    "candidate_index": 144,
+    "url": "https://www.reddit.com/r/retirement/comments/17v3vml/i_am_retired_with_no_bucket_list_anyone_else/",
+    "title": "I am retired with No Bucket List, anyone else? - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_144.json",
+    "visible_line_count": 586,
+    "reported_total_lines": 1518
+  },
+  {
+    "candidate_index": 145,
+    "url": "https://www.reddit.com/r/solotravel/comments/1bd2gtr/youre_never_too_old_to_solo_travel/",
+    "title": "You're Never Too Old to Solo Travel! : r/solotravel - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_145.json",
+    "visible_line_count": 688,
+    "reported_total_lines": 1788
+  },
+  {
+    "candidate_index": 146,
+    "url": "https://www.reddit.com/r/GenXWomen/comments/1e682e7/soontoretire_looking_for_slow_travel_companions/",
+    "title": "Soon-to-retire & looking for slow travel companions - Reddit",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_146.json",
+    "visible_line_count": 491,
+    "reported_total_lines": 781
+  },
+  {
+    "candidate_index": 147,
+    "url": "https://www.reddit.com/r/retirement/comments/1c9yce1/we_are_trying_to_decide_where_to_live_in/",
+    "title": "We are trying to decide where to live in retirement. How did you ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_147.json",
+    "visible_line_count": 628,
+    "reported_total_lines": 2321
+  },
+  {
+    "candidate_index": 148,
+    "url": "https://www.reddit.com/r/AskWomenOver50/comments/1or9uuy/retirement_decisions_time_to_go_or_act_2/",
+    "title": "Retirement decisions? Time to go, or Act 2? : r/AskWomenOver50",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_148.json",
+    "visible_line_count": 544,
+    "reported_total_lines": 734
+  },
+  {
+    "candidate_index": 149,
+    "url": "https://www.reddit.com/r/retirement/comments/1mu55jh/finding_meaning_in_retirement_part_2_grandkids/",
+    "title": "Finding Meaning in Retirement : Part 2 : Grandkids, continuing ...",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "page_text_retrieved",
+    "raw_file": "raw/page_149.json",
+    "visible_line_count": 622,
+    "reported_total_lines": 682
+  },
+  {
+    "candidate_index": 150,
+    "url": "https://www.reddit.com/r/Life/comments/1x62ud0/i_feel_like_my_life_is_on_pause_until_i_get_a_job/",
+    "title": "I feel like my life is on pause until I get a job",
+    "retrieved_date": "2026-11-08",
+    "retrieval_status": "failed",
+    "raw_file": "raw/page_150.json"
+  }
+]

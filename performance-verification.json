@@ -1,0 +1,28 @@
+{
+  "scope": "code/CPU measurements, not browser FPS or loading wall time",
+  "before": {
+    "characterDraws": 175,
+    "characterTriangles": 162778,
+    "referenceBytes": 2265925,
+    "idleDrawsPer600Ticks": 600
+  },
+  "after": {
+    "characterDraws": 111,
+    "characterTriangles": 162778,
+    "referenceBytes": 261857,
+    "idleDrawsPer600Ticks": 1,
+    "characterBuildMs": 196,
+    "characterMeshes": 108
+  },
+  "changes": [
+    "opaque torso index batching per material",
+    "still frames rendered only on change; game effects remain live",
+    "static shadow maps invalidated by model load and blinds",
+    "reference JPEG, same dimensions, quality 88 and 4:4:4 chroma",
+    "parallel anatomy/photo loading",
+    "conditional static asset ETag caching"
+  ],
+  "browserVerified": false,
+  "tests": "npm run check and npm test: 29 passed",
+  "review": "Independent review found no Important/Critical regressions; actual WebGL unverified"
+}

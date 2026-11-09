@@ -1,0 +1,442 @@
+{
+  "method": {
+    "scope": "한국어로 공개된 취업 가이드의 지원동기 8개·퇴사/이직 이유 9개; 9개 페이지, 7개 발행처/사이트. 한국어판을 포함하며 한국어로 처음 작성된 자료만으로 한정하지 않음.",
+    "selection": "검색으로 찾은 추천 예시를 목적 표집. 금지 답안은 표본에서 제외. 독립 저작/재인용 여부는 검증하지 않음. 같은 출처의 여러 예시를 별도 발행처로 세지 않음.",
+    "quotation": "출처 페이지별 25단어 이내 직접인용. 나머지는 조사자의 요약. 전체 답안 복제 및 전체 본문의 단어 빈도표가 아님.",
+    "analysis": "observed_terms는 요약문에서 자동 추출한 단어가 아니라 원문 예시에서 확인한 분석용 일부 어근·문구 목록. 사전에 정한 전수 단어 목록이 아니므로 빈도 순위로 해석하지 않음. 반복 분석은 직접인용의 문자열 또는 명시한 예시 ID의 의미 분류로 한정.",
+    "caution": "원 출처의 합격률·면접관 의도·금기 주장에 대한 진위는 검증하지 않음. 이를 사실로 권고하는 자료가 아닌 모범답안의 언어를 관찰하는 자료.",
+    "retrieved_date": "2026-11-09"
+  },
+  "sources": {
+    "I": {
+      "name": "인크루트",
+      "url": "https://news.incruit.com/news/newsview.asp?newsno=436718&ty=",
+      "date": "2024-03-25"
+    },
+    "H": {
+      "name": "HAIJOB",
+      "url": "https://www.haijob.co.kr/blog/interview-application-motivation-example-acceptance-rate-increase-practice-template-summary/",
+      "date": "2025-04-10"
+    },
+    "J": {
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/229",
+      "date": "2026-09-18"
+    },
+    "L": {
+      "name": "링커리어",
+      "url": "https://community.linkareer.com/employment_data/4913014",
+      "date": "2025-09-29"
+    },
+    "D": {
+      "name": "Deel 한국어판",
+      "url": "https://www.deel.com/ko-kr/blog/difficult-interview-questions-and-answers/",
+      "date": "2026-09-18"
+    },
+    "R": {
+      "name": "링커리어",
+      "url": "https://community.linkareer.com/employment_data/6071740",
+      "date": "2026-06-08"
+    },
+    "C": {
+      "name": "CrawlJobs 한국어판",
+      "url": "https://www.crawljobs.com/ko/blog/why-are-you-leaving-your-current-job-interview-answers/",
+      "date": ""
+    },
+    "P": {
+      "name": "프리터뷰",
+      "url": "https://preterview.com/guide/resignation-reason-interview-answer",
+      "date": "2026-11-06"
+    },
+    "K": {
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/69",
+      "date": "2026-01-22"
+    }
+  },
+  "answers": [
+    {
+      "id": "M01",
+      "question": "지원동기",
+      "name": "인크루트",
+      "url": "https://news.incruit.com/news/newsview.asp?newsno=436718&ty=",
+      "date": "2024-03-25",
+      "source_id": "I",
+      "locator": "답변 예시 / L369-L372",
+      "original_excerpt": "저는 귀사에서 제 경험과 역량을 활용하여 ○○○ 기술의 발전에 기여하고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "기술·사회적 가치·문화에 공감하며 프로젝트 경험과 역량으로 기술 발전에 기여하고 회사와 함께 성장하겠다는 예시.",
+      "structure": "회사 가치 공감 → 관련 프로젝트 경험 → 기술 발전·공동 성장",
+      "observed_terms": [
+        "기여",
+        "성장",
+        "경험",
+        "역량"
+      ],
+      "subtype": "기여 의향",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M02",
+      "question": "지원동기",
+      "name": "HAIJOB",
+      "url": "https://www.haijob.co.kr/blog/interview-application-motivation-example-acceptance-rate-increase-practice-template-summary/",
+      "date": "2025-04-10",
+      "source_id": "H",
+      "locator": "3. 실전에서 통하는 답변 템플릿 구조 / L84",
+      "original_excerpt": "이러한 경험을 바탕으로 귀사의 고객 중심 캠페인에 실질적인 기여를 하고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "소비자 경험 중심 전략에 주목하고 리서치 경험을 연결해 고객 중심 캠페인에 기여하겠다는 예시.",
+      "structure": "회사 전략 → 리서치 경험 → 캠페인 기여",
+      "observed_terms": [
+        "기여",
+        "경험"
+      ],
+      "subtype": "기여 의향",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M03",
+      "question": "지원동기",
+      "name": "HAIJOB",
+      "url": "https://www.haijob.co.kr/blog/interview-application-motivation-example-acceptance-rate-increase-practice-template-summary/",
+      "date": "2025-04-10",
+      "source_id": "H",
+      "locator": "4. 인사(HR) 직무 예시 / L100",
+      "original_excerpt": "사람과 조직을 연결하는 실무자로서 기여하고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "사람 중심 문화와 평가·복지 제도에 주목하고 수업·공모전을 통해 쌓은 관심과 이해로 HR 업무에 기여하겠다는 예시.",
+      "structure": "회사 인사 제도 → 수업·공모전 준비 → 실무 기여",
+      "observed_terms": [
+        "기여"
+      ],
+      "subtype": "기여 의향",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M04",
+      "question": "지원동기",
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/229",
+      "date": "2026-09-18",
+      "source_id": "J",
+      "locator": "회사 유형별 답변 예시 / 대기업 / L146",
+      "original_excerpt": "제가 해온 방향과 정확히 맞닿아 있다고 느꼈어요.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "소비자 행동 분석 인턴 경험과 회사의 데이터 기반 캠페인이 맞는다고 설명하고 입사 후 인사이트를 성과로 연결하겠다는 예시.",
+      "structure": "인턴 경험 → 회사 기사 → 방향 일치 → 성과",
+      "observed_terms": [
+        "경험",
+        "성과",
+        "입사 후"
+      ],
+      "subtype": "성과 연결",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M05",
+      "question": "지원동기",
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/229",
+      "date": "2026-09-18",
+      "source_id": "J",
+      "locator": "회사 유형별 답변 예시 / 스타트업 / L157",
+      "original_excerpt": "저도 성장하면서 기여하고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "서비스 출시 경험에서 얻은 문제의식이 대표 인터뷰의 방향과 같으며 실행과 학습 속에서 성장·기여하겠다는 예시.",
+      "structure": "출시 경험 → 회사가 푸는 문제 → 방향 일치 → 성장·기여",
+      "observed_terms": [
+        "기여",
+        "성장",
+        "경험"
+      ],
+      "subtype": "성장·기여 의향",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M06",
+      "question": "지원동기",
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/229",
+      "date": "2026-09-18",
+      "source_id": "J",
+      "locator": "회사 유형별 답변 예시 / 외국계 / L163",
+      "original_excerpt": "글로벌 협업 경험을 입사 후 바로 활용하고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "글로벌 팀 협업에서 생긴 관심이 회사의 운영 환경과 맞으며 영어·협업 능력을 즉시 활용하겠다는 예시.",
+      "structure": "팀 협업 경험 → 원하는 환경 → 회사와 일치 → 역량 활용",
+      "observed_terms": [
+        "경험",
+        "입사 후"
+      ],
+      "subtype": "경험 활용",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M07",
+      "question": "지원동기",
+      "name": "링커리어",
+      "url": "https://community.linkareer.com/employment_data/4913014",
+      "date": "2025-09-29",
+      "source_id": "L",
+      "locator": "2. (2) 지원동기 질문 / L169",
+      "original_excerpt": "이를 바탕으로 귀사의 영업 성과 확대에 기여하고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "해외 시장 확대에 맞춰 교환학생·외국어·해외 협업 경험으로 글로벌 고객 소통과 영업 성과에 기여하겠다는 예시.",
+      "structure": "회사 해외 전략 → 글로벌 경험·역량 → 영업 성과",
+      "observed_terms": [
+        "기여",
+        "경험",
+        "역량",
+        "성과"
+      ],
+      "subtype": "기여 의향",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "M08",
+      "question": "지원동기",
+      "name": "HAIJOB",
+      "url": "https://www.haijob.co.kr/blog/interview-application-motivation-example-acceptance-rate-increase-practice-template-summary/",
+      "date": "2025-04-10",
+      "source_id": "H",
+      "locator": "4. 마케팅 직무 예시 / L93",
+      "original_excerpt": "마케팅 기획 능력을 키웠습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "회사 캠페인과 데이터 기반 전략에 주목하고 대학 프로젝트에서 쌓은 소비자 분석·기획 능력을 연결하는 예시. 인용된 예시 자체에는 입사 후 기여를 약속하는 마지막 문장이 없음.",
+      "structure": "회사 전략·캠페인 → 프로젝트 경험 → 관련 능력",
+      "observed_terms": [
+        "경험"
+      ],
+      "subtype": "준비 역량 제시",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R01",
+      "question": "퇴사·이직 이유",
+      "name": "Deel 한국어판",
+      "url": "https://www.deel.com/ko-kr/blog/difficult-interview-questions-and-answers/",
+      "date": "2026-09-18",
+      "source_id": "D",
+      "locator": "2. 이전 직장을 퇴사하려는 이유 / L87",
+      "original_excerpt": "새로운 도전에 직면하고 더 큰 책임을 맡으며 성장의 폭을 넓히고자",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "기존 동료와 경험에 감사하되 성장의 한계를 느껴 새 환경에서 더 큰 책임과 역량 발휘를 원한다는 예시.",
+      "structure": "이직 의향 → 과거 경험에 감사 → 성장 한계 → 새 환경",
+      "observed_terms": [
+        "성장",
+        "새로운",
+        "역량"
+      ],
+      "subtype": "성장·역할 확장",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R02",
+      "question": "퇴사·이직 이유",
+      "name": "링커리어",
+      "url": "https://community.linkareer.com/employment_data/6071740",
+      "date": "2026-06-08",
+      "source_id": "R",
+      "locator": "유형 1. 성장 기회 확장 / L120",
+      "original_excerpt": "더 넓은 규모의 프로젝트와 전문 환경에서 역량을 키우고 싶어",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "현재 직장에서 기반을 쌓았고 다음 단계로 규모와 전문성이 높은 환경을 원한다는 예시.",
+      "structure": "현재 경험 → 다음 단계 → 역량 개발",
+      "observed_terms": [
+        "역량",
+        "다음 단계"
+      ],
+      "subtype": "성장·역할 확장",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R03",
+      "question": "퇴사·이직 이유",
+      "name": "링커리어",
+      "url": "https://community.linkareer.com/employment_data/6071740",
+      "date": "2026-06-08",
+      "source_id": "R",
+      "locator": "유형 5. 연봉형 / L154-L156",
+      "original_excerpt": "제 역량을 더 제대로 발휘할 수 있는 환경",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "연봉이 이유인 상황에 대해 자료가 제안하는 우회 답변. 기여 대비 성장의 한계와 역량을 발휘할 환경으로 설명함. 실제 지원자가 이렇게 느꼈다는 증거는 아님.",
+      "structure": "연봉 문제(자료의 상황 설정) → 성장 한계·역량 발휘 환경으로 변경",
+      "observed_terms": [
+        "성장",
+        "역량",
+        "환경"
+      ],
+      "subtype": "연봉 사유의 우회",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R04",
+      "question": "퇴사·이직 이유",
+      "name": "CrawlJobs 한국어판",
+      "url": "https://www.crawljobs.com/ko/blog/why-are-you-leaving-your-current-job-interview-answers/",
+      "date": "",
+      "source_id": "C",
+      "locator": "가장 잘 먹히는 답변 구조 / L121",
+      "original_excerpt": "제가 다음 단계로 성장하기에 적합하다고 봤습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "현재 역할에서 배웠지만 범위가 좁았으며 새 포지션의 협업·오너십이 성장에 적합하다고 설명하는 예시.",
+      "structure": "기존 배움 → 확장 한계 → 새 포지션 → 성장",
+      "observed_terms": [
+        "성장",
+        "다음 단계",
+        "환경"
+      ],
+      "subtype": "성장·역할 확장",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R05",
+      "question": "퇴사·이직 이유",
+      "name": "CrawlJobs 한국어판",
+      "url": "https://www.crawljobs.com/ko/blog/why-are-you-leaving-your-current-job-interview-answers/",
+      "date": "",
+      "source_id": "C",
+      "locator": "번아웃, 과도한 업무량 / L185",
+      "original_excerpt": "지속적인 성과를 위해서는 역할 정의와 우선순위가 분명한 조직",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "업무 범위 확대와 우선순위 변동이 장기 효율에 맞지 않으며 역할·우선순위가 명확한 조직에서 성과를 내고 싶다는 예시.",
+      "structure": "과도한 업무·우선순위 변화 → 장기 효율 → 지속적 성과의 조건",
+      "observed_terms": [
+        "성과",
+        "효율"
+      ],
+      "subtype": "과로 사유를 업무 조건과 연결",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R06",
+      "question": "퇴사·이직 이유",
+      "name": "프리터뷰",
+      "url": "https://preterview.com/guide/resignation-reason-interview-answer",
+      "date": "2026-11-06",
+      "source_id": "P",
+      "locator": "근무 시간이 이유일 때 / 고친 문장 / L102",
+      "original_excerpt": "입력 시간을 줄였지만 월말에 몰리는 구조는 그대로였습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "반복적인 야근과 본인이 시도한 절차 개선을 사실로 설명하고 업무를 분산하는 새 공고와 연결함. 기간·시각·상황은 원 출처가 만든 가상 값임.",
+      "structure": "반복 야근 → 개선 시도 → 구조적 한계 → 새 공고",
+      "observed_terms": [
+        "공고",
+        "시도"
+      ],
+      "subtype": "근무 조건과 개선 시도",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R07",
+      "question": "퇴사·이직 이유",
+      "name": "프리터뷰",
+      "url": "https://preterview.com/guide/resignation-reason-interview-answer",
+      "date": "2026-11-06",
+      "source_id": "P",
+      "locator": "피할 말과 바꾸는 법 / 보수 / L180",
+      "original_excerpt": "보수도 이유 중 하나였습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "업무 범위가 늘어도 등급이 그대로여서 맡은 범위에 맞는 직무를 찾는다는 예시. 보수 문제를 숨기지 않는 반례.",
+      "structure": "보수 문제 인정 → 업무·등급 불일치 → 새 직무",
+      "observed_terms": [
+        "보수",
+        "업무 범위"
+      ],
+      "subtype": "보수 문제 직접 인정",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R08",
+      "question": "퇴사·이직 이유",
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/69",
+      "date": "2026-01-22",
+      "source_id": "K",
+      "locator": "유형별 답변 / 성장 중심형 / L42",
+      "original_excerpt": "더 큰 책임과 프로젝트 주도 경험을 쌓고 싶습니다.",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "제한된 업무에서도 성과를 냈으나 커리어·리더십 개발이 필요해 더 큰 책임과 주도 경험을 원한다는 예시.",
+      "structure": "기존 성과 → 확장 필요 → 책임·주도 경험",
+      "observed_terms": [
+        "성과",
+        "경험",
+        "역량"
+      ],
+      "subtype": "성장·역할 확장",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    },
+    {
+      "id": "R09",
+      "question": "퇴사·이직 이유",
+      "name": "잡패스코치",
+      "url": "https://jobready.tistory.com/69",
+      "date": "2026-01-22",
+      "source_id": "K",
+      "locator": "유형별 답변 / Work-Life 밸런스 중심형 / L51",
+      "original_excerpt": "지속 가능한 커리어 성장을 위해 효율적이고 유연한 환경",
+      "text_scope": "원문 일부 직접인용",
+      "summary_ko": "높은 업무 강도 속에서 배운 점을 인정하면서 지속 가능한 성장을 위해 유연하고 효율적인 환경을 찾는다는 예시.",
+      "structure": "높은 강도·배움 → 지속 가능한 성장 → 새 환경",
+      "observed_terms": [
+        "성장",
+        "효율",
+        "환경"
+      ],
+      "subtype": "과로 사유를 지속 가능성과 연결",
+      "language": "ko",
+      "retrieved_date": "2026-11-09",
+      "record_type": "출처가 제시한 추천 예시·템플릿",
+      "verification": "본문 확인; 실제 지원자 발언·합격 여부 검증 안 함"
+    }
+  ]
+}

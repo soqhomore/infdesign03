@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-09",
+  "reference": "references/visual-targets/generated-room-target-v1.png",
+  "referenceKind": "user-approved generated target, not missing original photo",
+  "implementation": {
+    "scene": "/",
+    "people": 3,
+    "anatomy": "CC0 MakeHuman hm08 head and hand",
+    "faceReplacement": "local bitmap/canvas + front-facing texture projection",
+    "photoPersistence": false,
+    "photoNetworkTransmission": false,
+    "limits": {
+      "fileBytes": 12582912,
+      "pixels": 40000000,
+      "maxSide": 12000,
+      "minSide": 64
+    },
+    "personalizedHeadReconstruction": false,
+    "dialogueIntegration": false,
+    "facialAnimation": false
+  },
+  "checks": {
+    "syntax": "npm run check: passed",
+    "tests": "npm test: 25 passed",
+    "independentReview": "reviewed; neutral-adjustment reset bug reproduced and fixed; torso groups/hair batches reduced",
+    "geometry": "real model CPU projection; anatomical asset indices/bounds validated; rear face projection weights zero; independent portrait uniforms; character draw calls below 100 each",
+    "editor": "DOM/bitmap/canvas event doubles: neutral defaults, late-photo cancellation on selection/close, individual apply/restore, invalid-file rejection"
+  },
+  "visual": {
+    "browserVerified": false,
+    "webglShaderVerified": false,
+    "roomScreenshot": false,
+    "cpuPreview": "character-geometry-preview.png",
+    "cpuPreviewLimit": "geometry-only software rendering; excludes room, actual shader compilation, PBR lighting, shadows and face-editor screen",
+    "chromeFailure": "launch closed immediately, including software GPU flags",
+    "blenderFailure": "Metal initialization SIGSEGV, only metal backend available",
+    "quality": "first-pass photo-mapped models; not photoreal reconstruction; garments/hair/poses differ from target"
+  }
+}

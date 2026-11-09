@@ -1,0 +1,30 @@
+{
+  "cafe_rows": 1068,
+  "unique_shop_ids": 1068,
+  "duplicate_shop_ids": 0,
+  "cafe_lon_range": [
+    126.882818298781,
+    126.939596624454
+  ],
+  "cafe_lat_range": [
+    37.4860680499891,
+    37.5423771561163
+  ],
+  "all_cafe_coords_valid_seoul": true,
+  "bin_lon_range": [
+    126.8834636891,
+    126.9377092728
+  ],
+  "bin_lat_range": [
+    37.4871457304,
+    37.547524111
+  ],
+  "all_bin_coords_valid_seoul": true,
+  "165_equals_matched_plus_unmatched": true,
+  "1068_plus_24041_equals_25109": true,
+  "recycling_matched_rows": 59,
+  "recycling_unique_ars": 57,
+  "all_nearest_distance_finite": true,
+  "unmatched_bus_rows": 10,
+  "unmatched_nonbus_rows": 17
+}

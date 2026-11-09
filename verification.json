@@ -1,0 +1,28 @@
+{
+  "initial": {
+    "ready": true,
+    "frames": 141,
+    "objects": 383,
+    "geometries": 384,
+    "textures": 28,
+    "camera": [
+      0,
+      1.25,
+      3.42
+    ],
+    "failedAssets": [],
+    "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "orbitCamera": [
+    -2.9870229272591735,
+    2.3609213412047665,
+    -0.19715798296618783
+  ],
+  "settings": {
+    "blinds": "40%",
+    "exposure": 1.2
+  },
+  "errors": [],
+  "failed": [],
+  "final_visual_check": "최종 수정 후 in-app browser에서 3D 장면을 직접 확인; 좁은 창에서 16:9 구도 유지 확인"
+}

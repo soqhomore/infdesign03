@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-09",
+  "scope": "기존 3D와 분리한 다회 대화 시제품",
+  "automated": {
+    "syntax": "npm run check passed",
+    "tests": "npm test: 18 passed",
+    "http_transport": "실제 Node HTTP 요청 처리기에 메모리 요청 전달. 실제 소켓 아님.",
+    "client_transport": "HTML ID를 읽고 경량 DOM·음성 이벤트 대역에서 실제 interview.js 실행. 실제 브라우저 아님."
+  },
+  "passed": [
+    "정상 다회 대화",
+    "2회 이후 행복버튼",
+    "다음 답변부터 발끈",
+    "정상 5회·발끈 4회 상한",
+    "입력 길이·빈 입력",
+    "중복 동시 전송 거부",
+    "응답 유실 재시도 멱등성",
+    "AI 오류·불완전 응답의 이력 롤백",
+    "세션당 실패 포함 12회 호출 제한",
+    "세션 만료·종료",
+    "문자 입력과 음성 이벤트 전환",
+    "키보드 수정 후 늦은 음성 이벤트 무시",
+    "클라이언트 초기화",
+    "환경변수·서버·인계자료의 HTTP 접근 차단",
+    "교차 출처·호스트·과대 본문·잘못된 JSON 차단",
+    "기존 3D 상태 테스트와 자산 요청"
+  ],
+  "review": {
+    "independent": true,
+    "important_findings": 2,
+    "fixed_with_regression_tests": 2
+  },
+  "not_verified": [
+    "API 키 부재: 실제 모델의 한국어 품질·지연·요금",
+    "실제 브라우저 렌더링·반응형 레이아웃",
+    "실제 마이크의 권한·한국어 인식",
+    "실제 한국어 음성 출력과 감정 연기",
+    "기존 3D와 새 대화의 결합"
+  ],
+  "environment_limits": [
+    "로컬 포트 바인딩 EPERM",
+    "자동화 Chrome 실행 종료(SIGABRT), 프로세스 권한 제한",
+    "앱 브라우저 접근 호스트 사용 불가"
+  ],
+  "live_api_requests_made": 0,
+  "privacy": "AI 모드는 답변·이력을 OpenAI에 전송. 앱 파일 저장 없음, 메모리 세션 종료/만료 삭제. 브라우저 음성 인식은 별도 외부 서비스를 사용할 수 있음.",
+  "source_data_changed": false
+}

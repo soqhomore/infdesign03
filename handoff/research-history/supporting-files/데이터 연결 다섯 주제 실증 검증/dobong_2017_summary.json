@@ -1,0 +1,26 @@
+{
+  "source": "https://data.seoul.go.kr/dataList/OA-13467/S/1/datasetView.do",
+  "rows": 17,
+  "data_dates": [
+    "2017-04-30"
+  ],
+  "child_fixture_total": 3,
+  "child_fields": [
+    "남성용-어린이용대변기수",
+    "남성용-어린이용소변기수",
+    "여성용-어린이용대변기수"
+  ],
+  "child_fixture_field_totals": {
+    "남성용-어린이용대변기수": 0,
+    "남성용-어린이용소변기수": 1,
+    "여성용-어린이용대변기수": 2
+  },
+  "missing_child_cells": 0,
+  "coordinate_missing_rows": 0,
+  "limitation": "2017.04.30 도봉구17기록의 오래된 소규모자료이며 반복시설명의 좌표·시설수가 달라 고유시설분모불확실. 현행서울전체대표아님. 2026학원과관계결합안함.",
+  "exact_duplicate_rows": 0,
+  "unique_rows": 17,
+  "note_duplicate_identity": "완전중복0이나 반복시설명4행, 이름-좌표 조합15개, 시설명13개. 충돌내용이 있어 시설분모 미확정.",
+  "raw_rows_child_positive": 2,
+  "raw_rows_child_zero": 15
+}

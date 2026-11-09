@@ -1,0 +1,116 @@
+{
+  "collected_date": "2026-11-09",
+  "scope": "설문 항목과 분리한 한국어 자기 경험 문구 1차 후보",
+  "counts": {
+    "source_pages": 2,
+    "quote_excerpts": 5
+  },
+  "method": {
+    "selection": "원문 접근이 된 공개 페이지에서 자신의 경험·근로 동기를 이야기한 짧은 문구를 목적 선별. 동일 질문에 대한 직접 응답 3개와 경험 서술 2개를 구별.",
+    "limits": "댓글의 개인 신원·진정성·농담 여부는 검증하지 않음. 목적 표집이며 사람들의 비율로 일반화하지 않음. 제삼자가 추측한 타인의 속마음은 제외.",
+    "privacy": "닉네임·직장명·IP는 별도로 수집하지 않음.",
+    "provenance": "출처 URL·게시일·본문/댓글 위치를 보존. 개별 댓글 영구 링크는 미확보.",
+    "copyright": "출처당 짧은 인용만 보존하고 전체 게시물은 복제하지 않음.",
+    "runtime": "원문·조사자 요약·향후 편집 대사를 분리. 현재 게임에 추가하지 않음."
+  },
+  "sources": [
+    {
+      "id": "BLIND20241202",
+      "url": "https://www.teamblind.com/kr/post/회사다니는-이유-r1YVWb8s",
+      "post_date": "2024-12-02",
+      "context": "작성자가 출근할 힘이 나지 않는다며 다른 사람들의 근로 이유를 묻는 글",
+      "access": "공개 페이지 본문과 노출 댓글 확인. 전체 11개 중 더보기 뒤 댓글은 미수집.",
+      "retrieval_id": "01a1bfd7-3237-779c-98f9-a7f6ce3cc83a"
+    },
+    {
+      "id": "COOK20111017",
+      "url": "https://www.82cook.com/entiz/read.php?bn=15&num=1099128",
+      "post_date": "2011-10-17",
+      "context": "경제활동을 시작한 뒤 자신이 느끼는 당당함에 관한 글과 전업·취업 선택을 이야기하는 댓글",
+      "access": "공개 페이지의 본문과 댓글 확인. 근로 이유를 동일 질문으로 물은 조사는 아님.",
+      "retrieval_id": "01a1bfd7-3275-717c-a475-e34009f9be6d"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "WQ01",
+      "source_id": "BLIND20241202",
+      "original_excerpt": "싫은데 먹고살려면 가야지..",
+      "date": "2024-12-02",
+      "locator": "노출 댓글 1번째",
+      "theme_summary": "생계",
+      "context_summary": "다른 사람들의 출근 이유를 묻는 글에 대한 직접 답변",
+      "source_url": "https://www.teamblind.com/kr/post/회사다니는-이유-r1YVWb8s",
+      "record_type": "public_first_person_post_or_comment_excerpt",
+      "text_scope": "짧은 직접인용; 맞춤법·문장부호 유지, 전문 아님",
+      "theme_type": "조사자 요약",
+      "speaker_identity_verified": false,
+      "comment_permalink_available": false,
+      "game_line_adaptation": null
+    },
+    {
+      "id": "WQ02",
+      "source_id": "BLIND20241202",
+      "original_excerpt": "백수 하기 싫어서,,,,",
+      "date": "2024-12-02",
+      "locator": "노출 댓글 중 위 문구로 시작하는 댓글",
+      "theme_summary": "미취업 상태 회피",
+      "context_summary": "다른 사람들의 출근 이유를 묻는 글에 대한 직접 답변",
+      "source_url": "https://www.teamblind.com/kr/post/회사다니는-이유-r1YVWb8s",
+      "record_type": "public_first_person_post_or_comment_excerpt",
+      "text_scope": "짧은 직접인용; 맞춤법·문장부호 유지, 전문 아님",
+      "theme_type": "조사자 요약",
+      "speaker_identity_verified": false,
+      "comment_permalink_available": false,
+      "game_line_adaptation": null
+    },
+    {
+      "id": "WQ03",
+      "source_id": "BLIND20241202",
+      "original_excerpt": "인스타에 명품백올려야지",
+      "date": "2024-12-02",
+      "locator": "노출 마지막 댓글",
+      "theme_summary": "소비와 자기표현",
+      "context_summary": "다른 사람들의 출근 이유를 묻는 글에 대한 답변. 농담·과장 여부는 판단하지 않음",
+      "source_url": "https://www.teamblind.com/kr/post/회사다니는-이유-r1YVWb8s",
+      "record_type": "public_first_person_post_or_comment_excerpt",
+      "text_scope": "짧은 직접인용; 맞춤법·문장부호 유지, 전문 아님",
+      "theme_type": "조사자 요약",
+      "speaker_identity_verified": false,
+      "comment_permalink_available": false,
+      "game_line_adaptation": null
+    },
+    {
+      "id": "WQ04",
+      "source_id": "COOK20111017",
+      "original_excerpt": "왜냐면... 내 자신이 먼저 당당해진걸 느끼거든요..",
+      "date": "2011-10-17",
+      "locator": "원글 본문; 처음 돈을 벌고 느낀 변화를 서술하는 부분",
+      "theme_summary": "경제활동과 당당함",
+      "context_summary": "일을 시작한 원인을 직접 답한 말은 아니며, 돈을 번 뒤 자신에게 생긴 변화를 설명한 경험",
+      "source_url": "https://www.82cook.com/entiz/read.php?bn=15&num=1099128",
+      "record_type": "public_first_person_post_or_comment_excerpt",
+      "text_scope": "짧은 직접인용; 맞춤법·문장부호 유지, 전문 아님",
+      "theme_type": "조사자 요약",
+      "speaker_identity_verified": false,
+      "comment_permalink_available": false,
+      "game_line_adaptation": null
+    },
+    {
+      "id": "WQ05",
+      "source_id": "COOK20111017",
+      "original_excerpt": "전 이 바쁜 생활 피곤한 생활이 적성에 맞습니다.^^",
+      "date": "2011-10-18",
+      "locator": "댓글 23번, 14:10, 마지막 부분",
+      "theme_summary": "활동적인 생활에 대한 선호",
+      "context_summary": "사회적 성취와 바쁜 생활을 좋아해 직장생활을 선택했다고 설명한 댓글",
+      "source_url": "https://www.82cook.com/entiz/read.php?bn=15&num=1099128",
+      "record_type": "public_first_person_post_or_comment_excerpt",
+      "text_scope": "짧은 직접인용; 맞춤법·문장부호 유지, 전문 아님",
+      "theme_type": "조사자 요약",
+      "speaker_identity_verified": false,
+      "comment_permalink_available": false,
+      "game_line_adaptation": null
+    }
+  ]
+}

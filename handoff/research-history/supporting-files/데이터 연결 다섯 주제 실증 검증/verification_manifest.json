@@ -1,0 +1,673 @@
+{
+  "spreadsheetId": "1_pwb_UvpQTEpGlSrfC1vdnMEcDW58TPDU3KzidM3RRM",
+  "sheets": [
+    {
+      "sheetId": 162000001,
+      "sheetName": "16-20검증요약",
+      "usedRows": 11,
+      "usedCols": 6,
+      "range": "'16-20검증요약'!A1:F11"
+    },
+    {
+      "sheetId": 162000016,
+      "sheetName": "16_학원과어린이변기",
+      "usedRows": 31,
+      "usedCols": 8,
+      "range": "'16_학원과어린이변기'!A1:H31"
+    },
+    {
+      "sheetId": 162000017,
+      "sheetName": "17_보호구역과조업",
+      "usedRows": 16,
+      "usedCols": 8,
+      "range": "'17_보호구역과조업'!A1:H16"
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "usedRows": 43,
+      "usedCols": 8,
+      "range": "'18_카페와휴지통'!A1:H43"
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "usedRows": 14,
+      "usedCols": 8,
+      "range": "'19_산불연기와태양광'!A1:H14"
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "usedRows": 25,
+      "usedCols": 8,
+      "range": "'20_준공연대와충전기'!A1:H25"
+    },
+    {
+      "sheetId": 162000099,
+      "sheetName": "16-20출처방법",
+      "usedRows": 30,
+      "usedCols": 8,
+      "range": "'16-20출처방법'!A1:H30"
+    },
+    {
+      "sheetId": 162000118,
+      "sheetName": "18_카페거리원자료",
+      "usedRows": 1069,
+      "usedCols": 12,
+      "range": "'18_카페거리원자료'!A1:L1069"
+    },
+    {
+      "sheetId": 162000218,
+      "sheetName": "18_휴지통위치검증",
+      "usedRows": 166,
+      "usedCols": 16,
+      "range": "'18_휴지통위치검증'!A1:P166"
+    }
+  ],
+  "expectedFormulaCells": [
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B8",
+      "formula": "=B7/B6",
+      "expected": 0.8363636363636363,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B11",
+      "formula": "=MEDIAN('18_카페거리원자료'!H2:H1069)",
+      "expected": 222.93452127635865,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B12",
+      "formula": "=AVERAGE('18_카페거리원자료'!H2:H1069)",
+      "expected": 239.32041746956943,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B13",
+      "formula": "=COUNTIF('18_카페거리원자료'!H2:H1069,\">300\")",
+      "expected": 300,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B14",
+      "formula": "=B13/B5",
+      "expected": 0.2808988764044944,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B15",
+      "formula": "=COUNTIF('18_카페거리원자료'!H2:H1069,\">500\")",
+      "expected": 47,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B16",
+      "formula": "=B15/B5",
+      "expected": 0.04400749063670412,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "B21",
+      "formula": "=B11-B20",
+      "expected": 7.737171771781419,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F26",
+      "formula": "=E26/B26",
+      "expected": 0.1262135922330097,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F27",
+      "formula": "=E27/B27",
+      "expected": 0.25675675675675674,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F28",
+      "formula": "=E28/B28",
+      "expected": 0.2631578947368421,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F29",
+      "formula": "=E29/B29",
+      "expected": 0.3333333333333333,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F30",
+      "formula": "=E30/B30",
+      "expected": 0.3333333333333333,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F31",
+      "formula": "=E31/B31",
+      "expected": 1.0,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F32",
+      "formula": "=E32/B32",
+      "expected": 0.27358490566037735,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F33",
+      "formula": "=E33/B33",
+      "expected": 0.2857142857142857,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F34",
+      "formula": "=E34/B34",
+      "expected": 0.21428571428571427,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F35",
+      "formula": "=E35/B35",
+      "expected": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F36",
+      "formula": "=E36/B36",
+      "expected": 0.18181818181818182,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F37",
+      "formula": "=E37/B37",
+      "expected": 0.07317073170731707,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F38",
+      "formula": "=E38/B38",
+      "expected": 0.3333333333333333,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F39",
+      "formula": "=E39/B39",
+      "expected": 0.6166666666666667,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F40",
+      "formula": "=E40/B40",
+      "expected": 0.11594202898550725,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F41",
+      "formula": "=E41/B41",
+      "expected": 0.24429967426710097,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F42",
+      "formula": "=E42/B42",
+      "expected": 0.4537037037037037,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000018,
+      "sheetName": "18_카페와휴지통",
+      "cell": "F43",
+      "formula": "=E43/B43",
+      "expected": 0.1111111111111111,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "C8",
+      "formula": "=B8/$B$12-1",
+      "expected": -0.040000000000000036,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "C9",
+      "formula": "=B9/$B$12-1",
+      "expected": -0.12,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "D9",
+      "formula": "=B9/B8-1",
+      "expected": -0.08333333333333337,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "C10",
+      "formula": "=B10/$B$12-1",
+      "expected": -0.09999999999999998,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "D10",
+      "formula": "=B10/B9-1",
+      "expected": 0.022727272727272707,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "C11",
+      "formula": "=B11/$B$12-1",
+      "expected": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000019,
+      "sheetName": "19_산불연기와태양광",
+      "cell": "D11",
+      "formula": "=B11/B10-1",
+      "expected": 0.11111111111111116,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D8",
+      "formula": "=C8/B8",
+      "expected": 0.2153846153846154,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G8",
+      "formula": "=F8/E8",
+      "expected": 0.6971575722811428,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D9",
+      "formula": "=C9/B9",
+      "expected": 0.4329004329004329,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G9",
+      "formula": "=F9/E9",
+      "expected": 1.041251828854869,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D10",
+      "formula": "=C10/B10",
+      "expected": 0.6756756756756757,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G10",
+      "formula": "=F10/E10",
+      "expected": 1.280530264303182,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "B11",
+      "formula": "=SUM(B8:B10)",
+      "expected": 861,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "C11",
+      "formula": "=SUM(C8:C10)",
+      "expected": 406,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D11",
+      "formula": "=C11/B11",
+      "expected": 0.4715447154471545,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "E11",
+      "formula": "=SUM(E8:E10)",
+      "expected": 593505,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "F11",
+      "formula": "=SUM(F8:F10)",
+      "expected": 630875,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G11",
+      "formula": "=F11/E11",
+      "expected": 1.0629649286863632,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "B12",
+      "formula": "=100*(D10-D8)",
+      "expected": 46.029106029106025,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "B13",
+      "formula": "=D10/D8",
+      "expected": 3.137065637065637,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D15",
+      "formula": "=C15/B15",
+      "expected": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G15",
+      "formula": "=F15/E15",
+      "expected": 0.5217391304347826,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H15",
+      "formula": "=IF(G15>D15,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D16",
+      "formula": "=C16/B16",
+      "expected": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G16",
+      "formula": "=F16/E16",
+      "expected": 0.5714285714285714,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H16",
+      "formula": "=IF(G16>D16,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D17",
+      "formula": "=C17/B17",
+      "expected": 0.18181818181818182,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G17",
+      "formula": "=F17/E17",
+      "expected": 0.5172413793103449,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H17",
+      "formula": "=IF(G17>D17,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D18",
+      "formula": "=C18/B18",
+      "expected": 0.3559322033898305,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G18",
+      "formula": "=F18/E18",
+      "expected": 0.8333333333333334,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H18",
+      "formula": "=IF(G18>D18,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D19",
+      "formula": "=C19/B19",
+      "expected": 0.2857142857142857,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G19",
+      "formula": "=F19/E19",
+      "expected": 0.6708860759493671,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H19",
+      "formula": "=IF(G19>D19,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D20",
+      "formula": "=C20/B20",
+      "expected": 0.21818181818181817,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G20",
+      "formula": "=F20/E20",
+      "expected": 0.38235294117647056,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H20",
+      "formula": "=IF(G20>D20,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D21",
+      "formula": "=C21/B21",
+      "expected": 0.07142857142857142,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G21",
+      "formula": "=F21/E21",
+      "expected": 0.5555555555555556,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H21",
+      "formula": "=IF(G21>D21,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "D22",
+      "formula": "=C22/B22",
+      "expected": 0.2,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "G22",
+      "formula": "=F22/E22",
+      "expected": 0.7904761904761904,
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000020,
+      "sheetName": "20_준공연대와충전기",
+      "cell": "H22",
+      "formula": "=IF(G22>D22,\"최신군 높음\",\"확인필요\")",
+      "expected": "최신군 높음",
+      "tolerance": 1e-06
+    },
+    {
+      "sheetId": 162000016,
+      "sheetName": "16_학원과어린이변기",
+      "cell": "B12",
+      "formula": "=COUNTA(A15:A31)",
+      "expected": 17,
+      "tolerance": 0
+    },
+    {
+      "sheetId": 162000016,
+      "sheetName": "16_학원과어린이변기",
+      "cell": "B13",
+      "formula": "=SUM(F15:F31)",
+      "expected": 3,
+      "tolerance": 0
+    }
+  ],
+  "existingNavigation": {
+    "sheetId": 467615415,
+    "range": "'검증요약'!A20",
+    "formula": "=HYPERLINK(\"#gid=162000001\",\"16~20번 수치·관계 검증: 16-20검증요약 시트로 이동\")"
+  },
+  "rawCounts": {
+    "cafes": 1068,
+    "bins": 165,
+    "matchedBins": 138,
+    "unmatchedBins": 27,
+    "dobongRecords": 17
+  },
+  "writeOrder": [
+    "sheets_1620_main.json",
+    "sheets_1620_cafes_1.json",
+    "sheets_1620_cafes_2.json",
+    "sheets_1620_cafes_3.json",
+    "sheets_1620_bins.json"
+  ]
+}

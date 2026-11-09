@@ -1,0 +1,169 @@
+subcats {'경영 컨설팅업': 1912, '백반/한정식': 1375, '카페': 1068, '부동산 중개/대리업': 1033, '미용실': 752, '광고 대행업': 689, '요리 주점': 511, '편의점': 470, '기타 의류 소매업': 469, '중국집': 452, '슈퍼마켓': 449, '세무사': 438, '돼지고기 구이/찜': 379, '여성 의류 소매업': 349, '김밥/만두/분식': 347, '명함/간판/광고물 제작': 328, '여행사': 325, '일식 회/초밥': 302, '국/탕/찌개류': 299, '노래방': 289, '시각 디자인업': 270, '화장품 소매업': 259, '약국': 249, '건축 설계 및 관련 서비스업': 237, '빵/도넛': 236, '인테리어 디자인업': 231, '생맥주 전문': 224, '치킨': 224, '피부 관리실': 224, '사진촬영업': 217, '자동차 정비소': 210, '요가/필라테스 학원': 196, '전시/컨벤션/행사 대행 서비스업': 185, '경양식': 181, '핸드폰 소매업': 180}
+counts 25109 1068 138 76 27
+{
+  "bin_rows": 165,
+  "bin_general": 92,
+  "bin_recycling": 73,
+  "bin_busstop_rows": 148,
+  "bin_sites_by_exact_address_description": 93,
+  "bin_rows_with_matched_ars": 138,
+  "matched_bus_sites": 76,
+  "unmatched_bin_rows": 27,
+  "bin_bus_source_rows": 11236,
+  "all_ydp_shops": 25109,
+  "cafes": 1068,
+  "cafe_coordinate_missing": 0,
+  "cafe_dist_m": {
+    "0": 13.446228607365631,
+    "0.25": 135.1124498855902,
+    "0.5": 222.93452127635865,
+    "0.75": 313.3049938154404,
+    "0.9": 436.04622747813687,
+    "1": 726.597430088555
+  },
+  "cafe_mean_distance_m": 239.32041746956943,
+  "all_shop_median_distance_m": 215.19734950457723,
+  "all_shop_mean_distance_m": 236.8936725443716,
+  "cafes_distance_over_300m": 300,
+  "cafes_distance_over_500m": 47,
+  "cafes_distance_within_100m": 150,
+  "non_cafe_shops": 24041,
+  "non_cafe_median_distance_m": 215.19734950457723,
+  "non_cafe_mean_distance_m": 236.78586656375052,
+  "matched_recycling_sites": 57,
+  "recycling_distance_median_m": 273.2814065083321,
+  "recycling_distance_over_300m": 488,
+  "dong_rows": [
+    {
+      "행정동명": "당산1동",
+      "cafes": 103,
+      "median_nearest_bin_m": 169.39558957727766,
+      "mean_nearest_bin_m": 177.33533410825828,
+      "over_300m": 13
+    },
+    {
+      "행정동명": "당산2동",
+      "cafes": 74,
+      "median_nearest_bin_m": 200.4228165218376,
+      "mean_nearest_bin_m": 208.71793908792526,
+      "over_300m": 19
+    },
+    {
+      "행정동명": "대림1동",
+      "cafes": 19,
+      "median_nearest_bin_m": 227.39740972182528,
+      "mean_nearest_bin_m": 221.66562027639122,
+      "over_300m": 5
+    },
+    {
+      "행정동명": "대림2동",
+      "cafes": 24,
+      "median_nearest_bin_m": 281.410404691881,
+      "mean_nearest_bin_m": 300.5860093484858,
+      "over_300m": 8
+    },
+    {
+      "행정동명": "대림3동",
+      "cafes": 36,
+      "median_nearest_bin_m": 255.89506622557312,
+      "mean_nearest_bin_m": 271.4106356058948,
+      "over_300m": 12
+    },
+    {
+      "행정동명": "도림동",
+      "cafes": 23,
+      "median_nearest_bin_m": 444.0456039137991,
+      "mean_nearest_bin_m": 428.8064582662513,
+      "over_300m": 23
+    },
+    {
+      "행정동명": "문래동",
+      "cafes": 106,
+      "median_nearest_bin_m": 225.37206625475864,
+      "mean_nearest_bin_m": 271.0435100699227,
+      "over_300m": 29
+    },
+    {
+      "행정동명": "신길1동",
+      "cafes": 21,
+      "median_nearest_bin_m": 255.6133268763366,
+      "mean_nearest_bin_m": 254.18239091750522,
+      "over_300m": 6
+    },
+    {
+      "행정동명": "신길3동",
+      "cafes": 14,
+      "median_nearest_bin_m": 205.65877171259837,
+      "mean_nearest_bin_m": 211.10202751302663,
+      "over_300m": 3
+    },
+    {
+      "행정동명": "신길4동",
+      "cafes": 10,
+      "median_nearest_bin_m": 114.62731993449383,
+      "mean_nearest_bin_m": 128.36541179362038,
+      "over_300m": 0
+    },
+    {
+      "행정동명": "신길5동",
+      "cafes": 11,
+      "median_nearest_bin_m": 176.44435198067833,
+      "mean_nearest_bin_m": 178.59858871043605,
+      "over_300m": 2
+    },
+    {
+      "행정동명": "신길6동",
+      "cafes": 41,
+      "median_nearest_bin_m": 154.386166547335,
+      "mean_nearest_bin_m": 156.41891247685467,
+      "over_300m": 3
+    },
+    {
+      "행정동명": "신길7동",
+      "cafes": 15,
+      "median_nearest_bin_m": 160.31876554665305,
+      "mean_nearest_bin_m": 207.50443610993852,
+      "over_300m": 5
+    },
+    {
+      "행정동명": "양평1동",
+      "cafes": 60,
+      "median_nearest_bin_m": 365.06719452260165,
+      "mean_nearest_bin_m": 329.9721812644883,
+      "over_300m": 37
+    },
+    {
+      "행정동명": "양평2동",
+      "cafes": 69,
+      "median_nearest_bin_m": 208.80430736055695,
+      "mean_nearest_bin_m": 196.55403689155455,
+      "over_300m": 8
+    },
+    {
+      "행정동명": "여의동",
+      "cafes": 307,
+      "median_nearest_bin_m": 245.3478377937734,
+      "mean_nearest_bin_m": 238.80620980721775,
+      "over_300m": 75
+    },
+    {
+      "행정동명": "영등포동",
+      "cafes": 108,
+      "median_nearest_bin_m": 227.0698297644867,
+      "mean_nearest_bin_m": 274.49976225883717,
+      "over_300m": 49
+    },
+    {
+      "행정동명": "영등포본동",
+      "cafes": 27,
+      "median_nearest_bin_m": 116.50568336211876,
+      "mean_nearest_bin_m": 174.3187094563798,
+      "over_300m": 3
+    }
+  ],
+  "sha256": {
+    "/Users/sqmr/Documents/ChatGPT/정보디자인/research_notes/데이터 연결 다섯 주제 실증 검증/bins.csv": "8e816f12c9aa568d7339790d7aa6f76a2e8933fb3518f9602c2fe0b25b76dbc1",
+    "/Users/sqmr/Documents/ChatGPT/정보디자인/research_notes/데이터 연결 다섯 주제 실증 검증/OA-15067.csv": "6c8e8dab61d62843bec637063b9204168ba6cdf6ad06a14c2c86e011d63763e0",
+    "/Users/sqmr/Documents/ChatGPT/정보디자인/verification_batch1/analysis/city/raw/shops_seoul_202409.csv": "c62b85df98f02406df8f4515bb6ed809621a60483676e4c53a7d529e45f319a0"
+  }
+}

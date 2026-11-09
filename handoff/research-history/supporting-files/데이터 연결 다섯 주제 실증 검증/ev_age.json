@@ -1,0 +1,156 @@
+{
+  "topic": 20,
+  "title": "전기차의 충전 여건은 집의 나이와 관계있을까?",
+  "verdict": "기존 연구 근거 있음 / 제안 원자료 직접결합 및 원지표 직접검증 미완료",
+  "evidence_level": "공공연구원 기존 조사 원문 집계표 확인·독립 재계산",
+  "study": {
+    "author": "정동재",
+    "organization": "인천연구원",
+    "year": 2022,
+    "scope": "인천 100세대 이상 아파트 861개 단지",
+    "period": "2022년 기준, 연구기간2022-01-01~2022-06-30, 원시 수집일 미확인",
+    "n": 861,
+    "source_data": "K-apt 공동주택관리 정보시스템(2022), 인천시 내부자료",
+    "source_url": "https://www.ii.re.kr/base/board/read?boardManagementNo=14&boardNo=15612&menuLevel=2&menuNo=76",
+    "pdf_url": "https://www.ii.re.kr/base/linked/report/download?boardNo=15612&projcd=1022JU0018&seq=3&div=A1&atchSeq=1",
+    "table": "표5-10",
+    "printed_page": 74,
+    "pdf_page": 88
+  },
+  "age_groups": [
+    {
+      "group": "1995년 이전 사용승인(원문 구간)",
+      "complexes": 260,
+      "with_chargers": 56,
+      "without_chargers": 204,
+      "installation_rate": 0.2153846153846154,
+      "households": 163874,
+      "parking_spaces": 114246
+    },
+    {
+      "group": "1995~2005년 사용승인(원문 구간)",
+      "complexes": 231,
+      "with_chargers": 100,
+      "without_chargers": 131,
+      "installation_rate": 0.4329004329004329,
+      "households": 140115,
+      "parking_spaces": 145895
+    },
+    {
+      "group": "2005년 이후 사용승인(원문 구간)",
+      "complexes": 370,
+      "with_chargers": 250,
+      "without_chargers": 120,
+      "installation_rate": 0.6756756756756757,
+      "households": 289516,
+      "parking_spaces": 370734
+    }
+  ],
+  "district_counts": [
+    [
+      "중구",
+      8,
+      0,
+      19,
+      6,
+      23,
+      12
+    ],
+    [
+      "동구",
+      8,
+      0,
+      7,
+      6,
+      7,
+      4
+    ],
+    [
+      "미추홀구",
+      33,
+      6,
+      20,
+      8,
+      29,
+      15
+    ],
+    [
+      "연수구",
+      59,
+      21,
+      21,
+      7,
+      66,
+      55
+    ],
+    [
+      "남동구",
+      35,
+      10,
+      22,
+      13,
+      79,
+      53
+    ],
+    [
+      "부평구",
+      55,
+      12,
+      42,
+      16,
+      34,
+      13
+    ],
+    [
+      "계양구",
+      42,
+      3,
+      39,
+      17,
+      27,
+      15
+    ],
+    [
+      "서구",
+      20,
+      4,
+      61,
+      27,
+      105,
+      83
+    ]
+  ],
+  "calculations": {
+    "new_minus_old_pp": 46.029106029106025,
+    "new_old_rate_ratio": 3.137065637065637,
+    "cramers_v": 0.3911328453457761,
+    "districts_with_same_direction": 8,
+    "total_districts": 8,
+    "all_installation_rate": 0.4715447154471545
+  },
+  "original_question_unverified": [
+    "준공연대별 세대당 충전기 수",
+    "외부인 이용제한을 고려한 외부 충전소까지 거리",
+    "제공한 건축물대장×충전소 원시 주소 결합",
+    "현재서울의충전여건"
+  ],
+  "limitations": [
+    "설치유무 지표이며 기수/세대 또는 충전대기/거리 지표 아님",
+    "2022년 인천 단면자료; 현재나 서울 일반화 불가",
+    "소득/규모/주차여건/임대여부/지역 등 미조정; 인과 주장 불가",
+    "원문연대경계 포함방향 미확인"
+  ],
+  "source_quality_issue": "원문의 34개단지=전체의8.4%는 분모 혼동.34/406=8.37%,34/861=3.95%.",
+  "sheet_summary_row": [
+    20,
+    "전기차 충전 여건×집의 나이",
+    "기존 연구 근거 있음 / 직접 원자료 결합 미완료",
+    "인천 2022년, 100세대 이상861단지",
+    "충전기 1기 이상 설치율:1995이전56/260(21.54%),1995~2005년100/231(43.29%),2005이후250/370(67.57%)",
+    "최신-최고령46.03%p;설치율비3.14배;8구전부같은방향;V=0.391",
+    "설치 유무의 관계는 뚜렷.제안된 세대당충전기·외부거리는 미검증",
+    "기존공공연구원집계표재계산;정책기준을실측으로사용안함",
+    "2022인천·주차/규모/소득미조정·인과불가",
+    "https://www.ii.re.kr/base/board/read?boardManagementNo=14&boardNo=15612&menuLevel=2&menuNo=76"
+  ]
+}

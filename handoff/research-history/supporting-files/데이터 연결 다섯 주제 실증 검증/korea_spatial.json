@@ -1,0 +1,287 @@
+{
+  "researched_at": "2026-11-02 Asia/Seoul",
+  "topics": [
+    {
+      "id": 16,
+      "title": "학원가에는 어린이 변기도 많을까?",
+      "verdict": "미검증: 어린이변기 원자료와 학원 전수의 결합 미실행",
+      "direct_analysis": false,
+      "actual_numeric_checks": [
+        {
+          "metric": "NEIS 서울 학원·교습소 API 응답 total_count",
+          "value": 25512,
+          "kind": "API 메타수치; 초등대상·현재운영 전수 검증수 아님"
+        },
+        {
+          "metric": "인증키 없는 API 실제 수신 행",
+          "value": 5,
+          "kind": "스키마 확인용 표본; 대표표본 아님"
+        },
+        {
+          "metric": "기존 서울 공중화장실 좌표자료 실제 행",
+          "value": 4455,
+          "kind": "어린이변기수 필드 없음"
+        },
+        {
+          "metric": "기존 공중화장실 CSV 열",
+          "value": 17,
+          "kind": "어린이변기수 열 0"
+        }
+      ],
+      "access_checks": [
+        "OA-20528 CSV 310bytes header-only",
+        "OA-23036 CSV 352bytes header-only",
+        "NEIS acaInsTiInfo 정상 INFO-000, 총25512, 실제5행",
+        "file.localdata.go.kr/file/public_restroom_info/info HTTPS403; HTTP404"
+      ],
+      "interpretation": "학원과 어린이변기의 상관·거리·충족률을 계산하지 못했다. 관계가 없다는 증거가 아니라 미검증이다.",
+      "limitations": [
+        "전국표준 화장실은 2025년2월부터 위경도 제공 중단을 공식 고지",
+        "기존서울4455개 자료는 어린이변기 수 필드가 없어 대체불가",
+        "학원 교습과정은 초등대상을 일관되게 식별하는 별도 연령필드가 아님",
+        "학원정원은 실제 이용 아동수/현장 유동량 아님",
+        "사설 학원 내부 화장실은 본래 분석에서 제외"
+      ],
+      "sources": [
+        "https://data.seoul.go.kr/dataList/OA-20528/S/1/datasetView.do",
+        "https://data.seoul.go.kr/dataList/OA-23036/S/1/datasetView.do",
+        "https://open.neis.go.kr/hub/acaInsTiInfo?Type=json&pIndex=1&pSize=1000&ATPT_OFCDC_SC_CODE=B10",
+        "https://www.data.go.kr/data/15012892/standard.do",
+        "https://file.localdata.go.kr/file/public_restroom_info/info",
+        "https://data.seoul.go.kr/dataList/OA-22586/S/1/datasetView.do"
+      ],
+      "historical_supplement": {
+        "source": "https://data.seoul.go.kr/dataList/OA-13467/S/1/datasetView.do",
+        "rows": 17,
+        "data_dates": [
+          "2017-04-30"
+        ],
+        "child_fixture_total": 3,
+        "child_fields": [
+          "남성용-어린이용대변기수",
+          "남성용-어린이용소변기수",
+          "여성용-어린이용대변기수"
+        ],
+        "child_fixture_field_totals": {
+          "남성용-어린이용대변기수": 0,
+          "남성용-어린이용소변기수": 1,
+          "여성용-어린이용대변기수": 2
+        },
+        "missing_child_cells": 0,
+        "coordinate_missing_rows": 0,
+        "limitation": "2017.04.30 도봉구17기록의 오래된 소규모자료이며 반복시설명의 좌표·시설수가 달라 고유시설분모불확실. 현행서울전체대표아님. 2026학원과관계결합안함.",
+        "exact_duplicate_rows": 0,
+        "unique_rows": 17,
+        "note_duplicate_identity": "완전중복0이나 반복시설명4행, 이름-좌표 조합15개, 시설명13개. 충돌내용이 있어 시설분모 미확정.",
+        "raw_rows_child_positive": 2,
+        "raw_rows_child_zero": 15
+      }
+    },
+    {
+      "id": 18,
+      "title": "커피를 살 곳과 컵을 버릴 곳은 가까이 있을까?",
+      "verdict": "조건부 부분실증: 위치 복원된 정류장형 휴지통에 대한 접근거리 계산; 전체 공백·카페 특유 불균형 확정 불가",
+      "direct_analysis": true,
+      "dates": {
+        "bins": "2024-08-28",
+        "shops": "2024-09-30",
+        "bus_coordinates_metadata_updated": "2026-09-02",
+        "downloaded": "2026-11-02"
+      },
+      "actual_numeric_checks": {
+        "bin_rows": 165,
+        "bin_general": 92,
+        "bin_recycling": 73,
+        "bin_busstop_rows": 148,
+        "bin_sites_by_exact_address_description": 93,
+        "bin_rows_with_matched_ars": 138,
+        "matched_bus_sites": 76,
+        "unmatched_bin_rows": 27,
+        "bin_bus_source_rows": 11236,
+        "all_ydp_shops": 25109,
+        "cafes": 1068,
+        "cafe_coordinate_missing": 0,
+        "cafe_dist_m": {
+          "0": 13.446228607365631,
+          "0.25": 135.1124498855902,
+          "0.5": 222.93452127635865,
+          "0.75": 313.3049938154404,
+          "0.9": 436.04622747813687,
+          "1": 726.597430088555
+        },
+        "cafe_mean_distance_m": 239.32041746956943,
+        "all_shop_median_distance_m": 215.19734950457723,
+        "all_shop_mean_distance_m": 236.8936725443716,
+        "cafes_distance_over_300m": 300,
+        "cafes_distance_over_500m": 47,
+        "cafes_distance_within_100m": 150,
+        "non_cafe_shops": 24041,
+        "non_cafe_median_distance_m": 215.19734950457723,
+        "non_cafe_mean_distance_m": 236.78586656375052,
+        "matched_recycling_sites": 57,
+        "recycling_distance_median_m": 273.2814065083321,
+        "recycling_distance_over_300m": 488,
+        "dong_rows": [
+          {
+            "행정동명": "당산1동",
+            "cafes": 103,
+            "median_nearest_bin_m": 169.39558957727766,
+            "mean_nearest_bin_m": 177.33533410825828,
+            "over_300m": 13
+          },
+          {
+            "행정동명": "당산2동",
+            "cafes": 74,
+            "median_nearest_bin_m": 200.4228165218376,
+            "mean_nearest_bin_m": 208.71793908792526,
+            "over_300m": 19
+          },
+          {
+            "행정동명": "대림1동",
+            "cafes": 19,
+            "median_nearest_bin_m": 227.39740972182528,
+            "mean_nearest_bin_m": 221.66562027639122,
+            "over_300m": 5
+          },
+          {
+            "행정동명": "대림2동",
+            "cafes": 24,
+            "median_nearest_bin_m": 281.410404691881,
+            "mean_nearest_bin_m": 300.5860093484858,
+            "over_300m": 8
+          },
+          {
+            "행정동명": "대림3동",
+            "cafes": 36,
+            "median_nearest_bin_m": 255.89506622557312,
+            "mean_nearest_bin_m": 271.4106356058948,
+            "over_300m": 12
+          },
+          {
+            "행정동명": "도림동",
+            "cafes": 23,
+            "median_nearest_bin_m": 444.0456039137991,
+            "mean_nearest_bin_m": 428.8064582662513,
+            "over_300m": 23
+          },
+          {
+            "행정동명": "문래동",
+            "cafes": 106,
+            "median_nearest_bin_m": 225.37206625475864,
+            "mean_nearest_bin_m": 271.0435100699227,
+            "over_300m": 29
+          },
+          {
+            "행정동명": "신길1동",
+            "cafes": 21,
+            "median_nearest_bin_m": 255.6133268763366,
+            "mean_nearest_bin_m": 254.18239091750522,
+            "over_300m": 6
+          },
+          {
+            "행정동명": "신길3동",
+            "cafes": 14,
+            "median_nearest_bin_m": 205.65877171259837,
+            "mean_nearest_bin_m": 211.10202751302663,
+            "over_300m": 3
+          },
+          {
+            "행정동명": "신길4동",
+            "cafes": 10,
+            "median_nearest_bin_m": 114.62731993449383,
+            "mean_nearest_bin_m": 128.36541179362038,
+            "over_300m": 0
+          },
+          {
+            "행정동명": "신길5동",
+            "cafes": 11,
+            "median_nearest_bin_m": 176.44435198067833,
+            "mean_nearest_bin_m": 178.59858871043605,
+            "over_300m": 2
+          },
+          {
+            "행정동명": "신길6동",
+            "cafes": 41,
+            "median_nearest_bin_m": 154.386166547335,
+            "mean_nearest_bin_m": 156.41891247685467,
+            "over_300m": 3
+          },
+          {
+            "행정동명": "신길7동",
+            "cafes": 15,
+            "median_nearest_bin_m": 160.31876554665305,
+            "mean_nearest_bin_m": 207.50443610993852,
+            "over_300m": 5
+          },
+          {
+            "행정동명": "양평1동",
+            "cafes": 60,
+            "median_nearest_bin_m": 365.06719452260165,
+            "mean_nearest_bin_m": 329.9721812644883,
+            "over_300m": 37
+          },
+          {
+            "행정동명": "양평2동",
+            "cafes": 69,
+            "median_nearest_bin_m": 208.80430736055695,
+            "mean_nearest_bin_m": 196.55403689155455,
+            "over_300m": 8
+          },
+          {
+            "행정동명": "여의동",
+            "cafes": 307,
+            "median_nearest_bin_m": 245.3478377937734,
+            "mean_nearest_bin_m": 238.80620980721775,
+            "over_300m": 75
+          },
+          {
+            "행정동명": "영등포동",
+            "cafes": 108,
+            "median_nearest_bin_m": 227.0698297644867,
+            "mean_nearest_bin_m": 274.49976225883717,
+            "over_300m": 49
+          },
+          {
+            "행정동명": "영등포본동",
+            "cafes": 27,
+            "median_nearest_bin_m": 116.50568336211876,
+            "mean_nearest_bin_m": 174.3187094563798,
+            "over_300m": 3
+          }
+        ],
+        "sha256": {
+          "/Users/sqmr/Documents/ChatGPT/정보디자인/research_notes/데이터 연결 다섯 주제 실증 검증/bins.csv": "8e816f12c9aa568d7339790d7aa6f76a2e8933fb3518f9602c2fe0b25b76dbc1",
+          "/Users/sqmr/Documents/ChatGPT/정보디자인/research_notes/데이터 연결 다섯 주제 실증 검증/OA-15067.csv": "6c8e8dab61d62843bec637063b9204168ba6cdf6ad06a14c2c86e011d63763e0",
+          "/Users/sqmr/Documents/ChatGPT/정보디자인/verification_batch1/analysis/city/raw/shops_seoul_202409.csv": "c62b85df98f02406df8f4515bb6ed809621a60483676e4c53a7d529e45f319a0"
+        }
+      },
+      "method": "영등포구 상권소분류=카페1068개. 휴지통 설치위치 문자열에서 19xxx ARS5자리 추출. 정류장 CSV 첫열(이름은 노드 ID이나 실제5자리 ARS)과 정확일치. 같은 ARS 휴지통은1장소, 165기중138행→76장소. 장소당 최초 매칭코드만. 경위도 Haversine R=6371008.8m. 1068×76 전체거리행렬에서 행별 최소. 재활용은138행중 해당종류만57장소.",
+      "interpretation": "복원된 휴지통까지 카페거리 중앙값222.93m이고 300/1068(28.09%)가300m초과다. 단, 누락27행과 설치점 대리좌표로 전체휴지통 공백을 확정할 수 없다. 카페222.93m 대 非카페24041개215.20m의 차이는7.74m 정도로, 이 단순비교에서 카페 특유의 큰 불균형 근거는 약하다. 장소별 접근성 시각화 후보로는 조건부 유효하다.",
+      "limitations": [
+        "27/165개 휴지통행은 좌표 미복원; 그중 정류장10행, 비정류장17행",
+        "복원76장소는 전체 원문 주소·설치위치 조합93장소의 부분집합",
+        "버스정류장 좌표는 휴지통 설치점의 대리좌표이며 오차거리 미상",
+        "휴지통·카페는2024년 인접시점, 좌표는2026.09.02 갱신본; 폐지·이전 여부 미확인",
+        "정류장 대리좌표가 설치점과 같고 시점변화가 없다는 가정에서만 부분집합최근접은전체최근접거리의 상한",
+        "구경계 밖 휴지통·카페 내부 수거함·공원/역사 내부 휴지통 포함 완전성 미확인",
+        "구면직선거리이며 실제 보행거리 아님",
+        "카페수는 컵배출량 아님; 재활용형은컵수거 전용/컵배출 적합성 확인 아님",
+        "非카페 비교는 위치·상권·유동인구 미통제 단순비교; 통계적 유의성·인과 주장 안함"
+      ],
+      "sources": [
+        "https://data.seoul.go.kr/dataList/OA-22383/F/1/datasetView.do",
+        "https://www.data.go.kr/data/15083033/fileData.do",
+        "https://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do"
+      ],
+      "raw_files": [
+        "bins.csv",
+        "bins_matched.csv",
+        "bins_unmatched.csv",
+        "cafe_nearest_matched_bin.csv",
+        "cafe_distances_by_dong.csv",
+        "OA-15067.csv"
+      ],
+      "reproduce": "python analyze_korea.py"
+    }
+  ]
+}

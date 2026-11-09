@@ -1,0 +1,274 @@
+{
+  "checked_at": "2026-11-02 Asia/Seoul",
+  "topics": [
+    {
+      "number": 17,
+      "title": "바다의 보호구역 경계에는 어선이 줄을 설까?",
+      "verdict": "사례에서는 관계 지지, 보편적 관계는 미성립. 기존연구 지지/반례 확인; 직접 Protected Planet×GFW 공간결합 미완료.",
+      "finding": "갈라파고스 선망 49척·664회 투망 AIS 연구는 경계 20km 이내 투망밀도가 연구해역 평균의 최소 4배라고 보고. 캐나다 264개 보전구역 연구에서는 경계집중이 전반적으로 뚜렷하지 않았고 버퍼가 지정 전부터 높았음.",
+      "recommended_message": "어떤 보호구역에서는 조업이 경계로 모이지만, 경계의 띠만으로 보호 효과나 조업 이전을 단정할 수 없다.",
+      "limitations": "2017 갈라파고스 수치는 투망횟수/면적이며 사용자 지표 시간/면적과 다름. 산업어업 금지, 지역 영세어업 허용. 1·5·10km 재분석 미수행. AIS 미탑재/수신누락 및 해류·자원·해저지형·원래 어장 차이 존재.",
+      "sources": [
+        "https://www.int-res.com/articles/feature/m585p001.pdf",
+        "https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/csp2.12919",
+        "https://datadryad.org/dataset/doi:10.5061/dryad.70rxwdc3d",
+        "https://api.protectedplanet.net/documentation/v3",
+        "https://globalfishingwatch.org/dataset-and-code-fishing-activity/"
+      ],
+      "status": "문헌 수치 검증 완료; 원자료 직접 결합 미완료",
+      "access_note": "Protected Planet v3 공식문서는 Archived이며 2026-05-01 종료 예정 고지; v4 전환 필요. 토큰 요구. Dryad monthly.zip file 2195550 공개 메타정보 확인(size165135, sha256 ccfa86810e7f30fb18ed1ea680a2ed3ccae7b78ad309054e26898e053d290a8b), 웹 다운로드403/API 다운로드401로 CSV 미확보."
+    },
+    {
+      "number": 19,
+      "title": "캐나다의 산불이 미국의 태양광을 어둡게 만들까?",
+      "verdict": "물리적 관계와 해당 사건 영향은 공식 운영자료·동료평가 연구가 지지. 직접 NOAA HMS×EIA-930 공간패널 결합 미완료; 인과효과 직접 추정 아님.",
+      "finding": "PJM 공식 보고 피크 출력은 2023-06-06 약4800→06-07 약4400MW(전일대비 -8.33%, 통상5000 대비 -12%), 06-08 약4500, 06-09 약5000MW. 6/7 13–14시 약1000MW 급락. 출력과 일별 발전에너지 혼동 금지.",
+      "recommended_message": "국경을 건넌 연기는 미국 전력망의 태양광 출력에도 흔적을 남겼다. 다만 관측 하락분 모두를 연기 탓으로 계산하지 않는다.",
+      "limitations": "PJM 수치는 반올림된 일피크 MW이며 MWh/GWh 일발전량 아님. 통상 피크는 무연기 반사실이나 전주평균 아님. PJM도 구름과 연기 효과분리가 어렵다고 명시. 분산형 BTM 직접 계측 제외. HMS 피복은 광학두께/지표일사량과 동일하지 않음. 날씨, 계절, 설비용량·고장·출력제어 통제 필요.",
+      "sources": [
+        "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+        "https://www.pjm.com/-/media/DotCom/library/reports-notices/weather-related/20240130-impacts-from-smoke-on-solar-generation-and-load-in-pjm-in-summer-of-2023.ashx",
+        "https://iopscience.iop.org/article/10.1088/1748-9326/adcf3b",
+        "https://ospo.noaa.gov/products/land/hms.html",
+        "https://www.eia.gov/electricity/930-content/about.html"
+      ],
+      "status": "공식 사건수치·문헌 검증 완료; 원래 데이터쌍 직접 분석 미완료"
+    }
+  ],
+  "numerical_headers": [
+    "주제",
+    "자료/범위",
+    "시점",
+    "지표",
+    "원값",
+    "단위",
+    "근거 수준",
+    "출처 URL",
+    "주의/계산"
+  ],
+  "numerical_rows": [
+    [
+      17,
+      "갈라파고스 AIS 표본",
+      "2011-01~2015-10",
+      "참치 선망 조업이 감지된 선박",
+      49,
+      "척",
+      "기존논문 보고값",
+      "https://www.int-res.com/articles/feature/m585p001.pdf",
+      "49척, 664회 투망. exactEarth AIS; GFW 직접 재집계 아님"
+    ],
+    [
+      17,
+      "갈라파고스 AIS 표본",
+      "2011-01~2015-10",
+      "추정 투망 이벤트",
+      664,
+      "회",
+      "기존논문 보고값",
+      "https://www.int-res.com/articles/feature/m585p001.pdf",
+      "해당 해역 통과 AIS 선박 3391척 중 선망선 66척, 조업 감지 49척"
+    ],
+    [
+      17,
+      "갈라파고스 경계 비교",
+      "2011-01~2015-10",
+      "외곽 0–20km 투망밀도 / 연구해역 평균",
+      4,
+      "배 이상",
+      "기존논문 보고값; 원문 at least 4-fold",
+      "https://www.int-res.com/articles/feature/m585p001.pdf",
+      "시간/km²가 아니라 sets/km². 1·5·10km 재계산 없음"
+    ],
+    [
+      17,
+      "갈라파고스 핫스폿 비교",
+      "2011-01~2015-10",
+      "핫스폿 투망밀도",
+      0.0006,
+      "회/km²",
+      "기존논문 본문 보고값",
+      "https://www.int-res.com/articles/feature/m585p001.pdf",
+      "핫스폿 21개 1°격자 170회; 0–20km 버퍼와 별개 범위"
+    ],
+    [
+      17,
+      "갈라파고스 핫스폿 비교",
+      "2011-01~2015-10",
+      "기타 연구해역 투망밀도",
+      0.0003,
+      "회/km²",
+      "기존논문 본문 보고값",
+      "https://www.int-res.com/articles/feature/m585p001.pdf",
+      "위 핫스폿 밀도/본 값=2배; 경계 4배 수치와 구분"
+    ],
+    [
+      17,
+      "캐나다 반례 연구",
+      "2012–2019",
+      "어업규정 있는 보전구역",
+      264,
+      "구역",
+      "기존논문 보고값",
+      "https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/csp2.12919",
+      "모든 구역이 전면 금어는 아님; 전체/구역별 규정 매칭"
+    ],
+    [
+      17,
+      "캐나다 반례 연구",
+      "2012–2019",
+      "지정 이후 내부 추정조업시간",
+      22000,
+      "시간(반올림)",
+      "기존논문 초록 보고값",
+      "https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/csp2.12919",
+      "지정 시기 서로 다름. 관찰연도 전체 시간을 분모로 해 연평균 계산 금지"
+    ],
+    [
+      17,
+      "캐나다 반례 연구",
+      "2012–2019",
+      "추정 불법 조업 비중",
+      0.22,
+      "비율",
+      "기존논문 초록 보고값",
+      "https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/csp2.12919",
+      "구역별 어구규정 대응; AIS만으로 법적 위반 확정 아님"
+    ],
+    [
+      19,
+      "PJM 계통연결 태양광",
+      "2023-06-06",
+      "일 피크 출력",
+      4800,
+      "MW(약)",
+      "계통운영자 공식 보고값",
+      "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+      "한낮 피크; 발전량 MWh/GWh 아님"
+    ],
+    [
+      19,
+      "PJM 계통연결 태양광",
+      "2023-06-07",
+      "일 피크 출력",
+      4400,
+      "MW(약)",
+      "계통운영자 공식 보고값",
+      "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+      "전일 4800 대비 (4400/4800)-1=-8.333%; 통상 5000 대비 -12%"
+    ],
+    [
+      19,
+      "PJM 계통연결 태양광",
+      "2023-06-08",
+      "일 피크 출력",
+      4500,
+      "MW(약)",
+      "계통운영자 공식 보고값",
+      "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+      "통상 5000 대비 -10%"
+    ],
+    [
+      19,
+      "PJM 계통연결 태양광",
+      "2023-06-09",
+      "일 피크 출력",
+      5000,
+      "MW(약)",
+      "계통운영자 공식 보고값",
+      "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+      "연기 감소 후 통상값 부근 복귀"
+    ],
+    [
+      19,
+      "PJM 계통연결 태양광",
+      "여름 통상 피크",
+      "비교 기준 출력",
+      5000,
+      "MW(약)",
+      "계통운영자 공식 보고값",
+      "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+      "동일일 무연기 반사실 기준 아님; 전주 평균 아님"
+    ],
+    [
+      19,
+      "PJM 계통연결 태양광",
+      "2023-06-07 13–14시",
+      "1시간 동안 출력 감소",
+      1000,
+      "MW(약)",
+      "계통운영자 공식 보고값",
+      "https://insidelines.pjm.com/quebec-wildfire-smoke-reduced-solar-output-electricity-demand-in-pjm-region/",
+      "1,000 MWh 에너지손실로 변환 금지"
+    ],
+    [
+      19,
+      "NYISO 예측 연구",
+      "2025 논문; 2023 캐나다 연기사건 포함",
+      "심한 연기기간 모델 예측 R²",
+      0.85,
+      "R²(최고값)",
+      "동료평가 논문 보고값",
+      "https://iopscience.iop.org/article/10.1088/1748-9326/adcf3b",
+      "NYISO 6개 load zones, HRRR-Smoke; 발전량 손실율/연기-발전 단순상관계수 아님"
+    ],
+    [
+      19,
+      "NYISO 예측 연구",
+      "동일 연구 비교",
+      "NYISO 기존 예측 R²",
+      0.5,
+      "R²",
+      "동료평가 논문 보고값",
+      "https://iopscience.iop.org/article/10.1088/1748-9326/adcf3b",
+      "위 0.85와 예측성능 비교; 0.35 증가를 발전량 증가로 해석 금지"
+    ]
+  ],
+  "suggested_sheet_calculations": [
+    {
+      "label": "17 핫스폿/기타해역 밀도비",
+      "inputs": [
+        0.0006,
+        0.0003
+      ],
+      "formula": "=0.0006/0.0003",
+      "result": 2,
+      "unit": "배",
+      "note": "본문 반올림값 재계산. 경계20km ≥4배와 다른 영역"
+    },
+    {
+      "label": "19 6/7 전일 대비 피크 변화율",
+      "inputs": [
+        4400,
+        4800
+      ],
+      "formula": "=4400/4800-1",
+      "result": -0.08333333333333337,
+      "unit": "비율",
+      "note": "반올림된 운영자값 재계산; 순수 연기효과 아님"
+    },
+    {
+      "label": "19 6/7 통상 피크 대비 변화율",
+      "inputs": [
+        4400,
+        5000
+      ],
+      "formula": "=4400/5000-1",
+      "result": -0.12,
+      "unit": "비율",
+      "note": "통상값 비교, 전주비교 아님"
+    },
+    {
+      "label": "19 6/8 통상 피크 대비 변화율",
+      "inputs": [
+        4500,
+        5000
+      ],
+      "formula": "=4500/5000-1",
+      "result": -0.09999999999999998,
+      "unit": "비율",
+      "note": "일피크 비교, 일별 에너지 아님"
+    }
+  ],
+  "excluded_unverified_values": "Boerder PDF 그래프를 Firecrawl이 임의 표로 추출한 0–10km별 소수값은 시각 검증하지 않아 사용하지 않음. Nature 2026 북미+유럽 모델 2.8%는 미국 관측손실로 오인 우려 있어 핵심값에서 제외."
+}
